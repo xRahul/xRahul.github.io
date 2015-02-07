@@ -11,40 +11,46 @@ $(function() {
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
+            var comment = "";
+            var idstamp = "ea89PinAfrlRSeBZAXHSBNW/y13BG3+FfvfFDyYK/mM="
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+              //  url: "https://rahulgr8888.wufoo.com/forms/zi8uqg41nhc658/#public",
+              //  type: "POST",
+                url: "https://rahulgr8888.wufoo.com/forms/zi8uqg41nhc658/#public",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
+                    Field7: name,
+                    Field4: phone,
+                    Field3: email,
+                    Field5: message,
+                    comment: comment,
+                    idstamp: idstamp
                 },
                 cache: false,
                 success: function() {
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                    $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
+                    $('#success > .alert-success').append("<strong>Your message might has been sent. </strong>");
                     $('#success > .alert-success').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
                 error: function() {
-                    // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
-                    $('#success > .alert-danger').append('</div>');
+                    // Success message
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
+                    $('#success > .alert-success').append("<strong>Your message might has been sent. </strong>");
+                    $('#success > .alert-success').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            });
         },
         filter: function() {
             return $(this).is(":visible");
