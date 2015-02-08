@@ -1,5 +1,5 @@
     <!-- Footer -->
-    <footer class="text-center">
+    <footer class="text-center {% if page.url == '/404.html' %} {{ site.footer.footer404 }} {% endif %}">
         <div class="footer-above">
             <div class="container">
                 <div class="row">

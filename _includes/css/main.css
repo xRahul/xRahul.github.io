@@ -58,7 +58,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #{{ site.color.secondary }};
 }
 
 hr.star-light:after {
@@ -97,6 +97,7 @@ header img {
 
 header .intro-text .name {
     display: block;
+    color: #{{ site.color.secondary }};
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
@@ -105,6 +106,7 @@ header .intro-text .name {
 
 header .intro-text .skills {
     font-size: 1.25em;
+    color: #{{ site.color.secondary }};
     font-weight: 300;
 }
 
@@ -144,6 +146,15 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+    }
+    .navbar-fixed-top .navbar-right {
+        font-size: 1.3em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+    .navbar-fixed-top.navbar-shrink .navbar-right {
+        font-size: 1em;
     }
 }
 
@@ -211,7 +222,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(143,144,138,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -364,6 +375,18 @@ footer .footer-below {
     outline: 0;
 }
 
+.row .form-group .btn-lg{
+    background-color: #{{ site.color.secondary }};
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    transition: all .1s;
+}
+
+.row .form-group .btn-lg:hover{
+    font-size: 1.3em;
+    background-color: #{{ site.color.secondary-dark }};
+}
+
 .scroll-top {
     z-index: 1049;
     position: fixed;
@@ -443,3 +466,49 @@ footer .footer-below {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+.fix-to-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-pic{
+    height: 256px;
+    width: 256px;
+    border-radius: 128px;
+    -ms-transform: rotate(-25deg); /* IE 9 */
+    -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
+    transform: rotate(-25deg);
+
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    transition: all .1s;
+}
+
+/*
+.profile-pic:hover{
+    height: 260px;
+    width: 260px;
+    border-radius: 130px;
+    margin-top: -4px;
+}
+
+.name, 
+hr.star-light, 
+.skills {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.name:hover, 
+hr.star-light:hover, 
+.skills:hover {
+    border-color: #{{ site.color.secondary }};
+    color: #{{ site.color.secondary }};
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+*/

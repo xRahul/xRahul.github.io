@@ -6,9 +6,9 @@ description: "Portfolio of a Software Engineer."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 8f908a #80B3FF
+  secondary: 3d3d3a #FD6E8A
+  secondary-dark: 272822 #A2122F
 
 # Footer settings
 footer:
@@ -16,6 +16,7 @@ footer:
   location: Location
   social: Around the Web
   credits: Work
+  footer404: fix-to-bottom
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -33,7 +34,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: Plot - 112, Sector 44
-  - line: Gurgaon, 122 001, Haryana, India
+  - line: Gurgaon, 122 001, India
 
 # Credits content
 credits: 'Software Engineer <a href="http://www.shopclues.com">@Shopclues</a>'
@@ -41,3 +42,12 @@ credits: 'Software Engineer <a href="http://www.shopclues.com">@Shopclues</a>'
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+#404 settinge
+404titleappend: 404
+
+#Github settings
+gems:
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-mentions
