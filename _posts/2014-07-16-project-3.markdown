@@ -1,6 +1,7 @@
 ---
 layout: default
 modal-id: 3
+page-name: blogs
 date: 2014-07-16
 img: circus.png
 alt: image-alt

@@ -29,9 +29,28 @@ $(function() {
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
-})
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
+});
+
+
+// Fetching of pages on modal click
+$('.portfolio-link').click(function() {
+    var fetch_array = this.href.split("_-_");
+    var fetch_id = 'fetch-content-'+fetch_array[2];
+    var page_name = fetch_array[1];
+
+    if($('#'+fetch_id).html() === ''){
+        var xhr_modals= new XMLHttpRequest();
+        xhr_modals.open('GET', 'posts/'+page_name+'.html', true);
+        xhr_modals.onreadystatechange= function() {
+            if (this.readyState!==4) return;
+            if (this.status!==200) return; // or whatever error handling you want
+            document.getElementById(fetch_id).innerHTML= this.responseText;
+        };
+        xhr_modals.send();
+    }
 });
