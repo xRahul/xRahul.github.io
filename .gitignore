@@ -1,3 +1,4 @@
+
 *.sublime-project
 
 *.sublime-workspace
@@ -15,3 +16,6 @@ ehthumbs.db
 Thumbs.db
 
 _site/
+
+.sass-cache/
+
