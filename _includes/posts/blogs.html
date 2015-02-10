@@ -1,29 +1,37 @@
-<h1>Yo!</h1>
-
 <div class="row">
     <div class="col-lg-8 col-lg-offset-2">
         <div class="modal-body">
-            <h2>title: {{ post.title }}</h2>
+            <h2>Blogs</h2>
             <hr class="star-primary">
-            Image{% if post.display-image %}
-            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% if post.display-image %}
+                <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             {% endif %}
-            <p>description{{ post.description }}</p>
+            <p>
+                <br>
+                <a href="http://rahulgr8888.blogspot.com/">Internesque</a>
+                <br>
+                <a href="http://ideafecate.blogspot.com/">Ideafecate</a>
+                <br>
+                <a href="http://hpmor-science.blogspot.com/">HPMOR - Scientific Facts</a>
+                <br>
+                <a href="http://cprogramsmadeeasy.blogspot.com/">C Programs made Easy</a>
+                <br>
+            </p>
             <ul class="list-inline item-details">
-                Client{% if post.client %}
-                <li>Client:
+                {% if post.client %}
+                <li>
                     <strong><a href="http://rahulja.in">{{ post.client }}</a>
                     </strong>
                 </li>
                 {% endif %}
-                Date{% if post.project-date %}
-                <li>Date:
+                {% if post.project-date %}
+                <li>
                     <strong><a href="http://rahulja.in">{{ post.project-date }}</a>
                     </strong>
                 </li>
                 {% endif %}
-                Service{% if post.category %}
-                <li>Service:
+                {% if post.category %}
+                <li>
                     <strong><a href="http://rahulja.in">{{ post.category }}</a>
                     </strong>
                 </li>

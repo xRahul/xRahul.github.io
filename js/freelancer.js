@@ -37,20 +37,49 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
-// Fetching of pages on modal click
+// Dynamic Fetching of pages on modal click
 $('.portfolio-link').click(function() {
     var fetch_array = this.href.split("_-_");
     var fetch_id = 'fetch-content-'+fetch_array[2];
     var page_name = fetch_array[1];
+    var seriously_wrong = '<h2>Something must really be wrong that even error page won\'t load! =(<h2>';
 
-    if($('#'+fetch_id).html() === ''){
+    if($('#'+fetch_id).html() === '' || $('#'+fetch_id).html() === seriously_wrong){
         var xhr_modals= new XMLHttpRequest();
         xhr_modals.open('GET', 'posts/'+page_name+'.html', true);
+
         xhr_modals.onreadystatechange= function() {
-            if (this.readyState!==4) return;
-            if (this.status!==200) return; // or whatever error handling you want
-            document.getElementById(fetch_id).innerHTML= this.responseText;
+            if (this.readyState!==4 && this.status!==200){
+
+                var xhr_modals_error= new XMLHttpRequest();
+                xhr_modals_error.open('GET', 'posts/error.html', true);
+
+                xhr_modals_error.onreadystatechange= function() {
+                    if (this.readyState!==4 || this.status!==200){
+                        document.getElementById(fetch_id).innerHTML= seriously_wrong;
+                    }else{
+                        document.getElementById(fetch_id).innerHTML= this.responseText;
+                    }
+                };
+                xhr_modals_error.send();
+
+            }else{
+                document.getElementById(fetch_id).innerHTML= this.responseText;
+            }
         };
         xhr_modals.send();
     }
 });
+
+$('.about-about').hover(
+    function(){
+        //alert($(this).data('ref'));
+        var aa = this.innerHTML;
+        this.innerHTML = $(this).data('ref');
+        $(this).data('ref', aa);
+    }, function(){
+        var aa = this.innerHTML;
+        this.innerHTML = $(this).data('ref');
+        $(this).data('ref', aa);
+    }
+);

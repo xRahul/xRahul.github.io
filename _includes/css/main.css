@@ -486,6 +486,23 @@ footer .footer-below {
     transition: all .1s;
 }
 
+#a_blogs{
+    color: #fff;
+    text-align: center;
+}
+#a_blogs:hover{
+    text-decoration: none;
+    color: #ddd;
+}
+#footer_emailID{
+    color: #ccc;
+    text-align: center;
+}
+#footer_emailID:hover{
+    text-decoration: none;
+    color: #aaa;
+}
+
 /*
 .profile-pic:hover{
     height: 260px;
