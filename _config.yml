@@ -15,7 +15,7 @@ footer:
   copyright: Rahul Jain
   location: Location
   social: Around the Web
-  credits: Work
+  email_header: Email
   footer404: fix-to-bottom
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -37,7 +37,7 @@ address:
   - line: Gurgaon, 122 001, India
 
 # Credits content
-credits: 'Software Engineer <a href="http://www.shopclues.com">@Shopclues</a>'
+email: '<h4><a id="footer_emailID" href="mailto:rahul_jain@live.in">rahul_jain@live.in</a></h4>'
 
 # Build settings
 markdown: kramdown
