@@ -494,6 +494,19 @@ footer .footer-below {
     text-decoration: none;
     color: #ddd;
 }
+
+.about-about{
+    color: #333;
+    font-size: 1.2em;
+}
+.about-about:hover{
+    color: #222;
+}
+
+.about-next{
+    display: block;
+}
+
 #footer_emailID{
     color: #ccc;
     text-align: center;
@@ -502,7 +515,6 @@ footer .footer-below {
     text-decoration: none;
     color: #aaa;
 }
-
 /*
 .profile-pic:hover{
     height: 260px;

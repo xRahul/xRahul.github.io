@@ -70,16 +70,3 @@ $('.portfolio-link').click(function() {
         xhr_modals.send();
     }
 });
-
-$('.about-about').hover(
-    function(){
-        //alert($(this).data('ref'));
-        var aa = this.innerHTML;
-        this.innerHTML = $(this).data('ref');
-        $(this).data('ref', aa);
-    }, function(){
-        var aa = this.innerHTML;
-        this.innerHTML = $(this).data('ref');
-        $(this).data('ref', aa);
-    }
-);
