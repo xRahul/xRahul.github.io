@@ -524,8 +524,8 @@ footer .footer-below {
     border-color: #007bb6;
 }
 .bg-github:hover{
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 #footer_emailID{
