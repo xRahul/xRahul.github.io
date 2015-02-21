@@ -524,7 +524,8 @@ footer .footer-below {
     border-color: #007bb6;
 }
 .bg-github:hover{
-    background-color: #000;
+    background-color: #111;
+    border-color: #111;
     color: #fff;
 }
 
