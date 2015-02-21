@@ -276,7 +276,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #{{ site.color.primary }};
+    color: #fff;
     background: #fff;
 }
 
@@ -521,9 +521,6 @@ footer .footer-below {
 }
 .bg-github:hover{
     background-color: #333;
-}
-.fa-fw:hover{
-    color: WHITE;
 }
 
 #footer_emailID{
