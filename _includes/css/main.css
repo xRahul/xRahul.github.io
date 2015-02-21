@@ -507,6 +507,10 @@ footer .footer-below {
     display: block;
 }
 
+.bg-twitter:hover{
+    background-color: #55acee;
+}
+
 #footer_emailID{
     color: #ccc;
     text-align: center;
