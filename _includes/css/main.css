@@ -520,7 +520,8 @@ footer .footer-below {
     background-color: #007bb6;
 }
 .bg-github:hover{
-    background-color: #333;
+    background-color: #fff;
+    color: #000;
 }
 
 #footer_emailID{
