@@ -383,7 +383,6 @@ footer .footer-below {
 }
 
 .row .form-group .btn-lg:hover{
-    font-size: 1.3em;
     background-color: #{{ site.color.secondary-dark }};
 }
 
@@ -507,6 +506,11 @@ footer .footer-below {
     display: block;
 }
 
+.bg-download:hover{
+    background-color: #{{ site.color.secondary }};
+    border-color: #{{ site.color.secondary }};
+    color: #{{ site.color.primary }};
+}
 .bg-twitter:hover{
     background-color: #00aced;
     border-color: #00aced;
