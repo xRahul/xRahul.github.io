@@ -35,6 +35,7 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
     - _vendor/
+  baseurl: http://rahulja.in
 collections:
   my_tags:
     output: true
