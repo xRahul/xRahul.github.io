@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Rahul Jain</title>
+    <description></description>
+    <link>http://rahulja.in</link>
+    <atom:link href="http://rahulja.in/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Chalk Template for Jekyll</title>
+        <description>Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.</description>
+        <pubDate>Sun, 01 Jan 2017 00:00:00 +0530</pubDate>
+        <link>http://rahulja.in/posts/chalk-template-for-jekyll</link>
+        <guid isPermaLink="true">http://rahulja.in/posts/chalk-template-for-jekyll</guid>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+  {% if site.social.twitter %}
+    <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
+  {% endif %}
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% asset_path apple-touch-icon-57x57.png %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset_path apple-touch-icon-114x114.png %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% asset_path apple-touch-icon-72x72.png %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% asset_path apple-touch-icon-60x60.png %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% asset_path apple-touch-icon-120x120.png %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% asset_path apple-touch-icon-76x76.png %}" />
+  <link rel="icon" type="image/png" href="{% asset_path favicon-96x96.png %}" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{% asset_path favicon-32x32.png %}" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{% asset_path favicon-16x16.png %}" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{% asset_path favicon-128.png %}" sizes="128x128" />
+  <meta name="msapplication-square70x70logo" content="{% asset_path mstile-70x70.png %}" />
+
+  <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
+
+  {% if site.blog_theme == "light" %}
+    {% stylesheet light %}
+  {% else %}
+    {% stylesheet dark %}
+  {% endif %}
+
+</head>

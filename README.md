@@ -1,0 +1,1 @@
+Personalized blog profile

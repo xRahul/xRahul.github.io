@@ -1,0 +1,27 @@
+<nav class="header-nav reveal">
+  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <ul class="header-links">
+
+    {% if site.about_enabled == true %}
+      {%  unless page.url contains '/tags'  %}
+        <li>
+          <a class="header-icon-link" href="{{ 'tags' | relative_url }}" title="Tags">
+            <span class="icon icon-pound header-icon hash-icon-header"></span>tags
+          </a>
+        </li>
+      {% endunless %}
+    {% endif %}
+
+    {% if site.about_enabled == true %}
+      {%  unless page.url contains '/about'  %}
+        <li>
+          <a class="header-icon-link" href="{{ 'about' | relative_url }}" title="About me">
+            <span class="icon icon-android-person header-icon"></span>
+
+          </a>
+        </li>
+      {% endunless %}
+    {% endif %}
+
+  </ul>
+</nav>

@@ -1,0 +1,4 @@
+---
+slug: template
+name: Template
+---

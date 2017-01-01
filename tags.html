@@ -1,0 +1,19 @@
+---
+layout: default
+title: "All tags from blog posts"
+description: ""
+---
+
+<div class="tags-page reveal text-center">
+  <h1 class="tags-page-header">
+    <span class="icon icon-pound"></span>tags
+  </h1>
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    <h4>
+      <a class="no-text-decoration" href="{{ 'tag/' | relative_url }}{{ tag | first }}" title="See all posts by {{ tag | first }} tag">
+        {{ tag | first }}
+      </a>
+    </h4>
+  {% endfor %}
+</div>

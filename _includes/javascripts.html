@@ -1,0 +1,39 @@
+{% javascript vendor %}
+{% javascript application %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    }
+  });
+</script>
+
+{% if site.ga_analytics %}
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', '{{ site.ga_analytics }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+{% endif %}
+
+{% if site.about_enabled == true and page.url contains '/about' %}
+  <script>
+    $(document).ready(function(){
+      $(".technology-list-a-svg").hover(function(){
+          $(this).children(":first").css("top", "25%");
+          $(this).children(":first").css("left", "15%");
+          $(this).children(":first").css("width", "70%");
+          $(this).children(":first").css("height", "50%");
+        }, function(){
+          $(this).children(":first").css("top", "35%");
+          $(this).children(":first").css("left", "25%");
+          $(this).children(":first").css("width", "50%");
+          $(this).children(":first").css("height", "30%");
+        }
+      );
+    });
+  </script>
+{% endif %}
