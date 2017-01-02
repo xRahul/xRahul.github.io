@@ -3,10 +3,10 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ site.name }} | {{ page.title }}</title>
+  <title>{{ site.name }}{% if page.title and page.title != '' %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
@@ -18,7 +18,7 @@
   {% if site.social.twitter %}
     <meta name="twitter:creator" content="@{{ site.social.twitter }}" />
   {% endif %}
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path about.jpg %}{% endif %}">
 
