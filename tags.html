@@ -4,16 +4,14 @@ title: "Tags"
 description: "Tags from all the posts"
 ---
 
-<div class="tags-page reveal text-center">
-  <h1 class="tags-page-header">
+<div class="tags-page text-center">
+  <h1 class="tags-page-header reveal">
     <span class="icon icon-pound"></span>tags
   </h1>
   {% assign sorted_tags = site.tags | sort %}
   {% for tag in sorted_tags %}
-    <h4>
-      <a class="no-text-decoration" href="{{ 'tag/' | relative_url }}{{ tag | first }}" title="See all posts by {{ tag | first }} tag">
-        {{ tag | first | upcase }}
-      </a>
-    </h4>
+    <a class="no-text-decoration" href="{{ 'tag/' | relative_url }}{{ tag | first }}" title="See all posts by {{ tag | first | upcase }} tag">
+      <h4 class="reveal">{{ tag | first | upcase }}</h4>
+    </a>
   {% endfor %}
 </div>

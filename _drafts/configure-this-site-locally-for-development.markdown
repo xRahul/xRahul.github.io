@@ -6,19 +6,23 @@ tags: [jekyll, ruby, dev-environment]
 og_image: "posts/configure-this-site-locally-for-development/og-image.png"
 ---
 
+{:.reveal}
 {% include image.html path="posts/configure-this-site-locally-for-development/og-image.png" path-detail="posts/configure-this-site-locally-for-development/og-image@2x.png" alt="Chalk Template" %}
 
-
+{:.reveal}
 Install ruby 2.3.3
 
+{:.reveal}
     {% highlight bash %}
     rbenv install 2.3.3
     rbenv global 2.3.3
     ruby -v
     {% endhighlight %}
 
+{:.reveal}
 Install site
 
+{:.reveal}
     {% highlight bash %}
     git clone https://github.com/xRahul/xRahul.github.io.git
     git config --global credential.helper cache
@@ -30,14 +34,18 @@ Install site
     bin/setup
     {% endhighlight %}
     
+{:.reveal}
 Run local development server
 
+{:.reveal}
     {% highlight bash %}
     bundle exec jekyll serve --drafts
     {% endhighlight %}
     
+{:.reveal}
 Deploy to github master branch
 
+{:.reveal}
     {% highlight bash %}
     bin/deploy
     {% endhighlight %}
@@ -45,6 +53,7 @@ Deploy to github master branch
 
 ---
 <br>
+{:.reveal}
 ##### References
 [rahulja.in](http://rahulja.in) 
 <br>
