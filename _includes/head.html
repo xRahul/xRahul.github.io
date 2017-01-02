@@ -11,7 +11,7 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
+  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path about.jpg %}{% endif %}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
@@ -20,7 +20,7 @@
   {% endif %}
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path og-image.jpg %}{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path about.jpg %}{% endif %}">
 
   <!-- favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% asset_path apple-touch-icon-57x57.png %}" />

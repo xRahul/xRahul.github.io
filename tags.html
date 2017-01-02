@@ -12,7 +12,7 @@ description: ""
   {% for tag in sorted_tags %}
     <h4>
       <a class="no-text-decoration" href="{{ 'tag/' | relative_url }}{{ tag | first }}" title="See all posts by {{ tag | first }} tag">
-        {{ tag | first }}
+        {{ tag | first | upcase }}
       </a>
     </h4>
   {% endfor %}

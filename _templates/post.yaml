@@ -1,0 +1,10 @@
+# create new posts
+---
+layout: ${1:post}
+title:
+description: $2
+tags: [$3]
+og_image: "$4"
+---
+
+$5
