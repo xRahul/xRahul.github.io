@@ -1,5 +1,11 @@
 <nav class="header-nav reveal">
-  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">
+    {% if page.title and page.title != '' %}
+      {{ site.name }}
+    {% else %}
+      <h1 class="header-logo">{{ site.name }}</h1>
+    {% endif %}
+  </a>
   <ul class="header-links">
 
     {%  unless page.url contains '/tags'  %}
