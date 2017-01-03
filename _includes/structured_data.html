@@ -1,0 +1,33 @@
+{%  unless page.url contains '/posts'  %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gurgaon",
+      "addressRegion": "HR",
+      "addressCountry": "India"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Chandigarh Engineering College"
+    },
+    "birthDate": "1993-02-17",
+    "email": "rahul_jain@live.in",
+    "familyName": "Jain",
+    "givenName": "Rahul",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Shopclues"
+    },
+    "nationality": {
+      "@type": "Country",
+      "name": "India"
+    },
+    "image": "http://rahulja.in/assets/about.jpg"
+    "url": "http://rahulja.in",
+  }
+</script>
+{% endunless %}
