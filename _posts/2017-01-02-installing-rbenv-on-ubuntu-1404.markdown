@@ -24,7 +24,8 @@ og_image: "posts/installing-rbenv-on-ubuntu-1404/rbenv-og-image.png"
     
 {:.reveal}
 Disable rubygems to generate local documentation for each gem that you install
-    {:.reveal}
+
+{:.reveal}
     {% highlight bash %}
     echo "gem: --no-document" > ~/.gemrc
     {% endhighlight %}
