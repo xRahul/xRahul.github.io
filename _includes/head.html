@@ -6,6 +6,10 @@
   <title>{{ site.name }}{% if page.title and page.title != '' %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
 
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+  <meta name="msvalidate.01" content="C02D47D34B2CA730AA994096C315F5FE" />
+
   <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
