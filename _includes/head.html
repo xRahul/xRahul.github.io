@@ -10,12 +10,30 @@
 
   <meta name="msvalidate.01" content="C02D47D34B2CA730AA994096C315F5FE" />
 
+  <!-- open graph metadata -->
   <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-  <meta property="og:type" content="website">
+
+  {% if page.og_image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">
+  {% endif %}
+
+  <meta property="og:image" content="{{ site.url }}{% asset_path about.jpg %}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:profile:first_name" content="Rahul">
+  <meta property="og:profile:last_name" content="Jain">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path about.jpg %}{% endif %}">
+
+  {% if page.url contains '/posts' %}
+    <meta property="og:type" content="article">
+    <meta property="og:article:author" content="{{ site.name }}">
+    <meta property="og:article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% for tag in page.tags %}
+      <meta property="og:article:tag" content="{{ tag }}">
+    {% endfor %}
+  {% else %}
+    <meta property="og:type" content="website">
+  {% endif %}
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
