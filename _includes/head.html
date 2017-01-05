@@ -57,6 +57,8 @@
   <link rel="icon" type="image/png" href="{% asset_path favicon-128.png %}" sizes="128x128" />
   <meta name="msapplication-square70x70logo" content="{% asset_path mstile-70x70.png %}" />
 
+  <link rel="alternate" media="handheld" href="{{ page.url | absolute_url }}" />
+
   <link href="{{ 'feed.xml' | absolute_url }}" type="application/rss+xml" rel="alternate" title="{{ site.name }} Last 10 blog posts" />
 
   {% if site.blog_theme == "light" %}
