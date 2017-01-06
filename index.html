@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ''
-description: "Rahul Jain is a Full-Stack Engineer and web enthusiast living in Gurgaon, India."
+description: "Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Gurgaon, India."
 ---
 
 <ul class="article-list">
@@ -12,8 +12,8 @@ description: "Rahul Jain is a Full-Stack Engineer and web enthusiast living in G
           {{ post.title }}
           <span class="icon icon-ios-arrow-thin-right"></span>
         </h5>
+        <p>{{ post.description }}</p>
       </a>
-      <p>{{ post.description }}</p>
       <div class="article-list-footer">
         <span class="article-list-date">
           {{ post.date | date: "%B %-d, %Y" }}
