@@ -67,11 +67,13 @@
 
   <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="Articles by {{ site.author.name }}">
 
-  {% if site.blog_theme == "light" %}
-    {% stylesheet light %}
-  {% else %}
-    {% stylesheet dark %}
-  {% endif %}
+  <style>
+    {% if site.blog_theme == "light" %}
+      {% asset_source 'light.scss' %}
+    {% else %}
+      {% asset_source 'dark.scss' %}
+    {% endif %}
+  </style>
 
   {% include structured_data.html %}
 
