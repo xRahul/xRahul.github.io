@@ -11,41 +11,41 @@ image: "posts/installing-rbenv-on-ubuntu-1404/rbenv-og-image.png"
 #### Installing [rbenv](https://github.com/rbenv/rbenv#installation)
 
 {:.reveal}
-    {% highlight bash %}
-    sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
-    
-    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-    
-    cd ~/.rbenv && src/configure && make -C src
-    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-    
-    ~/.rbenv/bin/rbenv init
-    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-    {% endhighlight %}
+{% highlight bash %}
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+cd ~/.rbenv && src/configure && make -C src
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+
+~/.rbenv/bin/rbenv init
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+{% endhighlight %}
     
 {:.reveal}
 Disable rubygems to generate local documentation for each gem that you install
 
 {:.reveal}
-    {% highlight bash %}
-    echo "gem: --no-document" > ~/.gemrc
-    {% endhighlight %}
+{% highlight bash %}
+echo "gem: --no-document" > ~/.gemrc
+{% endhighlight %}
 
 {:.reveal}
 Restart your shell so that PATH changes take effect. (Opening a new terminal tab will usually do it.) or run:
 
 {:.reveal}
-    {% highlight bash %}
-    source ~/.bashrc
-    {% endhighlight %}
+{% highlight bash %}
+source ~/.bashrc
+{% endhighlight %}
 
 {:.reveal}
 Now check if rbenv was set up:
 
 {:.reveal}
-    {% highlight bash %}
-    type rbenv
-    {% endhighlight %}
+{% highlight bash %}
+type rbenv
+{% endhighlight %}
 
 ---
 {:.reveal}
@@ -54,9 +54,9 @@ Now check if rbenv was set up:
 It provides the `rbenv install` command that simplifies the process of [installing new Ruby versions](https://github.com/rbenv/rbenv#installing-ruby-versions).
 
 {:.reveal}
-    {% highlight bash %}
-    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-    {% endhighlight %}
+{% highlight bash %}
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+{% endhighlight %}
 
 ---
 <br>

@@ -14,42 +14,42 @@ image: "posts/configure-this-site-locally-for-development/og-image.png"
 Install ruby 2.3.3
 
 {:.reveal}
-    {% highlight bash %}
-    rbenv install 2.3.3
-    rbenv global 2.3.3
-    ruby -v
-    {% endhighlight %}
+{% highlight bash %}
+rbenv install 2.3.3
+rbenv global 2.3.3
+ruby -v
+{% endhighlight %}
 
 {:.reveal}
 Install site
 
 {:.reveal}
-    {% highlight bash %}
-    git clone https://github.com/xRahul/xRahul.github.io.git
-    git config --global credential.helper cache
-    git config --global credential.helper 'cache --timeout=36000'
-    cd xRahul.github.io/
-    git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
-    git fetch --all
-    git pull --all
-    bin/setup
-    {% endhighlight %}
+{% highlight bash %}
+git clone https://github.com/xRahul/xRahul.github.io.git
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=36000'
+cd xRahul.github.io/
+git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+bin/setup
+{% endhighlight %}
     
 {:.reveal}
 Run local development server
 
 {:.reveal}
-    {% highlight bash %}
-    bundle exec jekyll serve --drafts
-    {% endhighlight %}
+{% highlight bash %}
+bundle exec jekyll serve --drafts
+{% endhighlight %}
     
 {:.reveal}
 Deploy to github master branch
 
 {:.reveal}
-    {% highlight bash %}
-    bin/deploy
-    {% endhighlight %}
+{% highlight bash %}
+bin/deploy
+{% endhighlight %}
     
 
 ---

@@ -87,5 +87,4 @@ curl_close($conn);
 {:.reveal}
 [Function definition for curl\_file\_create on PHP < 5.5](http://php.net/manual/en/function.curl-file-create.php#114538)
 <br>
-{:.reveal}
 [Sending files using cURL in PHP](http://code.stephenmorley.org/php/sending-files-using-curl/) (2009)

@@ -18,4 +18,6 @@ https://hydepress.github.io/jekyll-plugins
 
 http://josephrex.me/using-jekyll-assets/
 
+https://mademistakes.com/articles/using-jekyll-2016/
+
 ```
