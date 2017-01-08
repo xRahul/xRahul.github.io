@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Configure this site locally for development
 description: Configure the repository xRahul.github.io locally for development
 tags: [jekyll, ruby, dev-environment]

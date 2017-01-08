@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Page not found"
 description: "Page not found"
 permalink: /404.html
@@ -8,6 +7,11 @@ sitemap: false
 
 <div class="notfound-wrapper">
   <div class="notfound-content reveal">
+  	<p>
+  		{% for kk in site.static_files %}
+				{{ kk.path }}<br>
+  		{% endfor %}
+  	</p>
     <p>
       Looks like you got lost.
       <br>

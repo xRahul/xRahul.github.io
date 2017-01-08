@@ -20,4 +20,6 @@ http://josephrex.me/using-jekyll-assets/
 
 https://mademistakes.com/articles/using-jekyll-2016/
 
+https://jekyllrb.com/docs/variables/
+
 ```

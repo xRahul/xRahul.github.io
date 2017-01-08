@@ -1,14 +1,29 @@
-# Mandatory settings
+#Mandatory
 name: Rahul Jain
-paginate: 5
-paginate_path: "/posts/page/:num/"
 url: http://rahulja.in
-blog_theme: light # Or use dark
 description: Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Gurgaon, India.
+
+blog_theme: light # Or use dark
+timezone: Asia/Kolkata
+encoding: utf-8
+
+# Process and render draft posts
+# show_drafts: false
+# Publish posts or collection documents with a future date
+# future: false
+# Render posts that were marked as unpublished
+# unpublished: false
+# Produce an index for related posts.
+# lsi: true
+
 author:
   name: Rahul Jain
   email: rahul_jain@live.in
   uri: http://rahulja.in/about
+
+paginate: 5
+paginate_path: "/posts/page/:num/"
+permalink: posts/:slug
 
 # Optional Settings
 discus_identifier: rahulja-in # Add your Disqus identifier
@@ -26,13 +41,11 @@ social_links:
   bitcoin: 1BmYjgdCkY6P8tmmxjm4f5stDK7vJ6VcQN # Add your Bitcoin wallet ID
 
 # Important settings
-timezone: Asia/Kolkata
-encoding: utf-8
 assets:
-  digest: true
+  digest: false
   compress:
-    css: true
-    js: true
+    css: false
+    js: false
   features:
     automatic_img_size: false
   sources:
@@ -42,10 +55,13 @@ assets:
     - _assets/javascripts
     - _assets/stylesheets
   baseurl: http://rahulja.in
+
 collections:
   my_tags:
     output: true
     permalink: /tag/:slug/
+
+# using defaults- https://jekyllrb.com/docs/configuration/
 defaults:
   -
     scope:
@@ -53,6 +69,19 @@ defaults:
       type: my_tags
     values:
       layout: articles_by_tag
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
 exclude:
   - .bowerrc
   - .travis.yml
@@ -65,6 +94,8 @@ exclude:
   - README.md
   - feed.xml_asdf
   - vendor/
+  - .jekyll-metadata
+
 gems:
   - jekyll-assets
   - jekyll-paginate
@@ -74,7 +105,6 @@ gems:
   - jekyll-redirect-from
   - jekyll-gist
   - jekyll-seo-tag
-permalink: posts/:slug
 
 #Cusstom variables
 attribution:

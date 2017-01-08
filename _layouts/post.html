@@ -47,6 +47,15 @@ layout: default
     </a>
   </div>
 
+  <div class="article-pagination reveal">
+    {% if page.previous != nil %}
+      <a href="{{ page.previous.url }}" rel="prev" title="{{ page.previous.title }}" class="article-pagination-right">Older post <small><i class="fa fa-angle-double-right" aria-hidden="true"></i></small></a>
+    {% endif %}
+    {% if page.next != nil %}
+      <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}"><small><i class="fa fa-angle-double-left" aria-hidden="true"></i></small> Newer post</a>
+    {% endif %}
+  </div>
+
   {% if site.discus_identifier and jekyll.environment == "production" %}
     <div id="disqus_thread" class="article-comments reveal"></div>
     <script>

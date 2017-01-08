@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Google Search Console - Basics
 description: Overview of Google's webmaster tools, and what you can do using them.
 tags: [web, tools]

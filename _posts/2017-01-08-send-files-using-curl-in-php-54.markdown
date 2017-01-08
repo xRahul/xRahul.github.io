@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Send Files using cURL in Php 5.4
 description: Learn how to send files using cURL in php 5.4 and an example code for that.
 tags: [php, code]
