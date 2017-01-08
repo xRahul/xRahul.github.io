@@ -11,7 +11,7 @@
     {%  unless page.url contains '/tags'  %}
       <li>
         <a class="header-icon-link" href="{{ 'tags' | relative_url }}" title="Tags">
-          <span class="icon icon-pound header-icon hash-icon-header"></span>tags
+          <i class="fa fa-hashtag" aria-hidden="true"></i>tags
         </a>
       </li>
     {% endunless %}
@@ -20,7 +20,7 @@
       {%  unless page.url contains '/about'  %}
         <li>
           <a class="header-icon-link" href="{{ 'about' | relative_url }}" title="About me">
-            <span class="icon icon-android-person header-icon"></span>Profile
+            <i class="fa fa-user" aria-hidden="true"></i> Profile
           </a>
         </li>
       {% endunless %}

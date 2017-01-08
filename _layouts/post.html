@@ -36,7 +36,7 @@ layout: default
 
   <div class="article-share reveal">
     {% assign page_title = page.title  | truncate '110' %}
-    <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social.twitter %}by @{{ site.social.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
+    <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social_links.twitter %}by @{{ site.social_links.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
       <span class="icon icon-social-twitter"></span>
     </a>
     <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}', 'newwindow', 'width=500, height=500'); return false;">
@@ -47,7 +47,7 @@ layout: default
     </a>
   </div>
 
-  {% if site.discus_identifier %}
+  {% if site.discus_identifier and jekyll.environment == "production" %}
     <div id="disqus_thread" class="article-comments reveal"></div>
     <script>
       (function() {

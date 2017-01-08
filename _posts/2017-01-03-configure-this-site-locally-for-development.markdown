@@ -4,6 +4,7 @@ title: Configure this site locally for development
 description: Configure the repository xRahul.github.io locally for development
 tags: [jekyll, ruby, dev-environment]
 og_image: "posts/configure-this-site-locally-for-development/og-image.png"
+image: "posts/configure-this-site-locally-for-development/og-image.png"
 ---
 
 {:.reveal}

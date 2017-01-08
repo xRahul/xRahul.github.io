@@ -4,6 +4,7 @@ title: Installing rbenv on Ubuntu 14.04
 description: Install rbenv and ruby-build to manage multiple ruby versions on Ubuntu 14.04
 tags: [linux, package, ruby]
 og_image: "posts/installing-rbenv-on-ubuntu-1404/rbenv-og-image.png"
+image: "posts/installing-rbenv-on-ubuntu-1404/rbenv-og-image.png"
 ---
 
 {:.reveal}

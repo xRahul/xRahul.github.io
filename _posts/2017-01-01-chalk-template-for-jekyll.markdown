@@ -3,6 +3,7 @@ layout: post
 title: "Chalk Template for Jekyll"
 description: "Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll."
 og_image: "posts/chalk-template-for-jekyll/og-image.png"
+image: "posts/chalk-template-for-jekyll/og-image.png"
 tags: [template, jekyll, web]
 ---
 {:.reveal}

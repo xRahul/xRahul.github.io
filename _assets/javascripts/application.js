@@ -1,3 +1,4 @@
+//= require vendor
 //= require_self
 
 // Initialize fluidbox

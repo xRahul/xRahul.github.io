@@ -1,4 +1,3 @@
-{% javascript vendor %}
 {% javascript application %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
@@ -10,7 +9,7 @@
   });
 </script>
 
-{% if site.ga_analytics %}
+{% if site.ga_analytics and jekyll.environment == "production" %}
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', '{{ site.ga_analytics }}', 'auto');
