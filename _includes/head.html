@@ -7,64 +7,13 @@
   <meta name="description" content="{{ page.description }}">
 
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="alternate" media="handheld" href="{{ page.url | absolute_url }}" />
 
   <meta name="msvalidate.01" content="C02D47D34B2CA730AA994096C315F5FE" />
 
-  <!-- open graph metadata -->
-  <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+  {% include head/favicon_links.html %}
 
-  {% if page.og_image %}
-    <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">
-  {% endif %}
-
-  <meta property="og:image" content="{{ site.url }}{% asset_path about.jpg %}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="profile:first_name" content="Rahul">
-  <meta property="profile:last_name" content="Jain">
-  <meta property="og:site_name" content="{{ site.name }}">
-
-  {% if page.url contains '/posts' %}
-    {%  unless page.url contains '/posts/page'  %}
-      <meta property="og:type" content="article">
-      <meta property="article:author" content="{{ site.name }}">
-      <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-      {% for tag in page.tags %}
-        <meta property="article:tag" content="{{ tag }}">
-      {% endfor %}
-    {% endunless %}
-  {% else %}
-    <meta property="og:type" content="website">
-  {% endif %}
-
-  {% if page.url contains '/posts/page' %}
-    <meta property="og:type" content="website">
-  {% endif %}
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ page.url | absolute_url }}">
-  {% if site.social_links.twitter %}
-    <meta name="twitter:creator" content="@{{ site.social_links.twitter }}" />
-  {% endif %}
-  <meta name="twitter:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path about.jpg %}{% endif %}">
-
-  <!-- favicons -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% asset_path apple-touch-icon-57x57.png %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset_path apple-touch-icon-114x114.png %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% asset_path apple-touch-icon-72x72.png %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% asset_path apple-touch-icon-60x60.png %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% asset_path apple-touch-icon-120x120.png %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% asset_path apple-touch-icon-76x76.png %}" />
-  <link rel="icon" type="image/png" href="{% asset_path favicon-96x96.png %}" sizes="96x96" />
-  <link rel="icon" type="image/png" href="{% asset_path favicon-32x32.png %}" sizes="32x32" />
-  <link rel="icon" type="image/png" href="{% asset_path favicon-16x16.png %}" sizes="16x16" />
-  <link rel="icon" type="image/png" href="{% asset_path favicon-128.png %}" sizes="128x128" />
-  <meta name="msapplication-square70x70logo" content="{% asset_path mstile-70x70.png %}" />
-
-  <link rel="alternate" media="handheld" href="{{ page.url | absolute_url }}" />
-
+  <!-- feed link -->
   <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="Articles by {{ site.author.name }}">
 
   <style>
@@ -75,6 +24,6 @@
     {% endif %}
   </style>
 
-  {% include structured_data.html %}
+  {% include head/structured_data.html %}
 
 </head>
