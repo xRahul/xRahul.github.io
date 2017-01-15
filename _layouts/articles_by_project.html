@@ -3,9 +3,18 @@ layout: default
 sitemap: false
 ---
 
-{% if site.tags[page.slug] %}
+{% assign has_posts = 0 %}
+{% assign post_array = "" | split:"," %}
+{% for post in site.posts %}
+  {% if post.projects contains page.slug %}
+    {% assign has_posts = 1 %}
+    {% assign post_array = post_array | push: post %}
+  {% endif %}
+{% endfor %}
+
+{% if has_posts > 0 %}
   <ul class="article-list">
-    {% for post in site.tags[page.slug] %}
+    {% for post in post_array %}
       <li class="article-list-item reveal">
         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h5>

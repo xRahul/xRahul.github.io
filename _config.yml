@@ -39,6 +39,7 @@ social_links:
   stackoverflow: 1435626/rahul # Add your stackoverflow id/name
   freecodecamp: xrahul # Add your freecodecamp username
   bitcoin: 1BmYjgdCkY6P8tmmxjm4f5stDK7vJ6VcQN # Add your Bitcoin wallet ID
+  flattr: "https://flattr.com/submit/auto?fid=djeqkn&url=http%3A%2F%2Frahulja.in"
 
 # Important settings
 assets:
@@ -60,9 +61,18 @@ collections:
   my_tags:
     output: true
     permalink: /tag/:slug/
+  my_projects:
+    output: true
+    permalink: /project/:slug/
 
 # using defaults- https://jekyllrb.com/docs/configuration/
 defaults:
+  -
+    scope:
+      path: ""
+      type: my_projects
+    values:
+      layout: articles_by_project
   -
     scope:
       path: ""

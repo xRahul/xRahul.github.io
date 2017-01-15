@@ -6,12 +6,31 @@ permalink: /tags
 
 <div class="tags-page text-center">
   <h1 class="tags-page-header reveal">
-    <span class="icon icon-pound"></span>tags
+    <small><i class="fa fa-hashtag" aria-hidden="true"></i></small> tags
   </h1>
+
+	{% assign my_tags = site.collections | where: "label", "my_tags" | first %}
+
   {% assign sorted_tags = site.tags | sort %}
+
   {% for tag in sorted_tags %}
-    <a class="no-text-decoration" href="{{ 'tag/' | relative_url }}{{ tag | first }}" title="See all posts by {{ tag | first | upcase }} tag">
-      <h4 class="reveal">{{ tag | first | upcase }}</h4>
-    </a>
+
+  	{% assign tag_slug = tag | first %}
+  	{% assign upcase_tag_slug = tag_slug | upcase %}
+  	{% assign no_of_posts = tag | last | size %}
+
+  		{% for my_tag in my_tags.docs %}
+    		{% if tag_slug == my_tag.slug %}
+    			{% assign tag_name = my_tag.name %}
+    		{% endif %}
+    	{% endfor %}
+    	{% assign upcase_tag_name = tag_name | upcase %}
+
+  	{% if upcase_tag_slug != "PROJECT" %}
+	    <a class="no-text-decoration" href="{{ 'tag/' | relative_url }}{{ tag_slug }}" title="See all posts by {{ upcase_tag_name }} tag">
+	      <h4 class="reveal">{{ upcase_tag_name }} <small>({{ no_of_posts }})</small></h4>
+	    </a>
+	  {% endif %}
+
   {% endfor %}
 </div>
