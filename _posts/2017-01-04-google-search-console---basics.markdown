@@ -9,7 +9,7 @@ redirect_from:
 {:.reveal}
 Add and verify your website on the Search Console. 
 <br>
-Now open the console for your added property (In my case - [http://rahulja.in](http://rahulja.in))
+Now open the console for your added property (In my case - [http://rahulja.in](http://rahulja.in){:target="_blank"})
 
 {:.reveal}
 <ul>
@@ -105,17 +105,17 @@ Disallow: /tag/*
 
 {:.reveal}
 * `Other Resources`-
-    * Take the [Intro to Webmaster Academy](https://support.google.com/webmasters/answer/6001102?hl=en&utm_source=wmx&utm_campaign=links) course. It'll be helpful in getting you started.
-    * If you've added any structured data in you website, you can use the [Structured Data Testing Tool](https://developers.google.com/webmasters/structured-data/testing-tool) to validate and view it.
-    * Use [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=en&utm_source=wmx&utm_campaign=wmx_otherlinks&url=http://rahulja.in/)  to find out how to make your web pages fast on all devices.
+    * Take the [Intro to Webmaster Academy](https://support.google.com/webmasters/answer/6001102?hl=en&utm_source=wmx&utm_campaign=links){:target="_blank"} course. It'll be helpful in getting you started.
+    * If you've added any structured data in you website, you can use the [Structured Data Testing Tool](https://developers.google.com/webmasters/structured-data/testing-tool){:target="_blank"} to validate and view it.
+    * Use [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=en&utm_source=wmx&utm_campaign=wmx_otherlinks&url=http://rahulja.in/){:target="_blank"} to find out how to make your web pages fast on all devices.
 
 
 ---
 <br>
 {:.reveal}
 ##### References
-[Learn about sitemaps - Search Console Help](https://support.google.com/webmasters/answer/156184?hl=en) 
+[Learn about sitemaps - Search Console Help](https://support.google.com/webmasters/answer/156184?hl=en){:target="_blank"} 
 <br>
-[Learn about robots.txt files - Search Console Help](https://support.google.com/webmasters/answer/6062608?hl=en) 
+[Learn about robots.txt files - Search Console Help](https://support.google.com/webmasters/answer/6062608?hl=en){:target="_blank"} 
 <br>
-[Use Fetch as Google for websites - Search Console Help](https://support.google.com/webmasters/answer/6066468) 
+[Use Fetch as Google for websites - Search Console Help](https://support.google.com/webmasters/answer/6066468){:target="_blank"} 

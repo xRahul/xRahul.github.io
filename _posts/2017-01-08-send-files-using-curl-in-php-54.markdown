@@ -5,7 +5,7 @@ tags: [php, code]
 ---
 
 {:.reveal}
-Since php 5.5, sending files in php has improved a lot. You can use [CURLFile](http://php.net/manual/en/class.curlfile.php) class or [curl_file_create()](http://php.net/manual/en/function.curl-file-create.php) to upload a file with `CURLOPT_POSTFIELDS`. 
+Since php 5.5, sending files in php has improved a lot. You can use [CURLFile](http://php.net/manual/en/class.curlfile.php){:target="_blank"} class or [curl_file_create()](http://php.net/manual/en/function.curl-file-create.php){:target="_blank"} to upload a file with `CURLOPT_POSTFIELDS`. 
 
 {:.reveal}
 {% highlight php %}
@@ -84,6 +84,6 @@ curl_close($conn);
 #### Reference
 
 {:.reveal}
-[Function definition for curl\_file\_create on PHP < 5.5](http://php.net/manual/en/function.curl-file-create.php#114538)
+[Function definition for curl\_file\_create on PHP < 5.5](http://php.net/manual/en/function.curl-file-create.php#114538){:target="_blank"}
 <br>
-[Sending files using cURL in PHP](http://code.stephenmorley.org/php/sending-files-using-curl/) (2009)
+[Sending files using cURL in PHP](http://code.stephenmorley.org/php/sending-files-using-curl/){:target="_blank"} (2009)

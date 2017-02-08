@@ -55,8 +55,8 @@ bin/deploy
 <br>
 {:.reveal}
 ##### References
-[rahulja.in](http://rahulja.in) 
+[rahulja.in](http://rahulja.in){:target="_blank"}
 <br>
-[xRahul.github.io - Github](https://github.com/xRahul/xRahul.github.io/tree/new-site) 
+[xRahul.github.io - Github](https://github.com/xRahul/xRahul.github.io/tree/new-site){:target="_blank"}
 <br>
-[How to fetch all git branches - StackOverflow](http://stackoverflow.com/a/10312587/1435626) 
+[How to fetch all git branches - StackOverflow](http://stackoverflow.com/a/10312587/1435626){:target="_blank"}

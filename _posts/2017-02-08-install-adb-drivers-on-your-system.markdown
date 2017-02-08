@@ -9,7 +9,7 @@ You don't need to install the entire android development environment to get the 
 
 
 {:.reveal}
-### Install adb on MacOSX using [Homebrew](http://brew.sh/)
+### Install adb on MacOSX using [Homebrew](http://brew.sh/){:target="_blank"}
 
 {:.reveal}
 This is the easiest way and will provide automatic updates.
@@ -31,7 +31,7 @@ adb devices
 ### Install adb manually
 
 
-1. {:.reveal} Download your OS specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download).
+1. {:.reveal} Download your OS specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank"}.
 2. {:.reveal} Extract the contents of the .zip file to a folder you can find later.
 3. {:.reveal} Navigate to the extracted folder using your terminal, and there you will find the adb command.
 4. {:.reveal} Run the command normally once you're in to the extracted folder- `adb devices`
@@ -41,8 +41,8 @@ adb devices
 <br>
 {:.reveal}
 ##### References
-[Installing ADB on MAC OS X - StackOverflow](http://stackoverflow.com/a/32314718) 
+[Installing ADB on MAC OS X - StackOverflow](http://stackoverflow.com/a/32314718){:target="_blank"} 
 <br>
-[SDK Platform Tools Download - Android Studio](https://developer.android.com/studio/releases/platform-tools.html) 
+[SDK Platform Tools Download - Android Studio](https://developer.android.com/studio/releases/platform-tools.html){:target="_blank"} 
 <br>
-[Install Android's ADB and Fastboot Tools on Any OS - Lifehacker](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378)
+[Install Android's ADB and Fastboot Tools on Any OS - Lifehacker](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378){:target="_blank"}

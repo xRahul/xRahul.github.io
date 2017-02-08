@@ -9,7 +9,7 @@ tags: [template, jekyll, web]
 {% include image.html path="posts/chalk-template-for-jekyll/og-image.png" path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" alt="Chalk Template" %}
 
 {:.reveal}
-[Download Chalk here!](https://github.com/nielsenramon/chalk)
+[Download Chalk here!](https://github.com/nielsenramon/chalk){:target="_blank"}
 
 {:.reveal}
 #### Features:
@@ -31,25 +31,25 @@ tags: [template, jekyll, web]
 {:.reveal}
 #### Integrations
 {:.reveal}
-  - {:.reveal} [Google Analytics](https://analytics.google.com/analytics/web/)
-  - {:.reveal} [Google Fonts](https://fonts.google.com/)
-  - {:.reveal} [Disqus](https://disqus.com/)
-  - {:.reveal} [Ionicons](http://ionicons.com/)
+  - {:.reveal} [Google Analytics](https://analytics.google.com/analytics/web/){:target="_blank"}
+  - {:.reveal} [Google Fonts](https://fonts.google.com/){:target="_blank"}
+  - {:.reveal} [Disqus](https://disqus.com/){:target="_blank"}
+  - {:.reveal} [Ionicons](http://ionicons.com/){:target="_blank"}
   - {:.reveal} Social media links
 
 {:.reveal}
 #### Used tools
-  - {:.reveal} [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - {:.reveal} [Bower](http://bower.io/)
-  - {:.reveal} [Circle CI](https://circleci.com/)
-  - {:.reveal} [Html-proofer](https://github.com/gjtorikian/html-proofer)
-  - {:.reveal} [Jekyll](http://jekyllrb.com/)
-  - {:.reveal} [Jekyll assets](https://github.com/jekyll/jekyll-assets)
-  - {:.reveal} [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-  - {:.reveal} [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-  - {:.reveal} [Kickster](http://kickster.nielsenramon.com/)
-  - {:.reveal} [Retina.js](http://imulus.github.io/retinajs/)
-  - {:.reveal} [STACSS](http://stacss.nielsenramon.com/)
+  - {:.reveal} [Autoprefixer](https://github.com/postcss/autoprefixer){:target="_blank"}
+  - {:.reveal} [Bower](http://bower.io/){:target="_blank"}
+  - {:.reveal} [Circle CI](https://circleci.com/){:target="_blank"}
+  - {:.reveal} [Html-proofer](https://github.com/gjtorikian/html-proofer){:target="_blank"}
+  - {:.reveal} [Jekyll](http://jekyllrb.com/){:target="_blank"}
+  - {:.reveal} [Jekyll assets](https://github.com/jekyll/jekyll-assets){:target="_blank"}
+  - {:.reveal} [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap){:target="_blank"}
+  - {:.reveal} [HTML5 Boilerplate](https://html5boilerplate.com/){:target="_blank"} (Influenced by)
+  - {:.reveal} [Kickster](http://kickster.nielsenramon.com/){:target="_blank"}
+  - {:.reveal} [Retina.js](http://imulus.github.io/retinajs/){:target="_blank"}
+  - {:.reveal} [STACSS](http://stacss.nielsenramon.com/){:target="_blank"}
 
 
 {:.reveal}
