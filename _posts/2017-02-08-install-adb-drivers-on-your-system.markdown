@@ -30,7 +30,6 @@ adb devices
 {:.reveal}
 ### Install adb manually
 
-
 1. {:.reveal} Download your OS specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank"}.
 2. {:.reveal} Extract the contents of the .zip file to a folder you can find later.
 3. {:.reveal} Navigate to the extracted folder using your terminal, and there you will find the adb command.

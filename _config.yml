@@ -43,10 +43,10 @@ social_links:
 
 # Important settings
 assets:
-  digest: true
+  digest: false
   compress:
-    css: true
-    js: true
+    css: false
+    js: false
   features:
     automatic_img_size: false
   sources:

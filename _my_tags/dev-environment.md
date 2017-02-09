@@ -1,4 +1,4 @@
 ---
-slug: dev-environment
-name: Development Environment
+slug: development
+name: Development
 ---
