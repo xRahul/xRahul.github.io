@@ -1,7 +1,7 @@
 ---
 title: Using Homebrew on MacOSX
 description: How to use the Homebrew package manager on MacOSX and things to keep in mind while using it.
-tags: [mac, package]
+tags: [macosx, package]
 og_image: "posts/using-homebrew-on-macosx/homebrew.jpg"
 ---
 
