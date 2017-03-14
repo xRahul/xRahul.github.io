@@ -1,6 +1,6 @@
 ---
 title: Setting up sublime-phpcs for PHP development in Sublime Text
-description: Install and setup PHP CodeSniffer, PHP Coding Standard Fixer, Linter, Mess Detector and scheck from fb/pfff for Sublime Text 3
+description: Install and setupsublime-phpcs with PHP CodeSniffer, PHP Coding Standard Fixer, Linter, Mess Detector and scheck from fb/pfff for Sublime Text 3
 tags: [development, macosx, php, tools]
 og_image: "posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text/phpcs.jpg"
 ---
