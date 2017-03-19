@@ -16,13 +16,15 @@
       </li>
     {% endunless %}
 
-    {%  unless page.url contains '/projects'  %}
-      <li>
-        <a class="header-icon-link" href="{{ 'projects' | relative_url }}" title="Projects">
-          <i class="fa fa-briefcase" aria-hidden="true"></i> Projects
-        </a>
-      </li>
-    {% endunless %}
+    {% if false %}
+      {%  unless page.url contains '/projects'  %}
+        <li>
+          <a class="header-icon-link" href="{{ 'projects' | relative_url }}" title="Projects">
+            <i class="fa fa-briefcase" aria-hidden="true"></i> Projects
+          </a>
+        </li>
+      {% endunless %}
+    {% endif %}
 
     {% if site.about_enabled == true %}
       {%  unless page.url contains '/about'  %}
