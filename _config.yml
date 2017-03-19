@@ -107,14 +107,14 @@ exclude:
   - .jekyll-metadata
 
 gems:
-  - jekyll-assets
-  - jekyll-paginate
-  - jekyll-sitemap
   - jemoji
-  - jekyll-feed
+  - jekyll-assets
+  - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-gist
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
 #Cusstom variables
 attribution:
