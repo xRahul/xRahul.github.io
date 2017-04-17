@@ -32,5 +32,5 @@ bundle exec jekyll serve --drafts
 Deploy to github master branch
 
 ```bash
-bin/deploy
+./bin/deploy
 ```
