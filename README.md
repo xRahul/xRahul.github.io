@@ -26,7 +26,7 @@ bin/setup
 Run local development server
 
 ```bash
-bundle exec jekyll serve --drafts
+LC_ALL=en_US.UTF-8 bundle exec jekyll serve --drafts
 ```
 
 Deploy to github master branch
