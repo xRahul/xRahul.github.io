@@ -1,7 +1,7 @@
 ---
 title: Get a notification when RAM is using compressions or swaps on MacOSX
 description: A scheduled applescript to notify when RAM on mac is using compression or swaps. This is useful to find out when your mac gets less responsive so you can take appropriate measures, or when you have SSD installed as swaps reduces it's life.
-tags: [macosx, script]
+tags: [macosx, hack]
 ---
 
 {:.reveal}

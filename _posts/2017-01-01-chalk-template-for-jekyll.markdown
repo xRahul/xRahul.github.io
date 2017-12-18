@@ -3,7 +3,7 @@ title: "Chalk Template for Jekyll"
 description: "Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll."
 og_image: "posts/chalk-template-for-jekyll/og-image.png"
 image: "posts/chalk-template-for-jekyll/og-image.png"
-tags: [template, jekyll, web]
+tags: [jekyll, web]
 ---
 {:.reveal}
 {% include image.html path="posts/chalk-template-for-jekyll/og-image.png" path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" alt="Chalk Template" %}

@@ -1,7 +1,7 @@
 ---
 title: Decrypt and extract your whatsapp database
 description: Instructions on how to extract your whatsapp data from the stored encrypted backup
-tags: [app, data, social]
+tags: [data, social, hack]
 og_image: "posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo.jpg"
 ---
 {:.reveal}
