@@ -1,6 +1,6 @@
 ---
 title: Decrypt and extract your whatsapp database
-description: Instructions on how to extract your whatsapp data from the stored encrypted backup
+description: Instructions on how to extract your WhatsApp data from the stored encrypted backup.
 tags: [data, social, hack]
 og_image: "posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo.jpg"
 ---
@@ -30,9 +30,9 @@ Prerequisites-
 `sh WhatsAppKeyDBExtract.sh`
 <br>
 Some things to keep in mind for this step-
-    - This step uses internet to download a legacy version of whatsapp (2.11) to install on your phone. So make sure your PC is connected to the internet before running it.
+    - This step uses the internet to download a legacy version of WhatsApp (2.11) to install on your phone. So make sure your PC is connected to the internet before running it.
     - Make sure there is no overlay active on your phone like `Twilight` or `Blue Light Filter`, as these will not allow you to click on `Back up my data`.
-4. Connect your device via USB, change mode from `charging` to `media`, unlock your screen and wait for `Full backup` to appear.
+4. Connect your device via USB, change the mode from `charging` to `media`, unlock your screen and wait for `Full backup` to appear.
 5. Enter your backup password or leave blank (if none set) and tap on `Back up my data`. This step takes some time depending on the size of your data. So be patient.
 6. Confirm backup password in your command console and then check your `extracted` folder. You will find many files there- `axolotl.db`, `chatsettings.db`, `msgstore.db`, `wa.db`, `whatsapp.cryptkey`.
 7. All these `.db` files are [__Sqlite__](https://www.sqlite.org){:target="_blank"} databases in unencrypted form. Use a database viewer like [DB Browser for SQLite](http://sqlitebrowser.org/){:target="_blank"} to see the data.

@@ -10,7 +10,7 @@ og_image: "posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text/ph
 * {:.reveal} Linter (`php -l`). This provides a convenient way to perform only a syntax check on the given PHP code.
 * {:.reveal} [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){:target="_blank"} 1.3+ (`phpcs`). It tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard.
 * {:.reveal} [PHP Mess Detector](https://phpmd.org/){:target="_blank"} 1.4+ (`phpmd`). It detects and reports various potential problems with the code like possible bugs, suboptimal code, overcomplicated expressions and unused parameters, methods, properties.
-* {:.reveal} [Scheck](https://github.com/facebook/pfff/wiki/Scheck){:target="_blank"} 0.23+ (`scheck`, part of Facebook’s pfff toolchain). This will help you find stupid mistakes like typo in your code.
+* {:.reveal} [Scheck](https://github.com/facebook/pfff/wiki/Scheck){:target="_blank"} 0.23+ (`scheck`, part of Facebook’s pfff toolchain). This will help you find stupid mistakes like a typo in your code.
 
 {:.reveal}
 #### You can also configure the plugin to fix the issues using either
@@ -57,7 +57,7 @@ php -v
 {% endhighlight %}
 
 * {:.reveal} Now you need to have the latest [`composer`](https://getcomposer.org/doc/00-intro.md){:target="_blank"} installed. Use the provided link to move it globally.
-* {:.reveal} Now install the [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){:target="_blank"}, [PHP Mess Detector](https://phpmd.org/){:target="_blank"}, [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer){:target="_blank"} and [PHP Code Beautifier](https://github.com/squizlabs/PHP_CodeSniffer){:target="_blank"} globally. You can also follow the links to see the install insructions for each.
+* {:.reveal} Now install the [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){:target="_blank"}, [PHP Mess Detector](https://phpmd.org/){:target="_blank"}, [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer){:target="_blank"} and [PHP Code Beautifier](https://github.com/squizlabs/PHP_CodeSniffer){:target="_blank"} globally. You can also follow the links to see the install instructions for each.
 {:.reveal}
 {% highlight bash %}
 composer global require squizlabs/php_codesniffer
@@ -65,7 +65,7 @@ composer global require phpmd/phpmd
 composer global require friendsofphp/php-cs-fixer
 {% endhighlight %}
 
-* {:.reveal} Please note absolute path of all the installed packages (On a Mac/Linux based environment), you can use:
+* {:.reveal} Please note the absolute path of all the installed packages (On a Mac/Linux based environment), you can use:
 {:.reveal}
 {% highlight bash %}
 which phpcs
@@ -89,7 +89,7 @@ yum install ocaml-camlp4 ocaml-camlp4-devel perl-pod-usage
 {% endhighlight %}
     
 
-* {:.reveal} Now install [Scheck](https://github.com/facebook/pfff/wiki/Main#install){:target="_blank"}. If you follow the instructions mentioned in their project, you can download and setup the entire `pfff` set of tools. But for our case we just need the `scheck` part. So, follow these instructions to get just that.
+* {:.reveal} Now install [Scheck](https://github.com/facebook/pfff/wiki/Main#install){:target="_blank"}. If you follow the instructions mentioned in their project, you can download and setup the entire `pfff` set of tools. But for our case, we just need the `scheck` part. So, follow these instructions to get just that.
 
   {:.reveal}
   After following the steps, you'll find a file called `scheck` in your cloned repo. Please note the absolute path of that as you'll need it later.
@@ -145,7 +145,7 @@ In the above configuration, replace the paths with your install paths.
 Also use either `php_cs_fixer` or `phpcbf` for fixing the errors. I'd recommend using `phpcbf` as that is already isntalled with `phpcs` and thus you won't have to install `php_cs_fixer` at all.
 
 {:.reveal}
-I am disabling anything happening on save, but you can change the configuration anyway you want. Find the defaults here-
+I am disabling anything happening on save, but you can change the configuration any way you want. Find the defaults here-
     - {:.reveal} `Preferences` -> `Package Settings` -> `PHP Code Sniffer` -> `Settings - Default`
 
 {:.reveal}

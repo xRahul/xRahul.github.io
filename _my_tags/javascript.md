@@ -1,5 +1,5 @@
 ---
 sitemap: false
-slug: js
+slug: javascript
 name: Javascript
 ---

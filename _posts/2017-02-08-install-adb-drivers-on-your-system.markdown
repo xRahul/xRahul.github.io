@@ -1,11 +1,11 @@
 ---
 title: Install ADB drivers on your system
-description: How to install ADB drivers on Mac, Linux and Windows without installing the full android sdk or the android studio
+description: How to install ADB drivers on Mac, Linux and Windows without installing the full Android SDK or the Android Studio.
 tags: [package, android]
 ---
 
 {:.reveal}
-You don't need to install the entire android development environment to get the adb now. Google collectively refers to ADB, fastboot, and a few other utilities as the Platform Tools package and has provided them seperately now. This post is assuming you don't have android sdk or android studio installed.
+You don't need to install the entire android development environment to get the adb now. Google collectively refers to ADB, fastboot, and a few other utilities as the Platform Tools package and has provided them separately now. This post is assuming you don't have android sdk or android studio installed.
 
 
 {:.reveal}
@@ -30,10 +30,10 @@ adb devices
 {:.reveal}
 ### Install adb manually
 
-1. {:.reveal} Download your OS specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank"}.
+1. {:.reveal} Download your OS-specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank"}.
 2. {:.reveal} Extract the contents of the .zip file to a folder you can find later.
 3. {:.reveal} Navigate to the extracted folder using your terminal, and there you will find the adb command.
-4. {:.reveal} Run the command normally once you're in to the extracted folder- `adb devices`
+4. {:.reveal} Run the command normally once you're into the extracted folder- `adb devices`
 
 
 ---

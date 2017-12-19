@@ -36,7 +36,7 @@ Now open the console for your added property (In my case - [http://rahulja.in](h
       <li>Submit.</li>
     </ol>
 
-    Now you will see an entry on how many links were submitted and how many have been indexed from that sitemap. It is the easiest way to submit all the links in your website automatically.
+    Now you will see an entry on how many links were submitted and how many have been indexed by that sitemap. It is the easiest way to submit all the links on your website automatically.
     You can use a sitemap generator, or in my case, jekyll gives me the 
     <code class="highlighter-rouge">sitemap.xml</code>
     file every time I build my website.
@@ -45,7 +45,7 @@ Now open the console for your added property (In my case - [http://rahulja.in](h
   <li>
     Next check and edit your 
     <code class="highlighter-rouge">robots.txt</code>
-    file. This is a file at the root of your site that indicates those parts of your site you don’t want accessed by search engine crawlers.
+    file. This is a file at the root of your site that indicates those parts of your site you don’t want to be accessed by search engine crawlers.
     <ol>
       <li>
         Go to
@@ -64,7 +64,7 @@ User-agent: *
 Disallow: /tag/*
 {% endhighlight %}
         <code class="highlighter-rouge">Disallow</code>
-        allows us to ignore certain urls and url types that we'd rather not be indexed and appear in search results.
+        allows us to ignore certain URLs and URL types that we'd rather not be indexed and appear in search results.
       </li>
     </ol>
   </li>
@@ -73,11 +73,11 @@ Disallow: /tag/*
     <code class="highlighter-rouge">Crawl</code>
     >
     <code class="highlighter-rouge">Fetch as Google</code>
-    to see how google renders pages from your website. Check different types of URLs for both mobile and desktop googlebot types.
+    to see how Google renders pages from your website. Check different types of URLs for both mobile and desktop Googlebot types.
   </li>
   <br>
   <li class="reveal">
-    Add <i>google analytics</i> property to your website if you've added analytics on your website. Do this by clicking on Settings gear on the top right and selecting
+    Add the <i>google analytics</i> property to your website if you've added analytics to your website. Do this by clicking on Settings gear on the top right and selecting
     <code class="highlighter-rouge">Google Analytics Property</code>.
   </li>
   <br>
@@ -94,10 +94,10 @@ Disallow: /tag/*
         Button.
       </li>
       <li>
-        Enter the URL of a typical page that you want to highlight. Like link to an article, product etc.
+        Enter the URL of a typical page that you want to highlight. Like a link to an article, product etc.
       </li>
       <li>
-        Start following the instructions and highlight as much data as you can find on the page. Make google learn pattern in your posts, so that it can auto highlight new pages that gets added to the index.
+        Start following the instructions and highlight as much data as you can find on the page. Make google learn pattern in your posts so that it can auto highlight new pages that get added to the index.
       </li>
     </ol>
   </li>

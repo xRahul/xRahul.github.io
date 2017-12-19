@@ -1,6 +1,6 @@
 ---
 title: Send Files using cURL in Php 5.4
-description: Learn how to send files using cURL in php 5.4 and an example code for that.
+description: Learn how to send files using cURL in PHP 5.4 and an example code for that.
 tags: [php, code]
 ---
 
@@ -21,7 +21,7 @@ $cfile = new CURLFile('resource/test.png','image/png','testpic');
 But for older versions, it's a struggle.
 
 {:.reveal}
-First of all, you can not send files using GET method.  That doesn't even make sense. Also you need the absolute path of the file. Relative paths won't work. 
+First of all, you can not send files using the GET method.  That doesn't even make sense. Also, you need the absolute path of the file. Relative paths won't work. 
 
 {:.reveal}
 Here's a sample code that will work-
@@ -51,10 +51,10 @@ Above code has 3 parts-
 * {:.reveal}`";filename=" . basename($fileAbsolutePath)`
 
   {:.reveal}
-  This is used to give uploaded file a new name. Use this to change the name of the file that is received by the server on which request is sent.
+  This is used to give the uploaded file a new name. Use this to change the name of the file that is received by the server on which request is sent.
   
 {:.reveal}
-Now you can use the `$cfile` variable to send file by setting it as a parameter to `CURLOPT_POSTFIELDS`.
+Now you can use the `$cfile` variable to send the file by setting it as a parameter to `CURLOPT_POSTFIELDS`.
 
 {:.reveal}
 {% highlight php %}
