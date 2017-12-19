@@ -115,6 +115,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 #Cusstom variables
 attribution:
