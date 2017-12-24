@@ -17,7 +17,7 @@ fi
 git checkout -b master
 
 # Build site.
-bower install
+yarn install --modules-folder ./_assets/yarn
 LC_ALL=en_US.UTF-8 JEKYLL_ENV=production bundle exec jekyll build
 
 # Delete and move files.
@@ -32,7 +32,7 @@ git push -f -q origin master
 
 # Move back to previous branch.
 git checkout new-site
-# bower install
+# yarn install --modules-folder ./_assets/yarn
 
 echo "Deployed Successfully!"
 

@@ -35,7 +35,7 @@ layout: default
   </div>
 
   <div class="article-share reveal">
-    {% assign page_title = page.title  | truncate '110' %}
+    {% assign page_title = page.title  | truncate '110' | cgi_escape %}
     <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social_links.twitter %}by @{{ site.social_links.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
       <i class="fa fa-twitter" aria-hidden="true"></i>
     </a>

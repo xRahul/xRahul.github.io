@@ -48,7 +48,7 @@ assets:
   features:
     automatic_img_size: false
   sources:
-    - _assets/bower
+    - _assets/yarn
     - _assets/fonts
     - _assets/images
     - _assets/images/favicons
@@ -93,10 +93,8 @@ defaults:
       layout: default
 
 exclude:
-  - .bowerrc
   - .travis.yml
   - bin/*
-  - bower.json
   - circle.yml
   - Gemfile
   - Gemfile.lock
@@ -105,6 +103,7 @@ exclude:
   - feed.xml_asdf
   - vendor/
   - .jekyll-metadata
+  - package.json
 
 gems:
   - jemoji

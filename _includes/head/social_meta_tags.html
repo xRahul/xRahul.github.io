@@ -3,6 +3,6 @@
 {% if site.social_links.twitter %}
   <meta name="twitter:creator" content="@{{ site.social_links.twitter }}" />
 {% endif %}
-<meta name="twitter:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:title" content="{% if page.title and page.title != '' %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
+<meta name="twitter:description" content="{{ page.description | escape }}">
 <meta name="twitter:image" content="{{ site.url }}{% if page.og_image %}{{ page.og_image | asset_path }}{% else %}{% asset_path about.jpg %}{% endif %}">

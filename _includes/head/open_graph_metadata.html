@@ -1,5 +1,5 @@
 <!-- open graph metadata -->
-<meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
 
 {% if page.og_image %}
   <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">
@@ -7,15 +7,15 @@
 
 <meta property="og:image" content="{{ site.url }}{% asset_path about.jpg %}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:description" content="{{ page.description }}">
+<meta property="og:description" content="{{ page.description | escape }}">
 <meta property="profile:first_name" content="Rahul">
 <meta property="profile:last_name" content="Jain">
-<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:site_name" content="{{ site.name | escape }}">
 
 {% if page.url contains '/posts' %}
   {%  unless page.url contains '/posts/page'  %}
     <meta property="og:type" content="article">
-    <meta property="article:author" content="{{ site.name }}">
+    <meta property="article:author" content="{{ site.name | escape }}">
     <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
     {% for tag in page.tags %}
       <meta property="article:tag" content="{{ tag }}">

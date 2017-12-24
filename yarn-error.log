@@ -1,0 +1,38 @@
+Arguments: 
+  /Users/slx/.nvm/versions/node/v6.11.1/bin/node /usr/local/Cellar/yarn/1.3.2/libexec/bin/yarn.js
+
+PATH: 
+  /Users/slx/.rbenv/shims:/Users/slx/.rbenv/shims:/Users/slx/.nvm/versions/node/v6.11.1/bin:/usr/local/sbin:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/slx/.composer/vendor/bin:/Users/slx/Library/Android/sdk/tools:/Users/slx/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  6.11.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "xRahul.github.io",
+    "dependencies": {
+      "jquery": "^3.1.1",
+      "fluidbox": "^2.0.4",
+      "scrollreveal": "^3.3.2",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/slx/Documents/GitHub/xRahul.github.io/package.json: Unexpected token } in JSON at position 134
+      at Object.parse (native)
+      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:770:59
+      at next (native)
+      at step (/usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:92:30)
+      at /usr/local/Cellar/yarn/1.3.2/libexec/lib/cli.js:103:13
