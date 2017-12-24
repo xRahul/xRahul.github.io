@@ -16,13 +16,15 @@
   <!-- feed link -->
   <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="Articles by {{ site.author.name }}">
 
-  <style>
-    {% if site.blog_theme == "light" %}
-      {% asset_source 'light.scss' %}
-    {% else %}
-      {% asset_source 'dark.scss' %}
-    {% endif %}
-  </style>
+  {% if site.local_fonts %}
+    {% stylesheet fonts %}
+  {% endif %}
+
+  {% if site.blog_theme == "light" %}
+    {% stylesheet light %}
+  {% else %}
+    {% stylesheet dark %}
+  {% endif %}
 
   {% include head/structured_data.html %}
 
