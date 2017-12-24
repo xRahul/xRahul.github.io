@@ -1,4 +1,4 @@
-// Variable 
+// Variable
 $fluidbox__transition-duration: .5s !default;
 $fluidbox__overlay-bg-color: rgba(255,255,255,.85) !default;
 $fluidbox__animation-bg-color: $fluidbox__overlay-bg-color !default;
@@ -27,7 +27,7 @@ $fluidbox__animation-bg-color: $fluidbox__overlay-bg-color !default;
 	right: 0;
 	/* Transition time for overlay is halved to ensure that flickering doesn't happen */
 	transition: all $fluidbox__transition-duration ease-in-out;
-	
+
 	.fluidbox--opened & { pointer-events: auto;}
 }
 .fluidbox__wrap {
@@ -44,7 +44,7 @@ $fluidbox__animation-bg-color: $fluidbox__overlay-bg-color !default;
 }
 .fluidbox__ghost {
 	background-size: 100% 100%;
-	background-position: center center;	
+	background-position: center center;
 	background-repeat: no-repeat;
 	position: absolute;
 	transition-duration: 0s, $fluidbox__transition-duration;
@@ -55,8 +55,8 @@ $fluidbox__animation-bg-color: $fluidbox__overlay-bg-color !default;
 	// > transition-property: opacity, transform, -webkit-transform;
 	// ...which will break Fluidbox
 	-webkit-transition-property: opacity, -webkit-transform;	/* autoprefixer: off */
-	transition-property: opacity, -webkit-transform;			/* autoprefixer: off */
-	transition-property: opacity, transform;					/* autoprefixer: off */
+	transition-property: opacity, -webkit-transform;
+	transition-property: opacity, transform;
 
 	.fluidbox--opened & {
 		cursor: pointer;
