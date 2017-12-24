@@ -1,6 +1,6 @@
 ---
-title: Object-Oriented Vanilla Javascript
-description: This article shows how Javascript manages its objects and properties, and how to utilize them to design code in meaningful patterns
+title: Object-Oriented Vanilla Javascript - Part 1
+description: This article explains what scopes, context, this keyword, closures, constructors and prototype chains are in vanilla javascript.
 tags: [javascript, code]
 og_image: "posts/object-oriented-vanilla-javascript/og-image.png"
 image: "posts/object-oriented-vanilla-javascript/og-image.png"
@@ -18,6 +18,7 @@ But once you know you will be working on something for a long time, it's time to
 {:.reveal}
 Below are some topics that will help you get an overview of the Whats and the Hows:
 
+{:.reveal}
 * ### Scopes
     - Scope determines the visibility of variables, functions, and objects in some particular part of your code during runtime.
     - Also called _Execution Context_ (Not to be confused with _Context_ below)
@@ -26,6 +27,7 @@ Below are some topics that will help you get an overview of the Whats and the Ho
         + _Global_ - Variables defined outside any scope and can be accessed anywhere in the code
         + _Lexical_ - Variables from parent scope are available inside the nested scopes.
             * Scope Chain: When accessing a variable, JS will start searching from the current scope, and keep jumping up in nested scopes to find it. 
+{:.reveal}
 {% highlight js %}
 var bike = {wheels: 2}; // bike variable is in global scope
 var ride = function() {
@@ -33,9 +35,11 @@ var ride = function() {
 };
 {% endhighlight %}
 
+{:.reveal}
 * ### Context & `this` keyword
     - Developers generally get confused between scope and context. Context is used to refer to the value of `this` variable in some place in the code.
     - Generally, `this` keyword in a context refers to the object it was called against, i.e. the variable left of the dot in a function call. 
+{:.reveal}
 {% highlight js %}
 var fn_ride = function() {
     console.log(this);
@@ -51,9 +55,11 @@ bike.ride(); // `ride()` points to `fn_ride()` in which `bike` will be logged
 bike.ride.call(car); // here you're changing the context from `bike` to `car`
 {% endhighlight %}
 
+{:.reveal}
 * ### Closures
     - It is created when an inner function tries to access the variables defined in and arguments passed into the outer function.
     - Even when the inner function is called outside the outer function, those variables will be available to the closure.
+{:.reveal}
 {% highlight js %}
 var CarOf = function(driver) {
     return function() {
@@ -65,9 +71,11 @@ drivingMyCar(); // This will log "Mike is driving"
 // Here the value of driver argument is preserved.
 {% endhighlight %}
 
+{:.reveal}
 * ### Constructors
     - These are the functions to the right of class definition.
     - The constructor function is nothing more than a normal function.
+{:.reveal}
 {% highlight js %}
 var Car = function(driver) { // Constructor function
     var wheels = 2;
@@ -77,12 +85,14 @@ var Car = function(driver) { // Constructor function
 var myCar = new Car("Rahul");
 {% endhighlight %}
 
+{:.reveal}
 * ### Prototype
     - This is a default attribute in every javascript function.
     - It points to an object in which properties and functions of a class can be assigned that should be usable by every object of that class(object of the constructor function).
     - Every object has a prototype that can be modified through the constructor's prototype.
     - If the current scope doesn't have the accessed attribute, the prototype of that function is checked before going to outer nesting.
     - Every prototype has a `constructor` property that points to the class(Constructor function) of that prototype.
+{:.reveal}
 {% highlight js %}
 var Car = function(driver) {
     // new anonymous function created with every new object of Car class
@@ -99,8 +109,10 @@ Car.prototype.driving = function(){
 console.log(Car.prototype.constructor); // logs `Car`
 {% endhighlight %}
 
+{:.reveal}
 * ### Prototype Chain
     - Every object has a prototype which has been chained all the way upto `Object` variable.
+{:.reveal}
 {% highlight js %}
 var Vehicle = function() {
     // ...
@@ -113,15 +125,6 @@ Car.prototype = Object.create(Vehicle.prototype);
 // Any method not found in `Car.prototype` will be searched in `Vehicle.prototype`
 {% endhighlight %}
 
-* ### Object Decorator Pattern
-* ### Functional Classes
-* ### Prototypal Classes
-* ### Pseudoclassical Patterns
-* ### Superclass and Subclass
-* ### Pseudoclassical Subclasses
-
-The above topics can be learned in detail via the Udacity course: 
-[Object-Oriented JavaScript](https://www.udacity.com/course/object-oriented-javascript--ud015){:target="_blank"}
 
 
 ---
