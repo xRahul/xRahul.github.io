@@ -17,3 +17,5 @@ gem 'jekyll-gist'
 gem 'jekyll-seo'
 gem 'jekyll-seo-tag'
 gem 'jekyll-last-modified-at'
+gem "sprockets", "4.0.0.beta6"
+gem "image_optim"

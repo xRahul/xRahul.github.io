@@ -11,6 +11,6 @@
 {% endif %}
 
 {% unless site.local_fonts %}
-  {% include javascript.html path="webfonts" %}
+  {% asset webfonts.js %}
 {% endunless %}
-{% include javascript.html path="application" %}
+{% asset application.js %}

@@ -1,11 +1,31 @@
-#Mandatory
-name: Rahul Jain
-url: http://rahulja.in
-description: Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Hyderabad, India.
+# Mandatory settings
 
 blog_theme: light # Or use dark
+name: Rahul Jain
+paginate: 5
+url: http://rahulja.in
+description: Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Hyderabad, India.
 timezone: Asia/Kolkata
 encoding: utf-8
+
+# Optional settings
+baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
+about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
+discus_identifier: rahulja-in # Add your Disqus identifier
+ga_analytics: UA-75936371-1 # Add your GA Tracking Id
+local_fonts: true # Change to true if you wish to use local fonts
+rss_enabled: true # Change to false if not
+social_links:
+  facebook: xRahulJain # Add your Facebook handle
+  github: xRahul # Add your GitHub handle
+  linkedin: xRahulJain # Add your LinkedIn handle
+  twitter: xRahulJain # Add your Twitter handle
+  email: rahul_jain@live.in # Add your Email address
+  stackoverflow: 1435626/rahul # Add your stackoverflow id/name
+  freecodecamp: xrahul # Add your freecodecamp username
+  #bitcoin: 1BmYjgdCkY6P8tmmxjm4f5stDK7vJ6VcQN # Add your Bitcoin wallet ID
+  flattr: "https://flattr.com/submit/auto?fid=djeqkn&url=http%3A%2F%2Frahulja.in"
+
 
 # Process and render draft posts
 # show_drafts: false
@@ -21,40 +41,23 @@ author:
   email: rahul_jain@live.in
   uri: http://rahulja.in/about
 
-paginate: 5
+# Important settings (change at own risk)
+
 paginate_path: /posts/page/:num/
 permalink: posts/:slug
-
-# Optional Settings
-discus_identifier: rahulja-in # Add your Disqus identifier
-ga_analytics: UA-75936371-1 # Add your GA Tracking Id
-local_fonts: true # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
-about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-social_links:
-  facebook: xRahulJain # Add your Facebook handle
-  github: xRahul # Add your GitHub handle
-  linkedin: xRahulJain # Add your LinkedIn handle
-  twitter: xRahulJain # Add your Twitter handle
-  email: rahul_jain@live.in # Add your Email address
-  stackoverflow: 1435626/rahul # Add your stackoverflow id/name
-  freecodecamp: xrahul # Add your freecodecamp username
-  #bitcoin: 1BmYjgdCkY6P8tmmxjm4f5stDK7vJ6VcQN # Add your Bitcoin wallet ID
-  flattr: "https://flattr.com/submit/auto?fid=djeqkn&url=http%3A%2F%2Frahulja.in"
 
 # Important settings
 assets:
   digest: true
-  features:
-    automatic_img_size: false
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
   sources:
-    - _assets/yarn
     - _assets/fonts
-    - _assets/images
     - _assets/images/favicons
+    - _assets/yarn
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
   baseurl: http://rahulja.in
 
 collections:
@@ -104,7 +107,7 @@ exclude:
   - .jekyll-metadata
   - package.json
 
-gems:
+plugins:
   - jemoji
   - jekyll-assets
   - jekyll-paginate-v2
@@ -115,7 +118,7 @@ gems:
   - jekyll-sitemap
   - jekyll-last-modified-at
 
-#Cusstom variables
+#Custom variables
 attribution:
   template:
     project_url: https://github.com/nielsenramon/chalk

@@ -1,10 +1,1 @@
-{% if page.og_image %}
-  {% if page.og_image contains '://' %}
-    {% assign thumb_image = page.og_image %}
-  {% else %}
-    {% assign thumb_image = page.og_image | asset_path | prepend: site.url %}
-  {% endif %}
-{% else %}
-  {% assign thumb_image = 'about.jpg' | asset_path | prepend: site.url %}
-{% endif %}
-{{ thumb_image }}
+{% if page.og_image %}{% asset '{{ page.og_image }}' @path %}{% else %}{% asset 'about.jpg' @path %}{% endif %}

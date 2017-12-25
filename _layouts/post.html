@@ -37,7 +37,7 @@ layout: default
   <div class="article-share text-center reveal">
     {% assign page_title = page.title  | cgi_escape | truncate: 110 %}
     {% capture twitter-share-text %}{{ page_title }} - {{ page.url | prepend: site.url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
-    <a href="https://twitter.com/home?status={{ twitter-share-text }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+    <a href="https://twitter.com/home?status={{ twitter-share-text | uri_escape }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
       <i class="fa fa-twitter" aria-hidden="true"></i>
     </a>
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">

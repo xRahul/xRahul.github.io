@@ -49,26 +49,28 @@
 }
 
 .article-list-item {
-  h5 {
-    position: relative;
-    display: block;
-    padding-right: 25px;
-    color: $article-header-title-color;
-    border-bottom: 1px solid transparent;
-    .icon {
-      display: inline-block;
-      margin-top: -2px;
-      vertical-align: middle;
-      opacity: 0;
-      transition: opacity $base-transition-speed linear;
+  a {
+    text-decoration: none;
+
+    h5 {
+      position: relative;
+      display: block;
+      padding-right: 25px;
+      color: $article-header-title-color;
+      border-bottom: 1px solid transparent;
+      .icon {
+        display: inline-block;
+        margin-top: -2px;
+        vertical-align: middle;
+        opacity: 0;
+        transition: opacity $base-transition-speed linear;
+      }
     }
-    &:hover .icon {
+    &:hover h5 .icon {
       opacity: 1;
     }
   }
-  a {
-    text-decoration: none;
-  }
+
   p {
     display: block;
     margin: 12px 0 10px;
