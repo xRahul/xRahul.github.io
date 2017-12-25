@@ -1,13 +1,12 @@
 <head>
-  <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ site.name }}{% if page.title and page.title != '' %} | {{ page.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
 
-  <link rel="canonical" href="{{ page.url | absolute_url }}" />
-  <link rel="alternate" media="handheld" href="{{ page.url | absolute_url }}" />
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}" />
+  <link rel="alternate" media="handheld" href="{{ page.url | prepend: site.url }}" />
 
   <meta name="msvalidate.01" content="C02D47D34B2CA730AA994096C315F5FE" />
 
@@ -17,13 +16,13 @@
   <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="Articles by {{ site.author.name }}">
 
   {% if site.local_fonts %}
-    {% stylesheet fonts %}
+    {% include stylesheet.html path="fonts" %}
   {% endif %}
 
   {% if site.blog_theme == "light" %}
-    {% stylesheet light %}
+    {% include stylesheet.html path="light" %}
   {% else %}
-    {% stylesheet dark %}
+    {% include stylesheet.html path="dark" %}
   {% endif %}
 
   {% include head/structured_data.html %}

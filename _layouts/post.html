@@ -34,15 +34,16 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="article-share reveal">
-    {% assign page_title = page.title  | truncate '110' | cgi_escape %}
-    <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status={{ page_title }} - {{ page.url | absolute_url }} {% if site.social_links.twitter %}by @{{ site.social_links.twitter }}{% endif %}', 'newwindow', 'width=500, height=225'); return false;">
+  <div class="article-share text-center reveal">
+    {% assign page_title = page.title  | cgi_escape | truncate: 110 %}
+    {% capture twitter-share-text %}{{ page_title }} - {{ page.url | prepend: site.url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
+    <a href="https://twitter.com/home?status={{ twitter-share-text }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
       <i class="fa fa-twitter" aria-hidden="true"></i>
     </a>
-    <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}', 'newwindow', 'width=500, height=500'); return false;">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
       <i class="fa fa-facebook" aria-hidden="true"></i>
     </a>
-    <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url={{ page.url | absolute_url }}', 'newwindow', 'width=550, height=400'); return false;">
+    <a href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}" title="Share on Google+" rel="noreferrer noopener" target="_blank">
       <i class="fa fa-google-plus" aria-hidden="true"></i>
     </a>
   </div>
@@ -57,15 +58,8 @@ layout: default
   </div>
 
   {% if site.discus_identifier and jekyll.environment == "production" %}
-    <div id="disqus_thread" class="article-comments reveal"></div>
-    <script>
-      (function() {
-          var d = document, s = d.createElement('script');
-          s.src = '//{{ site.discus_identifier }}.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div id="disqus_thread" class="article-comments"></div>
+    <script src="https://{{ site.discus_identifier }}.disqus.com/embed.js" async defer></script>
+    <noscript>Please enable JavaScript to view the comments.</noscript>
   {% endif %}
 </article>

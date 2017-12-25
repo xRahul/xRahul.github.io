@@ -7,7 +7,7 @@ image: "posts/installing-rbenv-on-ubuntu-1404/rbenv-og-image.png"
 ---
 
 {:.reveal}
-#### Installing [rbenv](https://github.com/rbenv/rbenv#installation){:target="_blank"}
+#### Installing [rbenv](https://github.com/rbenv/rbenv#installation){:target="_blank" rel="noopener noreferrer"}
 
 {:.reveal}
 {% highlight bash %}
@@ -48,9 +48,9 @@ type rbenv
 
 ---
 {:.reveal}
-#### Install [ruby-build](https://github.com/rbenv/ruby-build#readme){:target="_blank"}
+#### Install [ruby-build](https://github.com/rbenv/ruby-build#readme){:target="_blank" rel="noopener noreferrer"}
 {:.reveal}
-It provides the `rbenv install` command that simplifies the process of [installing new Ruby versions](https://github.com/rbenv/rbenv#installing-ruby-versions){:target="_blank"}.
+It provides the `rbenv install` command that simplifies the process of [installing new Ruby versions](https://github.com/rbenv/rbenv#installing-ruby-versions){:target="_blank" rel="noopener noreferrer"}.
 
 {:.reveal}
 {% highlight bash %}
@@ -61,9 +61,9 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 <br>
 {:.reveal}
 ##### References
-[How To Install Ruby on Rails with rbenv on Ubuntu 14.04 - Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04){:target="_blank"}
+[How To Install Ruby on Rails with rbenv on Ubuntu 14.04 - Digitalocean](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-14-04){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Install rbenv - Github](https://github.com/rbenv/rbenv#installation){:target="_blank"}
+[Install rbenv - Github](https://github.com/rbenv/rbenv#installation){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Install ruby-build - Github](https://github.com/rbenv/ruby-build#installation){:target="_blank"} 
+[Install ruby-build - Github](https://github.com/rbenv/ruby-build#installation){:target="_blank" rel="noopener noreferrer"} 
 

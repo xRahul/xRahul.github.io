@@ -1,6 +1,6 @@
 //= require pace-progress
 //= require jquery
-//= require vendor/jquery-throttle-debounce.js
+//= require throttle-debounce-fn/dist/throttle-debounce-fn.js
 //= require fluidbox
-//= require scrollreveal
-//= require vendor/retina.js
+//= require retinajs/dist/retina.js
+//= require scrollappear.js

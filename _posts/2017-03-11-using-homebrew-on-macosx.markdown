@@ -9,13 +9,13 @@ og_image: "posts/using-homebrew-on-macosx/homebrew.jpg"
 {% include image.html path="posts/using-homebrew-on-macosx/homebrew.jpg" path-detail="posts/using-homebrew-on-macosx/homebrew.jpg" alt="Homebrew" %}
 
 {:.reveal}
-If you have a mac, you need to have [homebrew](http://brew.sh/){:target="_blank"} installed on it. It is the best package manager for mac, and in their own words-
+If you have a mac, you need to have [homebrew](http://brew.sh/){:target="_blank" rel="noopener noreferrer"} installed on it. It is the best package manager for mac, and in their own words-
 
 {:.reveal}
-> Homebrew installs [the stuff you need](https://github.com/Homebrew/homebrew-core/tree/master/Formula){:target="_blank"} that Apple didn’t.
+> Homebrew installs [the stuff you need](https://github.com/Homebrew/homebrew-core/tree/master/Formula){:target="_blank" rel="noopener noreferrer"} that Apple didn’t.
 
 {:.reveal}
-Homebrew installs packages to their own directory and then symlinks their files into `/usr/local`. To _install homebrew_, check out simple instructions provided on their [homepage](http://brew.sh/){:target="_blank"}. Homebrew deals with formulas, which are basically package definitions written in Ruby.
+Homebrew installs packages to their own directory and then symlinks their files into `/usr/local`. To _install homebrew_, check out simple instructions provided on their [homepage](http://brew.sh/){:target="_blank" rel="noopener noreferrer"}. Homebrew deals with formulas, which are basically package definitions written in Ruby.
 
 {:.reveal}
 ### Below is a cheatsheet of basic brew commands
@@ -72,10 +72,10 @@ brewski
 <br>
 {:.reveal}
 ##### References
-[Homebrew](http://brew.sh/){:target="_blank"}
+[Homebrew](http://brew.sh/){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Homebrew - GitHub](https://github.com/Homebrew/brew){:target="_blank"}
+[Homebrew - GitHub](https://github.com/Homebrew/brew){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Getting Started with Homebrew - Safari Books](https://www.safaribooksonline.com/blog/2014/03/03/homebrew/){:target="_blank"}
+[Getting Started with Homebrew - Safari Books](https://www.safaribooksonline.com/blog/2014/03/03/homebrew/){:target="_blank" rel="noopener noreferrer"}
 
 

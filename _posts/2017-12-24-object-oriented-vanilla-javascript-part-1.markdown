@@ -131,8 +131,8 @@ Car.prototype = Object.create(Vehicle.prototype);
 <br>
 {:.reveal}
 ##### References
-[Object-Oriented JavaScript - Udacity](https://www.udacity.com/course/object-oriented-javascript--ud015){:target="_blank"}
+[Object-Oriented JavaScript - Udacity](https://www.udacity.com/course/object-oriented-javascript--ud015){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Understanding Scope in JavaScript - Scotch.io](https://scotch.io/tutorials/understanding-scope-in-javascript){:target="_blank"}
+[Understanding Scope in JavaScript - Scotch.io](https://scotch.io/tutorials/understanding-scope-in-javascript){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Understanding the JavaScript Prototype Chain & Inheritance - RisingStack](https://community.risingstack.com/javascript-prototype-chain-inheritance/){:target="_blank"}
+[Understanding the JavaScript Prototype Chain & Inheritance - RisingStack](https://community.risingstack.com/javascript-prototype-chain-inheritance/){:target="_blank" rel="noopener noreferrer"}

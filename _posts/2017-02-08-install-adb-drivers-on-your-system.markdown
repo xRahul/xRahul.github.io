@@ -9,7 +9,7 @@ You don't need to install the entire android development environment to get the 
 
 
 {:.reveal}
-### Install adb on MacOSX using [Homebrew](http://brew.sh/){:target="_blank"}
+### Install adb on MacOSX using [Homebrew](http://brew.sh/){:target="_blank" rel="noopener noreferrer"}
 
 {:.reveal}
 This is the easiest way and will provide automatic updates.
@@ -30,7 +30,7 @@ adb devices
 {:.reveal}
 ### Install adb manually
 
-1. {:.reveal} Download your OS-specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank"}.
+1. {:.reveal} Download your OS-specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank" rel="noopener noreferrer"}.
 2. {:.reveal} Extract the contents of the .zip file to a folder you can find later.
 3. {:.reveal} Navigate to the extracted folder using your terminal, and there you will find the adb command.
 4. {:.reveal} Run the command normally once you're into the extracted folder- `adb devices`
@@ -40,8 +40,8 @@ adb devices
 <br>
 {:.reveal}
 ##### References
-[Installing ADB on MAC OS X - StackOverflow](http://stackoverflow.com/a/32314718){:target="_blank"} 
+[Installing ADB on MAC OS X - StackOverflow](http://stackoverflow.com/a/32314718){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[SDK Platform Tools Download - Android Studio](https://developer.android.com/studio/releases/platform-tools.html){:target="_blank"} 
+[SDK Platform Tools Download - Android Studio](https://developer.android.com/studio/releases/platform-tools.html){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[Install Android's ADB and Fastboot Tools on Any OS - Lifehacker](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378){:target="_blank"}
+[Install Android's ADB and Fastboot Tools on Any OS - Lifehacker](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378){:target="_blank" rel="noopener noreferrer"}

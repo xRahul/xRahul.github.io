@@ -1,12 +1,9 @@
 <!-- open graph metadata -->
 <meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
 
-{% if page.og_image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.og_image | asset_path }}">
-{% endif %}
 
-<meta property="og:image" content="{{ site.url }}{% asset_path about.jpg %}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{% include head/thumb_image_url.html %}">
+<meta property="og:url" content="{{ page.url | prepend: site.url }}">
 <meta property="og:description" content="{{ page.description | escape }}">
 <meta property="profile:first_name" content="Rahul">
 <meta property="profile:last_name" content="Jain">

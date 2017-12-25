@@ -24,7 +24,7 @@ Currently, it's scheduled to **_run every hour_** and to check these RAM paramet
 * {:.reveal} Swapouts
 
 {:.reveal}
-Here is the [**gist**](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb99f9fe7){:target="_blank"} with the code. Just download the `applescript` file, and set it up using `crontab`
+Here is the [**gist**](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb99f9fe7){:target="_blank" rel="noopener noreferrer"} with the code. Just download the `applescript` file, and set it up using `crontab`
 
 {% gist a787f0c4eebfadf7af5beafdb99f9fe7 %}
 
@@ -33,18 +33,18 @@ Here is the [**gist**](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb9
 <br>
 {:.reveal}
 ##### References
-[Crontab.guru](hthttps://crontab.guru/){:target="_blank"} 
+[Crontab.guru](hthttps://crontab.guru/){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[AppleScript Programming - Wikibooks](https://en.wikibooks.org/wiki/AppleScript_Programming){:target="_blank"} 
+[AppleScript Programming - Wikibooks](https://en.wikibooks.org/wiki/AppleScript_Programming){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[xRahul/RAM_Overuse_Notification.applescript - Github Gist](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb99f9fe7){:target="_blank"} 
+[xRahul/RAM_Overuse_Notification.applescript - Github Gist](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb99f9fe7){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[Introduction to AppleScript - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html){:target="_blank"} 
+[Introduction to AppleScript - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[Introduction to AppleScript Overview - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html){:target="_blank"} 
+[Introduction to AppleScript Overview - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html){:target="_blank" rel="noopener noreferrer"} 
 <br>
-[Introduction to AppleScript Language Guide - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html){:target="_blank"}
+[Introduction to AppleScript Language Guide - Apple Developer Documentation](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html){:target="_blank" rel="noopener noreferrer"}
 <br>
-[How can I configure my computer to run an AppleScript at a specific time? -  Stackexchange](http://apple.stackexchange.com/questions/24862/how-can-i-configure-my-computer-to-run-an-applescript-at-a-specific-time-caveat){:target="_blank"} 
+[How can I configure my computer to run an AppleScript at a specific time? -  Stackexchange](http://apple.stackexchange.com/questions/24862/how-can-i-configure-my-computer-to-run-an-applescript-at-a-specific-time-caveat){:target="_blank" rel="noopener noreferrer"} 
 <br>
 
