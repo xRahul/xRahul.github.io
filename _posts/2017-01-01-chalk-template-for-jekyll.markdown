@@ -13,20 +13,26 @@ tags: [jekyll, web]
 
 {:.reveal}
 #### Features:
-{:.reveal}
-  - {:.reveal} Dark and Light theme.
-  - {:.reveal} Filter on tags.
-  - {:.reveal} Customizable pagination.
-  - {:.reveal} Beautified link sharing in Facebook and other social media.
-  - {:.reveal} Automatic time to read post indicator.
-  - {:.reveal} Automatic RSS feed.
   - {:.reveal} About page.
-  - {:.reveal} 404 page.
-  - {:.reveal} SEO optimized.
-  - {:.reveal} PageSpeed optimized.
+  - {:.reveal} Automatic RSS feed.
+  - {:.reveal} Automatic sitemap.
+  - {:.reveal} Automatic time to read post indicator.
   - {:.reveal} Cross browser support (supports all modern browsers).
+  - {:.reveal} Custom 404 page.
+  - {:.reveal} Custom code highlighting.
+  - {:.reveal} Customizable pagination.
+  - {:.reveal} Dark and Light theme.
+  - {:.reveal} Easy setup and deploying.
+  - {:.reveal} Enlarge images on click.
+  - {:.reveal} Filter on tags.
+  - {:.reveal} Frequently updated with new versions.
+  - {:.reveal} Many social media links supported.
   - {:.reveal} Media embed for videos.
-  - {:.reveal} Enlarge images on click (like Medium).
+  - {:.reveal} PageSpeed optimized.
+  - {:.reveal} Proper sharing links for posts on Facebook, Twitter and Google Plus.
+  - {:.reveal} SEO optimized.
+  - {:.reveal} Support for local fonts.
+  - {:.reveal} Support for emoji's.
 
 {:.reveal}
 #### Integrations
@@ -35,12 +41,10 @@ tags: [jekyll, web]
   - {:.reveal} [Google Fonts](https://fonts.google.com/){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [Disqus](https://disqus.com/){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [Ionicons](http://ionicons.com/){:target="_blank" rel="noopener noreferrer"}
-  - {:.reveal} Social media links
 
 {:.reveal}
 #### Used tools
   - {:.reveal} [Autoprefixer](https://github.com/postcss/autoprefixer){:target="_blank" rel="noopener noreferrer"}
-  - {:.reveal} [Bower](http://bower.io/){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [Circle CI](https://circleci.com/){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [Html-proofer](https://github.com/gjtorikian/html-proofer){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [Jekyll](http://jekyllrb.com/){:target="_blank" rel="noopener noreferrer"}
@@ -50,6 +54,8 @@ tags: [jekyll, web]
   - {:.reveal} [Kickster](http://kickster.nielsenramon.com/){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [Retina.js](http://imulus.github.io/retinajs/){:target="_blank" rel="noopener noreferrer"}
   - {:.reveal} [STACSS](http://stacss.nielsenramon.com/){:target="_blank" rel="noopener noreferrer"}
+  - {:.reveal} [Yarn](https://yarnpkg.com){:target="_blank" rel="noopener noreferrer"}
+
 
 
 {:.reveal}
@@ -150,8 +156,16 @@ If you wish that an image can be enlarged on click use the image include tag. Yo
 - {:.reveal} `alt`: Alt text for image in blog post.
 
 {:.reveal}
-{% highlight html %}
 {% include image.html path="posts/chalk-template-for-jekyll/og-image.png" path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" alt="Chalk Template" %}
+
+
+{% highlight liquid %}
+{% raw %}
+{% include image.html 
+  path="posts/chalk-template-for-jekyll/og-image.png" 
+  path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" 
+  alt="Chalk Template" %}
+{% endraw %}
 {% endhighlight %}
 
 {:.reveal}
@@ -159,12 +173,12 @@ Videos can be added and are responsive by default (4x3 by default, 16x9 with ext
 
 {:.reveal}
 <div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/iWowJBRMtpc?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/oiNVQ9Zjy4o?modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
 </div>
 
 {:.reveal}
 {% highlight html %}
 <div class="embed-responsive embed-responsive-16by9">
-    <iframe src="url-to-video" frameborder="0" allowfullscreen></iframe>
+    <iframe src="url-to-video" allowfullscreen></iframe>
 </div>
 {% endhighlight %}

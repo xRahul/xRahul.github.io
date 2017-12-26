@@ -51,10 +51,9 @@ assets:
   digest: true
   plugins:
     css: { autoprefixer: {}}
-    img: { optim: {}}
+    img: { optim: {jpegoptim: all}}
+  source_maps: false
   sources:
-    - _assets/fonts
-    - _assets/images/favicons
     - _assets/yarn
     - _assets/javascripts
     - _assets/stylesheets
@@ -103,9 +102,9 @@ exclude:
   - Gemfile.lock
   - .gitignore
   - README.md
-  - feed.xml_asdf
   - .jekyll-metadata
   - package.json
+  - vendor/
 
 plugins:
   - jemoji

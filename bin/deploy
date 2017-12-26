@@ -32,7 +32,7 @@ git push -f -q origin master
 
 # Move back to previous branch.
 git checkout new-site
-# yarn install --modules-folder ./_assets/yarn
+yarn install --modules-folder ./_assets/yarn
 
 echo "Deployed Successfully!"
 
