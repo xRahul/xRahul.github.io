@@ -5,16 +5,4 @@
   {% include head/structured_data_person.html %}
 </script>
 
-{% if page.url == '/' %}
-<script type="application/ld+json">
-  { "@context": "http://schema.org",
-    "@type": "Blog",
-    "url": "http://rahulja.in",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "http://rahulja.in"
-    },
-    "author": {% include head/structured_data_person.html %}
-  }
-</script>
-{% endif %}
+{% include head/structured_data_homepage.html %}
