@@ -1,0 +1,32 @@
+{% if page.url contains '/posts/' %}
+  {%  unless page.url contains '/posts/page/' %}
+    {% assign wordcount = include.content | number_of_words %}
+<script type="application/ld+json">
+{
+   "@context":"http://schema.org",
+   "@type":"BlogPosting",
+   "headline":"{{ include.headline }}",
+   "keywords":"{{ include.keywords }}",
+   "wordCount":"{{ wordcount }}",
+   "url":"http://rahulja.in{{ include.link }}",
+   "datePublished":"{{ include.datePublished | | date: '%Y-%m-%d' }}",
+   "dateModified":"{{ include.dateModified | | date: '%Y-%m-%d' }}",
+   "author": {% include head/structured_data_person.html %},
+   "publisher": {
+      "@type": "Organization",
+      "name": "Rahul Jain",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://rahulja.in/assets/about.jpg"
+      }
+    },
+   "image":"{% include head/thumb_image_url.html %}",
+   "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"http://rahulja.in{{ include.link }}"
+   },
+   "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+}
+</script>
+  {% endunless %}
+{% endif %}

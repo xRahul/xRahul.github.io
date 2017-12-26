@@ -48,7 +48,7 @@ permalink: posts/:slug
 
 # Important settings
 assets:
-  digest: true
+  digest: false
   plugins:
     css: { autoprefixer: {}}
     img: { optim: {jpegoptim: all}}

@@ -1,83 +1,20 @@
 {% include head/open_graph_metadata.html %}
 {% include head/social_meta_tags.html %}
 
-{%  unless page.url contains '/posts'  %}
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Person",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Hyderabad",
-      "addressRegion": "Telangana",
-      "addressCountry": "India",
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Hyderabad"
-      ]
-    },
-    "homeLocation": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Hyderabad",
-        "addressRegion": "Telangana",
-        "addressCountry": "India",
-        "sameAs": [
-          "https://en.wikipedia.org/wiki/Hyderabad"
-        ]
-      }
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Chandigarh Engineering College",
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Chandigarh_Engineering_College",
-        "http://cecmohali.org"
-      ],
-      "logo": "http://cecmohali.org/wp-content/themes/cec-mohali/img/logo.jpg",
-      "email": "contact@cecmohali.org",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mohali",
-        "addressRegion": "Punjab",
-        "postalCode": "140307",
-        "streetAddress": "Landran"
-      }
-    },
-    "birthDate": "1993-02-17",
-    "email": "rahul_jain@live.in",
-    "name": "Rahul Jain",
-    "familyName": "Jain",
-    "givenName": "Rahul",
-    "gender": "Male",
-    "jobTitle": "Software Development Engineer",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Amazon",
-      "sameAs": [
-        "https://en.wikipedia.org/wiki/Amazon_(company)",
-        "https://www.amazon.com"
-      ],
-      "areaServed": "India",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Amazon_logo_plain.svg/500px-Amazon_logo_plain.svg.png",
-      "legalName": "Amazon.com, Inc"
-    },
-    "nationality": {
-      "@type": "Country",
-      "name": "India",
-      "sameAs": "https://en.wikipedia.org/wiki/India"
-    },
-    "image": "http://rahulja.in/assets/about.jpg",
+  {% include head/structured_data_person.html %}
+</script>
+
+{% if page.url == '/' %}
+<script type="application/ld+json">
+  { "@context": "http://schema.org",
+    "@type": "Blog",
     "url": "http://rahulja.in",
-    "sameAs": [
-      "https://www.linkedin.com/in/xrahuljain",
-      "https://github.com/xRahul",
-      "https://www.facebook.com/xRahulJain",
-      "https://twitter.com/xRahulJain",
-      "http://stackoverflow.com/users/1435626/rahul",
-      "https://www.freecodecamp.com/xrahul",
-      "https://codepen.io/xRahul"
-    ]
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://rahulja.in"
+    },
+    "author": {% include head/structured_data_person.html %}
   }
 </script>
-{% endunless %}
+{% endif %}

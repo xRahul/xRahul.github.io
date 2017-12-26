@@ -3,7 +3,7 @@ title: ''
 description: "Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Hyderabad, India."
 ---
 
-<ul class="article-list">
+<ul class="article-list {{ page.url }}">
   {% for post in paginator.posts %}
     <li class="article-list-item reveal">
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
