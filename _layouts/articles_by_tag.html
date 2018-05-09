@@ -12,7 +12,13 @@ sitemap: false
             {{ post.title }}
             <small><i class="icon fa fa-angle-double-right" aria-hidden="true"></i></small>
           </h5>
-          <p>{{ post.description }}</p>
+          <p>
+            {% if post.description %}
+              {{ post.description }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </p>
         </a>
         <div class="article-list-footer">
           <span class="article-list-date">

@@ -20,17 +20,24 @@ cd xRahul.github.io/
 git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
 git fetch --all
 git pull --all
+
 bin/setup
+--or--
+npm run setup
 ```
 
 Run local development server
 
 ```bash
 LC_ALL=en_US.UTF-8 bundle exec jekyll serve --drafts
+--or--
+npm run local
 ```
 
 Deploy to github master branch
 
 ```bash
-./bin/deploy
+bin/deploy
+--or--
+npm run publish
 ```
