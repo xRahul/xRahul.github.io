@@ -6,12 +6,10 @@
     "publish": "bin/deploy"
   },
   "dependencies": {
-    "fluidbox": "^2.0.5",
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "pace-progress": "^1.0.2",
     "retinajs": "^2.1.3",
-    "scrollreveal": "^3.3.5",
-    "throttle-debounce-fn": "^1.0.1",
+    "scrollreveal": "^3.4.0",
     "webfontloader": "^1.6.28",
     "zooming": "^2.0.0"
   }
