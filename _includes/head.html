@@ -18,13 +18,13 @@
   <link type="application/atom+xml" rel="alternate" href="{{ site.url }}/feed.xml" title="Articles by {{ site.author.name }}">
 
   {% if site.local_fonts %}
-    {% asset fonts.css %}
+    {% asset fonts.css @inline %}
   {% endif %}
 
   {% if site.blog_theme == "light" %}
-    {% asset light.css %}
+    {% asset light.css @inline %}
   {% else %}
-    {% asset dark.css %}
+    {% asset dark.css @inline %}
   {% endif %}
 
   {% include head/structured_data.html %}
