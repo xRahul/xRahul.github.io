@@ -11,7 +11,7 @@ pagination:
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
-          <small><i class="icon fa fa-angle-double-right" aria-hidden="true"></i></small>
+          <small><i class="icon fas fa-angle-double-right" aria-hidden="true"></i></small>
         </h5>
         <p>
           {% if post.description %}
@@ -55,10 +55,10 @@ pagination:
   {% if paginator.total_pages > 1 %}
     <li class="article-pagination reveal">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Newer posts</a>
+        <a href="{{ paginator.previous_page_path }}"><i class="fas fa-angle-double-left" aria-hidden="true"></i> Newer posts</a>
       {% endif %}
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="article-pagination-right">Older posts <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+        <a href="{{ paginator.next_page_path }}" class="article-pagination-right">Older posts <i class="fas fa-angle-double-right" aria-hidden="true"></i></a>
       {% endif %}
     </li>
   {% endif %}
