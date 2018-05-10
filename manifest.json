@@ -1,0 +1,78 @@
+{
+  "short_name": "Rahul Jain",
+  "name": "Rahul Jain",
+  "description": "Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Hyderabad, India.",
+  "icons": [
+    {
+      "src": "assets/favicons/apple-touch-icon-57x57.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-114x114.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-60x60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-120x120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-76x76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "assets/favicons/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/favicons/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "assets/favicons/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "assets/favicons/favicon-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/favicons/mstile-70x70.png",
+      "type": "image/png",
+      "sizes": "70x70"
+    }
+  ],
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "orientation": "any",
+  "theme_color": "#ffffff",
+  "lang": "en-US",
+  "start_url": "/"
+}

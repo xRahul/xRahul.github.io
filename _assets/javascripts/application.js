@@ -3,17 +3,17 @@
 
 $(document).ready(function() {
 
-    // ScrollAppear
+  /* ScrollAppear */
   if (typeof $.fn.scrollAppear === 'function') {
     $('.reveal').scrollAppear();
   }
 
-  // Zooming
+  /* Zooming */
   new Zooming(
     {customSize: '100%', scaleBase: 0.9, scaleExtra: 0, enableGrab: false}
   ).listen('img[data-action="zoom"]');
 
-  // Share buttons
+  /* Share buttons */
   $('.article-share a').on('click', function() {
     window.open($(this).attr('href'), 'Share', 'width=200,height=200,noopener');
     return false;
