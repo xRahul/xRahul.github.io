@@ -42,6 +42,17 @@ author:
 
 # Important settings (change at own risk)
 
+sass:
+  sass_dir: _assets/stylesheets
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: all
+
+
 pagination:
   # Site-wide kill switch, disabled here it doesn't run at all
   enabled: true
@@ -89,10 +100,12 @@ permalink: posts/:slug
 # Important settings
 assets:
   digest: false
+  compression: true
+  gzip: true
+
   plugins:
     css: { autoprefixer: {}}
     img: { optim: {jpegoptim: all}}
-  source_maps: false
   sources:
     - _assets/yarn
     - _assets/javascripts
