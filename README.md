@@ -9,7 +9,9 @@
 
 [![GitHub license](https://img.shields.io/github/license/xRahul/xRahul.github.io.svg?style=flat-square)](https://github.com/xRahul/xRahul.github.io/blob/new-site/LICENSE)
 [![Build Status](https://travis-ci.org/xRahul/xRahul.github.io.svg?branch=new-site)](https://travis-ci.org/xRahul/xRahul.github.io)
-
+![Gem Version](https://img.shields.io/gem/v/jekyll.svg)
+[![Dependency Status](https://gemnasium.com/badges/github.com/xRahul/xRahul.github.io.svg)](https://gemnasium.com/github.com/xRahul/xRahul.github.io)
+[![security](https://hakiri.io/github/xRahul/xRahul.github.io/new-site.svg)](https://hakiri.io/github/xRahul/xRahul.github.io/new-site)
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
 
