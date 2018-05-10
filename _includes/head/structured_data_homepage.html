@@ -2,10 +2,10 @@
   <script type="application/ld+json">
     { "@context": "http://schema.org",
       "@type": "Blog",
-      "url": "http://rahulja.in",
+      "url": "https://rahulja.in",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://rahulja.in"
+        "@id": "https://rahulja.in"
       },
       "author": {% include head/structured_data_person.html %}
     }
@@ -17,7 +17,7 @@
       {
         "@type": "ListItem",
         "position": {{ forloop.index }},
-        "url": "http://rahulja.in{{ post.url }}"
+        "url": "https://rahulja.in{{ post.url }}"
       }
     {% endcapture %}
     {% assign items = items | append: list_item | append: "|||" %}

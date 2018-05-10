@@ -9,7 +9,7 @@ redirect_from:
 {:.reveal}
 Add and verify your website on the Search Console. 
 <br>
-Now open the console for your added property (In my case - [http://rahulja.in](http://rahulja.in){:target="_blank" rel="noopener noreferrer"})
+Now open the console for your added property (In my case - [https://rahulja.in](https://rahulja.in){:target="_blank" rel="noopener noreferrer"})
 
 {:.reveal}
 <ul>
@@ -107,7 +107,7 @@ Disallow: /tag/*
 * `Other Resources`-
     * Take the [Intro to Webmaster Academy](https://support.google.com/webmasters/answer/6001102?hl=en&utm_source=wmx&utm_campaign=links){:target="_blank" rel="noopener noreferrer"} course. It'll be helpful in getting you started.
     * If you've added any structured data in you website, you can use the [Structured Data Testing Tool](https://developers.google.com/webmasters/structured-data/testing-tool){:target="_blank" rel="noopener noreferrer"} to validate and view it.
-    * Use [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=en&utm_source=wmx&utm_campaign=wmx_otherlinks&url=http://rahulja.in/){:target="_blank" rel="noopener noreferrer"} to find out how to make your web pages fast on all devices.
+    * Use [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=en&utm_source=wmx&utm_campaign=wmx_otherlinks&url=https://rahulja.in/){:target="_blank" rel="noopener noreferrer"} to find out how to make your web pages fast on all devices.
 
 
 ---

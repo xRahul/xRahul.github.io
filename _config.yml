@@ -2,7 +2,7 @@
 
 blog_theme: light # Or use dark
 name: Rahul Jain
-url: http://rahulja.in
+url: https://rahulja.in
 description: Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Hyderabad, India.
 timezone: Asia/Kolkata
 encoding: utf-8
@@ -23,7 +23,7 @@ social_links:
   stackoverflow: 1435626/rahul # Add your stackoverflow id/name
   freecodecamp: xrahul # Add your freecodecamp username
   #bitcoin: 1BmYjgdCkY6P8tmmxjm4f5stDK7vJ6VcQN # Add your Bitcoin wallet ID
-  flattr: "https://flattr.com/submit/auto?fid=djeqkn&url=http%3A%2F%2Frahulja.in"
+  flattr: "https://flattr.com/submit/auto?fid=djeqkn&url=https%3A%2F%2Frahulja.in"
 
 
 # Process and render draft posts
@@ -38,7 +38,7 @@ social_links:
 author:
   name: Rahul Jain
   email: rahul_jain@live.in
-  uri: http://rahulja.in/about
+  uri: https://rahulja.in/about
 
 # Important settings (change at own risk)
 
@@ -110,7 +110,7 @@ assets:
     - _assets/yarn
     - _assets/javascripts
     - _assets/stylesheets
-  baseurl: http://rahulja.in
+  baseurl: https://rahulja.in
 
 collections:
   my_tags:

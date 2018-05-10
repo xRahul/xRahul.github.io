@@ -8,7 +8,7 @@
    "headline":"{{ include.headline }}",
    "keywords":"{{ include.keywords }}",
    "wordCount":"{{ wordcount }}",
-   "url":"http://rahulja.in{{ include.link }}",
+   "url":"https://rahulja.in{{ include.link }}",
    "datePublished":"{{ include.datePublished | | date: '%Y-%m-%d' }}",
    "dateModified":"{{ include.dateModified | | date: '%Y-%m-%d' }}",
    "author": {% include head/structured_data_person.html %},
@@ -17,13 +17,13 @@
       "name": "Rahul Jain",
       "logo": {
         "@type": "ImageObject",
-        "url": "http://rahulja.in/assets/about.jpg"
+        "url": "https://rahulja.in/assets/about.jpg"
       }
     },
    "image":"{% include head/thumb_image_url.html %}",
    "mainEntityOfPage":{
       "@type":"WebPage",
-      "@id":"http://rahulja.in{{ include.link }}"
+      "@id":"https://rahulja.in{{ include.link }}"
    },
    "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
 }

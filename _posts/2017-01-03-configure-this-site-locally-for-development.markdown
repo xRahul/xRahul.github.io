@@ -55,7 +55,7 @@ bin/deploy
 <br>
 {:.reveal}
 ##### References
-[rahulja.in](http://rahulja.in){:target="_blank" rel="noopener noreferrer"}
+[rahulja.in](https://rahulja.in){:target="_blank" rel="noopener noreferrer"}
 <br>
 [xRahul.github.io - Github](https://github.com/xRahul/xRahul.github.io/tree/new-site){:target="_blank" rel="noopener noreferrer"}
 <br>
