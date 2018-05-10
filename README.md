@@ -1,4 +1,6 @@
-## Personalized blog profile
+## Personalized blog & profile
+
+![Website PageSpeed](https://pagespeed-badges.herokuapp.com/?url=rahulja.in)
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
 
