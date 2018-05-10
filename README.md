@@ -1,6 +1,14 @@
 ## Personalized blog & profile
 
-![Website PageSpeed](https://pagespeed-badges.herokuapp.com/?url=rahulja.in)
+[![Website PageSpeed](https://pagespeed-badges.herokuapp.com/?url=rahulja.in)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frahulja.in%2F)
+[![Lighthouse Performance score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Performance)](files/Lighthouse-Report.pdf)
+[![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report.pdf)
+[![Lighthouse Accessibility score: 86/100](https://lighthouse-badge.appspot.com/?score=86&compact&category=Accessibility)](files/Lighthouse-Report.pdf)
+[![Lighthouse Best Practices score: 94/100](https://lighthouse-badge.appspot.com/?score=94&compact&category=Best+Practices)](files/Lighthouse-Report.pdf)
+[![Lighthouse SEO score: 90/100](https://lighthouse-badge.appspot.com/?score=90&compact&category=SEO)](files/Lighthouse-Report.pdf)
+
+
+
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
 
