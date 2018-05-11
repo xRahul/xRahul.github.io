@@ -1,4 +1,5 @@
-{% if page.url == '/' %}
+{% assign page_url_structured_data = page.url | remove: 'index.html' %}
+{% if page_url_structured_data == '/' %}
   <script type="application/ld+json">
     { "@context": "http://schema.org",
       "@type": "Blog",

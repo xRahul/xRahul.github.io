@@ -1,5 +1,5 @@
 <meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="{{ page.url | prepend: site.url }}">
+<meta name="twitter:url" content="{{ page.url | remove: 'index.html' | prepend: site.url }}">
 {% if site.social_links.twitter %}
   <meta name="twitter:creator" content="@{{ site.social_links.twitter }}" />
 {% endif %}

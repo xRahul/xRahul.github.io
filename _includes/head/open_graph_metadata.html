@@ -3,7 +3,7 @@
 
 
 <meta property="og:image" content="{% include head/thumb_image_url.html %}">
-<meta property="og:url" content="{{ page.url | prepend: site.url }}">
+<meta property="og:url" content="{{ page.url | remove: 'index.html' | prepend: site.url }}">
 <meta property="og:description" content="{{ page.description | escape }}">
 <meta property="profile:first_name" content="Rahul">
 <meta property="profile:last_name" content="Jain">
