@@ -6,11 +6,17 @@
 # Exit if any subcommand fails
 set -e
 
+# check for ruby and npm versions before
+
 # Set up Ruby dependencies via Bundler.
 gem install bundler --conservative
 bundle check || bundle install
 #bundle update
 
 # Set up JS dependencies via Yarn.
-npm install -g yarn
-yarn install --modules-folder ./_assets/yarn
+if hash yarn 2>/dev/null; then
+	yarn install;
+else
+	npm install -g yarn;
+	yarn install;
+fi;

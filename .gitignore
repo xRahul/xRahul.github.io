@@ -6,7 +6,7 @@ Thumbs.db
 # Project
 !.keep
 *.sass-cache
-/_assets/yarn/
 /_site/
 /.jekyll-cache/
 /node_modules/
+yarn-error.log
