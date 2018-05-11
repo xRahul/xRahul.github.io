@@ -165,6 +165,7 @@ exclude:
   - yarn-error.log
   - yarn.lock
   - node_modules/
+  - vendor/
 
 plugins:
   - amp-jekyll

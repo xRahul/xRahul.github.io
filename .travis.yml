@@ -7,11 +7,10 @@ cache: bundler
 before_install:
   - rm Gemfile.lock
   - gem update --system
-  - gem install bundler
+  - gem install bundler --conservative
 
 before_script:
   - chmod +x ./bin/setup
-  - bundle install --no-deployment
   - ./bin/setup
   - LC_ALL=en_US.UTF-8 JEKYLL_ENV=production bundle exec jekyll build
 
