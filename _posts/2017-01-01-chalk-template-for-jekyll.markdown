@@ -6,7 +6,7 @@ image: "posts/chalk-template-for-jekyll/og-image.png"
 tags: [jekyll, web]
 ampTags: [amp-iframe]
 ---
-{:.reveal}
+
 {% include image.html path="posts/chalk-template-for-jekyll/og-image.png" path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" alt="Chalk Template" %}
 
 {:.reveal}
@@ -156,7 +156,6 @@ If you wish that an image can be enlarged on click use the image include tag. Yo
 - {:.reveal} `path-detail`: Image to show when enlarging.
 - {:.reveal} `alt`: Alt text for image in blog post.
 
-{:.reveal}
 {% include image.html path="posts/chalk-template-for-jekyll/og-image.png" path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" alt="Chalk Template" %}
 
 

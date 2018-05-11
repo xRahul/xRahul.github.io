@@ -6,7 +6,6 @@ og_image: "posts/configure-this-site-locally-for-development/og-image.png"
 image: "posts/configure-this-site-locally-for-development/og-image.png"
 ---
 
-{:.reveal}
 {% include image.html path="posts/configure-this-site-locally-for-development/og-image.png" path-detail="posts/configure-this-site-locally-for-development/og-image@2x.png" alt="Chalk Template" %}
 
 {:.reveal}

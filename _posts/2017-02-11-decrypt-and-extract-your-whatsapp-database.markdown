@@ -4,7 +4,7 @@ description: Instructions on how to extract your WhatsApp data from the stored e
 tags: [data, social, hack]
 og_image: "posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo.jpg"
 ---
-{:.reveal}
+
 {% include image.html path="posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo.jpg" path-detail="posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo@2x.jpg" alt="Whatsapp" %}
 
 Steps to get your whatsapp data in decrypted form-

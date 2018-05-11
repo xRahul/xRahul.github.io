@@ -5,7 +5,6 @@ tags: [macosx, package]
 og_image: "posts/using-homebrew-on-macosx/homebrew.jpg"
 ---
 
-{:.reveal}
 {% include image.html path="posts/using-homebrew-on-macosx/homebrew.jpg" path-detail="posts/using-homebrew-on-macosx/homebrew.jpg" alt="Homebrew" %}
 
 {:.reveal}
