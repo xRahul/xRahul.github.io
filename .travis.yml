@@ -1,8 +1,10 @@
 language: ruby
 rvm:
-- 2.5.1
+ - 2.5.1
 
 before_script:
+ - gem update
+ - gem install json
  - chmod +x ./bin/setup
  - ./bin/setup
  - LC_ALL=en_US.UTF-8 JEKYLL_ENV=production bundle exec jekyll build
