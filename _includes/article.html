@@ -1,0 +1,15 @@
+<article class="article">
+  {% include article/header.html %}
+  <div class="article-content reveal">
+  	{% if page.amp %}
+			{{ content  | markdownify | amp_images }}
+		{% else %}
+			{{ content }}
+  	{% endif %}
+  </div>
+  {% include article/footer.html %}
+    {% if !page.amp %}
+			{% include article/disqus.html %}
+  	{% endif %}
+</article>
+{% include article/structuredData.html %}
