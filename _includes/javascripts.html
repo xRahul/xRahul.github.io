@@ -13,7 +13,7 @@
 {% unless site.local_fonts %}
   {% asset webfonts.js %}
 {% endunless %}
-{% asset application.js %}
+{% asset application.js !integrity %}
 
 <script async>
 /* Check that service workers are registered */

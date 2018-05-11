@@ -10,7 +10,8 @@ before_install:
 
 before_script:
   - chmod +x ./bin/setup
-  - bundle update
+  - bundle install --no-deployment
+  - bundle update --no-deployment
   - ./bin/setup
   - LC_ALL=en_US.UTF-8 JEKYLL_ENV=production bundle exec jekyll build
 
