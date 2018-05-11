@@ -32,7 +32,7 @@ Here is the [**gist**](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb9
     data-gistid="a787f0c4eebfadf7af5beafdb99f9fe7"
     data-file="RAM_Overuse_Notification.applescript"
     layout="fixed-height"
-    height="985">
+    height="1420">
 </amp-gist>
 {% else %}
 {% gist a787f0c4eebfadf7af5beafdb99f9fe7 %}

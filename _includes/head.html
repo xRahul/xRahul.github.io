@@ -8,7 +8,8 @@
 
   <link rel="manifest" href="/manifest.json">
 
-  {% if !page.amp %}
+  {% if page.amp %}
+  {% else %}
     {% if page.path contains '_posts' %}
       {% unless page.skip_amp %}
         <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
@@ -35,9 +36,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     {% if site.blog_theme == "light" %}
-      {% asset light.css @inline amp-custom !rel %}
+      {% asset light.css @inline amp-custom !rel !crossorigin !integrity %}
     {% else %}
-      {% asset dark.css @inline amp-custom !rel %}
+      {% asset dark.css @inline amp-custom !rel !crossorigin !integrity %}
     {% endif %}
   {% else %}
     {% if site.local_fonts %}
