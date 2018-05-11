@@ -4,6 +4,7 @@ description: Chalk is a high quality, completely customizable, performant and 10
 og_image: "posts/chalk-template-for-jekyll/og-image.png"
 image: "posts/chalk-template-for-jekyll/og-image.png"
 tags: [jekyll, web]
+ampTags: [amp-iframe]
 ---
 {:.reveal}
 {% include image.html path="posts/chalk-template-for-jekyll/og-image.png" path-detail="posts/chalk-template-for-jekyll/og-image@2x.png" alt="Chalk Template" %}
@@ -124,10 +125,10 @@ Ordered list example:
 {% endhighlight %}
 
 {:.reveal}
-## Emoji support :star:
+## Emoji support
 
 {:.reveal}
-Emoji's can be used everywhere in :cat2: your markdown!
+Emoji's can be used everywhere in your markdown!
 
 {:.reveal}
 ## Quotes
@@ -171,10 +172,21 @@ If you wish that an image can be enlarged on click use the image include tag. Yo
 {:.reveal}
 Videos can be added and are responsive by default (4x3 by default, 16x9 with extra class).
 
+{% if page.amp %}
+<amp-iframe width="500"
+  height="281"
+  layout="responsive"
+  sandbox="allow-scripts allow-same-origin"
+  allowfullscreen
+  frameborder="0"
+  src="https://www.youtube.com/embed/oiNVQ9Zjy4o?modestbranding=1&autohide=1&showinfo=0&controls=0">
+</amp-iframe>
+{% else %}
 {:.reveal}
 <div class="embed-responsive embed-responsive-16by9">
 <iframe src="https://www.youtube.com/embed/oiNVQ9Zjy4o?modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
 </div>
+{% endif %}
 
 {:.reveal}
 {% highlight html %}

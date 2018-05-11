@@ -3,7 +3,7 @@
 blog_theme: light # Or use dark
 name: Rahul Jain
 url: https://rahulja.in
-description: Articles and Profile of Rahul Jain. He is a Full-Stack Engineer and web enthusiast living in Hyderabad, India.
+description: This is the personal blog and profile of Rahul Jain, a full-stack engineer and web enthusiast living in Hyderabad, India.
 timezone: Asia/Kolkata
 encoding: utf-8
 
@@ -42,9 +42,7 @@ author:
 
 # Important settings (change at own risk)
 
-sass:
-  sass_dir: _assets/stylesheets
-  style: compressed
+ampdir: amp
 
 compress_html:
   clippings: all
@@ -67,7 +65,7 @@ pagination:
   # Optional the title format for the paginated pages
   # (supports :title for original page title,
   # :num for pagination page number, :max for total number of pages)
-  title: ':title - page :num'
+  title: ':title - Page :num'
   # Limit how many pagenated pages to create (default: 0, means all)
   limit: 0
   # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
@@ -100,14 +98,18 @@ permalink: posts/:slug
 # Important settings
 assets:
   digest: false
+  source_maps: true
   compression: true
   gzip: true
-
   plugins:
     css: { autoprefixer: {}}
-    img: { optim: {jpegoptim: all}}
+    img: { optim: {jpegoptim: {strip: all}}}
+  autoprefixer:
+    browsers:
+    - "last 2 versions"
+    - "IE > 9"
   sources:
-    - _assets/yarn
+    - node_modules
     - _assets/javascripts
     - _assets/stylesheets
   baseurl: https://rahulja.in
@@ -148,18 +150,24 @@ defaults:
       layout: default
 
 exclude:
-  - .travis.yml
+  - .bundle/
+  - .jekyll-cache/
   - bin/*
+  - .gitignore
+  - .ruby-version
+  - .travis.yml
   - circle.yml
   - Gemfile
   - Gemfile.lock
-  - .gitignore
-  - README.md
-  - .jekyll-metadata
+  - LICENSE
   - package.json
-  - vendor/
+  - README.md
+  - yarn-error.log
+  - yarn.lock
+  - node_modules/
 
 plugins:
+  - amp-jekyll
   - jemoji
   - jekyll-assets
   - jekyll-paginate-v2

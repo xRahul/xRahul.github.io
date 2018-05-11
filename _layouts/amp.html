@@ -1,0 +1,26 @@
+---
+layout: amp
+amp: true
+---
+
+<!doctype html>
+<html ⚡ lang="en" prefix="og: http://ogp.me/ns#">
+{% include head.html %}
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        {% capture navigationCaptured %}{% include navigation.html %}{% endcapture %}
+        {{ navigationCaptured | amp_images }}
+
+        {% capture contentCaptured %}{% include article.html %}{% endcapture %}
+        {{ contentCaptured }}
+
+        {% capture footerCaptured %}{% include footer.html %}{% endcapture %}
+        {{ footerCaptured | amp_images }}
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

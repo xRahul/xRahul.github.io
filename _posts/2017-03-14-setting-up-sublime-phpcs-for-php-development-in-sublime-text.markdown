@@ -180,7 +180,7 @@ Now you just need to do `Cmd` + `Shift` + `P` and look for `sniff` options.
 <br>
 [pfff General Install Instructions - Github](https://github.com/facebook/pfff/blob/master/install.txt){:target="_blank" rel="noopener noreferrer"}
 <br>
-[pfff Linux Install Instructions - Github](hthttps://github.com/facebook/pfff/blob/master/install_linux.txt){:target="_blank" rel="noopener noreferrer"} 
+[pfff Linux Install Instructions - Github](https://github.com/facebook/pfff/blob/master/install_linux.txt){:target="_blank" rel="noopener noreferrer"} 
 <br>
 [pfff MacOSX Install Instructions - Github](https://github.com/facebook/pfff/blob/master/install_macos.txt){:target="_blank" rel="noopener noreferrer"} 
 <br>

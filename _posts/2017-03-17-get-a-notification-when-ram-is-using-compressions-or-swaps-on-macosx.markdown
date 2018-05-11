@@ -2,6 +2,7 @@
 title: Get a notification when RAM is using compressions or swaps on MacOSX
 description: A scheduled AppleScript to notify when RAM on mac is using compression or swaps. This is useful to find out when your mac gets less responsive so you can take appropriate measures, or when you have SSD installed as swaps reduce its life.
 tags: [macosx, hack]
+ampTags: [amp-gist]
 ---
 
 {:.reveal}
@@ -26,14 +27,24 @@ Currently, it's scheduled to **_run every hour_** and to check these RAM paramet
 {:.reveal}
 Here is the [**gist**](https://gist.github.com/xRahul/a787f0c4eebfadf7af5beafdb99f9fe7){:target="_blank" rel="noopener noreferrer"} with the code. Just download the `applescript` file, and set it up using `crontab`
 
+{% if page.amp %}
+<amp-gist
+    data-gistid="a787f0c4eebfadf7af5beafdb99f9fe7"
+    data-file="RAM_Overuse_Notification.applescript"
+    layout="fixed-height"
+    height="985">
+</amp-gist>
+{% else %}
 {% gist a787f0c4eebfadf7af5beafdb99f9fe7 %}
+{% endif %}
+
 
 
 ---
 <br>
 {:.reveal}
 ##### References
-[Crontab.guru](hthttps://crontab.guru/){:target="_blank" rel="noopener noreferrer"} 
+[Crontab.guru](https://crontab.guru/){:target="_blank" rel="noopener noreferrer"} 
 <br>
 [AppleScript Programming - Wikibooks](https://en.wikibooks.org/wiki/AppleScript_Programming){:target="_blank" rel="noopener noreferrer"} 
 <br>
