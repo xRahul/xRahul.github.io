@@ -208,11 +208,11 @@ img {
 }
 
 .highlight {
-  padding: 10px 50px 10px 50px !important;
+  padding: 10px 50px 10px 50px;
 }
 
 @include breakpoint(small) {
   .highlight {
-    padding: 10px 20px 10px 20px !important;
+    padding: 10px 20px 10px 20px;
   }
 }
