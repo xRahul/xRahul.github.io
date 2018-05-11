@@ -72,7 +72,7 @@
   "background_color": "#ffffff",
   "display": "fullscreen",
   "orientation": "any",
-  "theme_color": "#ffffff",
+  "theme_color": "#000000",
   "lang": "en-US",
   "start_url": "/"
 }
