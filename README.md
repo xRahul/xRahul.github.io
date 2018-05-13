@@ -5,7 +5,7 @@
 [![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report.pdf)
 [![Lighthouse Accessibility score: 86/100](https://lighthouse-badge.appspot.com/?score=86&compact&category=Accessibility)](files/Lighthouse-Report.pdf)
 [![Lighthouse Best Practices score: 94/100](https://lighthouse-badge.appspot.com/?score=94&compact&category=Best+Practices)](files/Lighthouse-Report.pdf)
-[![Lighthouse SEO score: 90/100](https://lighthouse-badge.appspot.com/?score=90&compact&category=SEO)](files/Lighthouse-Report.pdf)
+[![Lighthouse SEO score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](files/Lighthouse-Report.pdf)
 
 [![GitHub license](https://img.shields.io/github/license/xRahul/xRahul.github.io.svg?style=flat-square)](https://github.com/xRahul/xRahul.github.io/blob/new-site/LICENSE)
 [![Build Status](https://travis-ci.org/xRahul/xRahul.github.io.svg?branch=new-site)](https://travis-ci.org/xRahul/xRahul.github.io)
