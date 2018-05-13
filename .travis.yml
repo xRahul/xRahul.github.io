@@ -20,6 +20,7 @@ script: LC_ALL=en_US.UTF-8 bundle exec htmlproofer ./_site --only-4xx --allow-ha
 branches:
   only:
     - new-site
+    - /^greenkeeper/.*$/
 
 env:
   global:
