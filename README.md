@@ -13,11 +13,11 @@
 [![Dependency Status](https://gemnasium.com/badges/github.com/xRahul/xRahul.github.io.svg)](https://gemnasium.com/github.com/xRahul/xRahul.github.io)
 [![security](https://hakiri.io/github/xRahul/xRahul.github.io/new-site.svg)](https://hakiri.io/github/xRahul/xRahul.github.io/new-site)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xRahul/xRahul.github.io.svg)](https://greenkeeper.io/)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d251b6435fc844c887ea6c7e58f0c982)](https://www.codacy.com/app/xRahul/xRahul.github.io)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f6e013323629b1fc88c2/maintainability)](https://codeclimate.com/github/xRahul/xRahul.github.io/maintainability)
 [![CodeFactor](https://www.codefactor.io/repository/github/xrahul/xrahul.github.io/badge)](https://www.codefactor.io/repository/github/xrahul/xrahul.github.io)
 [![codebeat badge](https://codebeat.co/badges/eb3cbae9-7f2b-41f1-9b06-0c0966d9a636)](https://codebeat.co/projects/github-com-xrahul-xrahul-github-io-new-site)
-[![Greenkeeper badge](https://badges.greenkeeper.io/xRahul/xRahul.github.io.svg)](https://greenkeeper.io/)
 
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
