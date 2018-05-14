@@ -1,11 +1,19 @@
 ## Personalized blog & profile
 
+#### Home page (List of Posts)
 [![Website PageSpeed](https://pagespeed-badges.herokuapp.com/?url=rahulja.in)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frahulja.in%2F)
-[![Lighthouse Performance score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Performance)](files/Lighthouse-Report.pdf)
-[![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report.pdf)
-[![Lighthouse Accessibility score: 86/100](https://lighthouse-badge.appspot.com/?score=86&compact&category=Accessibility)](files/Lighthouse-Report.pdf)
-[![Lighthouse Best Practices score: 94/100](https://lighthouse-badge.appspot.com/?score=94&compact&category=Best+Practices)](files/Lighthouse-Report.pdf)
-[![Lighthouse SEO score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](files/Lighthouse-Report.pdf)
+[![Lighthouse Performance score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Performance)](files/Lighthouse-Report-Homepage.pdf)
+[![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report-Homepage.pdf)
+[![Lighthouse Accessibility score: 86/100](https://lighthouse-badge.appspot.com/?score=86&compact&category=Accessibility)](files/Lighthouse-Report-Homepage.pdf)
+[![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](files/Lighthouse-Report-Homepage.pdf)
+[![Lighthouse SEO score: 90/100](https://lighthouse-badge.appspot.com/?score=90&compact&category=SEO)](files/Lighthouse-Report-Homepage.pdf)
+
+#### Article page (Post)
+[![Lighthouse Performance score: 99/100](https://lighthouse-badge.appspot.com/?score=99&compact&category=Performance)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse Accessibility score: 91/100](https://lighthouse-badge.appspot.com/?score=91&compact&category=Accessibility)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse SEO score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](files/Lighthouse-Report-Post.pdf)
 
 [![GitHub license](https://img.shields.io/github/license/xRahul/xRahul.github.io.svg?style=flat-square)](https://github.com/xRahul/xRahul.github.io/blob/new-site/LICENSE)
 [![Build Status](https://travis-ci.org/xRahul/xRahul.github.io.svg?branch=new-site)](https://travis-ci.org/xRahul/xRahul.github.io)

@@ -4,4 +4,4 @@ Disallow: /tag/
 Disallow: /project/
 Disallow: /posts/page/
 Disallow: /tags$
-Disallow: /files/Lighthouse-Report.pdf
+Disallow: /files/

@@ -148,6 +148,27 @@ defaults:
       type: pages
     values:
       layout: default
+  # sitemap defaults from robots.txt
+  -
+    scope:
+      path: "tag/"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "project/*"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "tags"
+    values:
+      sitemap: false
+  -
+    scope:
+      path: "files/*.pdf"
+    values:
+      sitemap: false
 
 exclude:
   - .bundle/
