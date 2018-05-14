@@ -1,27 +1,28 @@
 source "https://rubygems.org"
 
-gem "html-proofer"
-gem "jekyll"
-gem "jekyll-assets"
-gem "jekyll-paginate-v2"
-gem "jekyll-sitemap"
-gem "jemoji"
-gem "mini_magick"
-gem "sass"
-gem "uglifier"
+gem "amp-jekyll"
+gem "autoprefixer-rails"
+gem "crass"
 gem "font-awesome-sass"
-gem 'jekyll-feed'
-gem 'jekyll-redirect-from'
-gem 'jekyll-gist'
-gem 'jekyll-seo'
-gem 'jekyll-seo-tag'
-gem 'jekyll-last-modified-at'
-gem "sprockets", "4.0.0.beta7"
-gem "image_optim"
+gem "html-proofer"
 gem "image_optim_bin" # Optional
 gem "image_optim_pack"
-gem "autoprefixer-rails"
-gem "amp-jekyll"
+gem "image_optim"
+gem "jekyll-assets"
+gem "jekyll-feed"
+gem "jekyll-gist"
+gem "jekyll-last-modified-at"
+gem "jekyll-paginate-v2"
+gem "jekyll-redirect-from"
+gem "jekyll-seo-tag"
+gem "jekyll-seo"
+gem "jekyll-sitemap"
+gem "jekyll"
+gem "jemoji"
+gem "mini_magick"
+gem "rake"
 gem "rouge"
 gem "sanitize"
-gem "crass"
+gem "sass"
+gem "sprockets", "4.0.0.beta7"
+gem "uglifier"
