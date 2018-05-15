@@ -186,6 +186,7 @@ exclude:
   - README.md
   - yarn-error.log
   - yarn.lock
+  - VisualStudio.code-workspace
   - node_modules/
   - vendor/
 

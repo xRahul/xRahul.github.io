@@ -1,6 +1,6 @@
 {% if page.url contains '/posts/' %}
   {%  unless page.url contains '/posts/page/' %}
-    {% assign wordcount = include.content | number_of_words %}
+    {% assign wordcount = include.content | markdownify | newline_to_br | strip_html | strip_newlines | strip | number_of_words %}
 <script type="application/ld+json">
 {
    "@context":"http://schema.org",
@@ -25,7 +25,7 @@
       "@type":"WebPage",
       "@id":"https://rahulja.in{{ include.link }}"
    },
-   "articleBody":"{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+   "articleBody":"{{ include.content | markdownify | newline_to_br | strip_html | strip_newlines | strip | escape | remove:'\' }}"
 }
 </script>
   {% endunless %}
