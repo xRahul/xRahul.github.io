@@ -21,6 +21,13 @@
         </a>
       </li>
     {% endif %}
+    {% if site.social_links.googleplus %}
+      <li>
+        <a href="https://plus.google.com/+{{ site.social_links.googleplus }}" target="_blank" rel="me" title="Google Plus">
+          <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+        </a>
+      </li>
+    {% endif %}
     {% if site.social_links.linkedin %}
       <li>
         <a href="https://www.linkedin.com/in/{{ site.social_links.linkedin }}" target="_blank" rel="noopener noreferrer" title="LinkedIn">
