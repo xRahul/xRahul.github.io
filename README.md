@@ -4,7 +4,6 @@
 [![GitHub license](https://img.shields.io/github/license/xRahul/xRahul.github.io.svg?style=flat-square)](https://github.com/xRahul/xRahul.github.io/blob/new-site/LICENSE)
 [![Build Status](https://travis-ci.org/xRahul/xRahul.github.io.svg?branch=new-site)](https://travis-ci.org/xRahul/xRahul.github.io)
 ![Gem Version](https://img.shields.io/gem/v/jekyll.svg)
-[![Dependency Status](https://gemnasium.com/badges/github.com/xRahul/xRahul.github.io.svg)](https://gemnasium.com/github.com/xRahul/xRahul.github.io)
 [![security](https://hakiri.io/github/xRahul/xRahul.github.io/new-site.svg)](https://hakiri.io/github/xRahul/xRahul.github.io/new-site)
 
 [![Website PageSpeed](https://pagespeed-badges.herokuapp.com/?url=rahulja.in)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frahulja.in%2F)
