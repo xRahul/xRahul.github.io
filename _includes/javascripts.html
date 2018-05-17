@@ -1,26 +1,51 @@
 
 {% if site.ga_analytics and jekyll.environment == "production" %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  {% if page.amp %}
+    <amp-analytics type="googleanalytics">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "{{ site.ga_analytics }}"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+  {% else %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', '{{ site.ga_analytics }}');
-  </script>
+      gtag('config', '{{ site.ga_analytics }}');
+    </script>
+  {% endif %}
 {% endif %}
 
-{% unless site.local_fonts %}
-  {% asset webfonts.js %}
-{% endunless %}
-{% asset application.js !integrity %}
+{% if page.amp %}
+  {% capture serviceWorkerAssetPath %}{% asset sw.js @path %}{% endcapture %}
+  <amp-install-serviceworker
+    src="{{ serviceWorkerAssetPath | prepend: site.url }}"
+    layout="nodisplay"></amp-install-serviceworker>
+{% else %}
+  {% unless site.local_fonts %}
+    {% asset webfonts.js %}
+  {% endunless %}
+  {% asset application.js !integrity %}
 
-<script async>
-/* Check that service workers are registered */
-if ('serviceWorker' in navigator) {
-  /* Use the window load event to keep the page load performant */
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register("{% asset sw.js @path %}");
-  });
-}
-</script>
+  <script async>
+  /* Check that service workers are registered */
+  if ('serviceWorker' in navigator) {
+    /* Use the window load event to keep the page load performant */
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register("{% asset sw.js @path %}");
+    });
+  }
+  </script>
+{% endif %}
