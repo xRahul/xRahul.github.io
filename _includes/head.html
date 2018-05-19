@@ -17,7 +17,7 @@
     {% endif %}
   {% endif %}
 
-  <title>{{ site.name }}{% if page.title and page.title != '' %} | {{ page.title }}{% endif %}</title>
+  {% include head/title.html %}
 
   {% if page.amp %}
     <link rel="canonical" href="{{ page.canonical_url | remove: 'index.html' | prepend: site.url }}" />
