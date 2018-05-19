@@ -1,8 +1,11 @@
 {% include head/open_graph_metadata.html %}
 {% include head/social_meta_tags.html %}
 
-<script type="application/ld+json">
-  {% include head/structured_data_person.html %}
-</script>
+{%  if page.url contains '/about'  %}
+  <script type="application/ld+json">
+    {% include head/structured_data_person.html %}
+  </script>
+{% endif %}
+
 
 {% include head/structured_data_homepage.html %}
