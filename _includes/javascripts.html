@@ -1,33 +1,3 @@
-
-{% if site.ga_analytics and jekyll.environment == "production" %}
-  {% if page.amp %}
-    <amp-analytics type="googleanalytics">
-      <script type="application/json">
-      {
-        "vars": {
-          "account": "{{ site.ga_analytics }}"
-        },
-        "triggers": {
-          "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
-          }
-        }
-      }
-      </script>
-    </amp-analytics>
-  {% else %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_analytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', '{{ site.ga_analytics }}');
-    </script>
-  {% endif %}
-{% endif %}
-
 {% if page.amp %}
   {% capture serviceWorkerAssetPath %}{% asset sw.js @path %}{% endcapture %}
   <amp-install-serviceworker

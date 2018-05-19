@@ -7,6 +7,20 @@ amp: true
 <html ⚡ lang="en" prefix="og: http://ogp.me/ns#">
 {% include head.html %}
 <body>
+
+  {% if page.amp and jekyll.environment == "production" %}
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id={{ site.gtag_amp }}&gtm.url=SOURCE_URL"
+        data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gaTrackingId": "{{ site.ga_analytics }}"
+          }
+        }
+        </script>
+    </amp-analytics>
+  {% endif %}
+
   <main>
     <div class="grid grid-centered">
       <div class="grid-cell">
@@ -21,6 +35,8 @@ amp: true
       </div>
     </div>
   </main>
+
   {% include javascripts.html %}
+
 </body>
 </html>
