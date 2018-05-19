@@ -4,8 +4,18 @@ layout: compress
 
 <!doctype html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
+
 {% include head.html %}
+
 <body>
+
+  {% if jekyll.environment == "production"  %}
+    {% unless page.amp %}
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.gtag_universal }}"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {% endunless %}
+  {% endif %}
+
   <main>
     <div class="grid grid-centered">
       <div class="grid-cell">
@@ -15,6 +25,9 @@ layout: compress
       </div>
     </div>
   </main>
+
   {% include javascripts.html %}
+
 </body>
+
 </html>

@@ -8,9 +8,8 @@
   	{% endif %}
   </div>
   {% include article/footer.html %}
-  {% if page.amp %}
-  {% else %}
+  {% unless page.amp %}
 		{% include article/disqus.html %}
-	{% endif %}
+	{% endunless %}
 </article>
 {% include article/structuredData.html %}
