@@ -6,3 +6,4 @@ Disallow: /posts/page/
 Disallow: /tags$
 Disallow: /files/
 Disallow: /privacy/
+Disallow: /404.html
