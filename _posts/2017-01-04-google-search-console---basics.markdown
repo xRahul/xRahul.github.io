@@ -6,17 +6,15 @@ redirect_from:
   - /posts/google-search-console-basic-usage
 ---
 
-{:.reveal}
-Add and verify your website on the Search Console. 
+Add and verify your website on the Search Console.
 <br>
 Now open the console for your added property (In my case - [https://rahulja.in](https://rahulja.in){:target="_blank" rel="noopener noreferrer"})
 
-{:.reveal}
 <ul>
-  <li class="reveal">
-    First thing you need to to is add sitemap of your website. It is generally an 
+  <li>
+    First thing you need to to is add sitemap of your website. It is generally an
     <code class="highlighter-rouge">xml</code>
-    file named 
+    file named
     <code class="highlighter-rouge">sitemap.xml</code>
     <span>in your website root folder.</span>
 
@@ -28,7 +26,7 @@ Now open the console for your added property (In my case - [https://rahulja.in](
         <code class="highlighter-rouge">Sitemaps</code>
       </li>
       <li>
-        Click on 
+        Click on
         <code class="highlighter-rouge">Add/Test Sitemap</code>
         button
       </li>
@@ -37,13 +35,13 @@ Now open the console for your added property (In my case - [https://rahulja.in](
     </ol>
 
     Now you will see an entry on how many links were submitted and how many have been indexed by that sitemap. It is the easiest way to submit all the links on your website automatically.
-    You can use a sitemap generator, or in my case, jekyll gives me the 
+    You can use a sitemap generator, or in my case, jekyll gives me the
     <code class="highlighter-rouge">sitemap.xml</code>
     file every time I build my website.
   </li>
   <br>
   <li>
-    Next check and edit your 
+    Next check and edit your
     <code class="highlighter-rouge">robots.txt</code>
     file. This is a file at the root of your site that indicates those parts of your site you don’t want to be accessed by search engine crawlers.
     <ol>
@@ -69,19 +67,19 @@ Disallow: /tag/*
     </ol>
   </li>
   <br>
-  <li class="reveal">
+  <li>
     <code class="highlighter-rouge">Crawl</code>
     >
     <code class="highlighter-rouge">Fetch as Google</code>
     to see how Google renders pages from your website. Check different types of URLs for both mobile and desktop Googlebot types.
   </li>
   <br>
-  <li class="reveal">
+  <li>
     Add the <i>google analytics</i> property to your website if you've added analytics to your website. Do this by clicking on Settings gear on the top right and selecting
     <code class="highlighter-rouge">Google Analytics Property</code>.
   </li>
   <br>
-  <li class="reveal">
+  <li>
     If your website has some structured data like articles or products, you can highlight them to google for better search results.
     <ol>
       <li>
@@ -103,7 +101,6 @@ Disallow: /tag/*
   </li>
 </ul>
 
-{:.reveal}
 * `Other Resources`-
     * Take the [Intro to Webmaster Academy](https://support.google.com/webmasters/answer/6001102?hl=en&utm_source=wmx&utm_campaign=links){:target="_blank" rel="noopener noreferrer"} course. It'll be helpful in getting you started.
     * If you've added any structured data in you website, you can use the [Structured Data Testing Tool](https://developers.google.com/webmasters/structured-data/testing-tool){:target="_blank" rel="noopener noreferrer"} to validate and view it.
@@ -112,10 +109,10 @@ Disallow: /tag/*
 
 ---
 <br>
-{:.reveal}
+
 ##### References
-[Learn about sitemaps - Search Console Help](https://support.google.com/webmasters/answer/156184?hl=en){:target="_blank" rel="noopener noreferrer"} 
+[Learn about sitemaps - Search Console Help](https://support.google.com/webmasters/answer/156184?hl=en){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Learn about robots.txt files - Search Console Help](https://support.google.com/webmasters/answer/6062608?hl=en){:target="_blank" rel="noopener noreferrer"} 
+[Learn about robots.txt files - Search Console Help](https://support.google.com/webmasters/answer/6062608?hl=en){:target="_blank" rel="noopener noreferrer"}
 <br>
-[Use Fetch as Google for websites - Search Console Help](https://support.google.com/webmasters/answer/6066468){:target="_blank" rel="noopener noreferrer"} 
+[Use Fetch as Google for websites - Search Console Help](https://support.google.com/webmasters/answer/6066468){:target="_blank" rel="noopener noreferrer"}

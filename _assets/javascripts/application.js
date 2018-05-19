@@ -3,11 +3,6 @@
 
 $(document).ready(function() {
 
-  /* ScrollAppear */
-  if (typeof $.fn.scrollAppear === "function") {
-    $(".reveal").scrollAppear();
-  }
-
   /* Zooming */
   /*global Zooming*/
   new Zooming(

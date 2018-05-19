@@ -16,14 +16,14 @@ Prerequisites-
     2. Java - If not installed: [https://www.java.com/en/download/](https://www.java.com/en/download/){:target="_blank" rel="noopener noreferrer"}
     3. ADB (Android Debug Bridge) Drivers: [_Check out my post_]({% post_url 2017-02-08-install-adb-drivers-on-your-system %}){:target="_blank"}
     4. Android device with Android 4.0 or higher.
-    5. USB Debugging must be enabled on the target device. 
+    5. USB Debugging must be enabled on the target device.
         <br>
-        `Settings` -> `Developer Options` -> (Debugging) `USB debugging` 
+        `Settings` -> `Developer Options` -> (Debugging) `USB debugging`
         <br>
-        If you cannot find `Developer Options` then please go to: 
+        If you cannot find `Developer Options` then please go to:
         <br>
         `Settings` -> `About phone/device` and tap the Build number multiple times until you’re finally declared a developer.
-2. Extract `WhatsApp-Key-DB-Extractor-master.zip` maintaining the directory structure.  
+2. Extract `WhatsApp-Key-DB-Extractor-master.zip` maintaining the directory structure.
 3. Click on `WhatsAppKeyDBExtract.bat` (Windows) or `WhatsAppKeyDBExtract.sh` (Mac OS X / Linux).
 <br>Or go to the extracted folder via terminal and run the file as
 <br>
@@ -41,7 +41,7 @@ Some things to keep in mind for this step-
 
 ---
 <br>
-{:.reveal}
+
 ##### References
 [WhatCrypt](http://whatcrypt.com/){:target="_blank" rel="noopener noreferrer"}
 <br>

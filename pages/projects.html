@@ -6,7 +6,7 @@ sitemap: false
 ---
 
 <div class="tags-page text-center">
-  <h1 class="tags-page-header reveal">
+  <h1 class="tags-page-header">
     <small><i class="fas fa-briefcase" aria-hidden="true"></i></small> Projects
   </h1>
 
@@ -33,7 +33,7 @@ sitemap: false
       {% endfor %}
 
       <a class="no-text-decoration" href="{{ 'project/' | relative_url }}{{ project.slug }}" title="See all posts related to {{ project.name }}">
-        <h4 class="reveal">{{ project.name | upcase }} <small>({{ post_count | size }})</small></h4>
+        <h4>{{ project.name | upcase }} <small>({{ post_count | size }})</small></h4>
       </a>
     {% endif %}
   {% endfor %}

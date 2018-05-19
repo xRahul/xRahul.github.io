@@ -1,6 +1,6 @@
 <article class="article">
   {% include article/header.html %}
-  <div class="article-content reveal">
+  <div class="article-content">
   	{% if page.amp %}
 			{{ content  | markdownify | amp_images }}
 		{% else %}

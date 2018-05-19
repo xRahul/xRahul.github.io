@@ -1,4 +1,4 @@
-<div class="article-share text-center reveal">
+<div class="article-share text-center">
   {% assign page_title = page.title  | cgi_escape | truncate: 110 %}
   {% capture twitter-share-text %}{{ page_title }} - {{ page.url | remove: 'index.html' | prepend: site.url }}{% if site.social.twitter %} by @{{ site.social.twitter }}{% endif %}{% endcapture %}
   <a href="https://twitter.com/home?status={{ twitter-share-text | uri_escape }}" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
@@ -12,7 +12,7 @@
   </a>
 </div>
 
-<div class="article-pagination reveal">
+<div class="article-pagination">
   {% if page.previous != nil %}
     <a href="{{ page.previous.url }}" rel="prev" title="{{ page.previous.title }}" class="article-pagination-right">Older post <small><i class="fas fa-angle-double-right" aria-hidden="true"></i></small></a>
   {% endif %}

@@ -4,22 +4,19 @@ description: How to install ADB drivers on Mac, Linux and Windows without instal
 tags: [package, android]
 ---
 
-{:.reveal}
+
 You don't need to install the entire android development environment to get the adb now. Google collectively refers to ADB, fastboot, and a few other utilities as the Platform Tools package and has provided them separately now. This post is assuming you don't have android sdk or android studio installed.
 
 
-{:.reveal}
 ### Install adb on MacOSX using [Homebrew](http://brew.sh/){:target="_blank" rel="noopener noreferrer"}
 
-{:.reveal}
 This is the easiest way and will provide automatic updates.
 
-{:.reveal}
 {% highlight bash %}
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Install adb 
+# Install adb
 brew install android-platform-tools
 
 # run
@@ -27,21 +24,21 @@ adb devices
 {% endhighlight bash %}
 <br>
 
-{:.reveal}
+
 ### Install adb manually
 
-1. {:.reveal} Download your OS-specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank" rel="noopener noreferrer"}.
-2. {:.reveal} Extract the contents of the .zip file to a folder you can find later.
-3. {:.reveal} Navigate to the extracted folder using your terminal, and there you will find the adb command.
-4. {:.reveal} Run the command normally once you're into the extracted folder- `adb devices`
+1. Download your OS-specific zip of platform tools from [here](https://developer.android.com/studio/releases/platform-tools.html#download){:target="_blank" rel="noopener noreferrer"}.
+2. Extract the contents of the .zip file to a folder you can find later.
+3. Navigate to the extracted folder using your terminal, and there you will find the adb command.
+4. Run the command normally once you're into the extracted folder- `adb devices`
 
 
 ---
 <br>
-{:.reveal}
+
 ##### References
-[Installing ADB on MAC OS X - StackOverflow](http://stackoverflow.com/a/32314718){:target="_blank" rel="noopener noreferrer"} 
+[Installing ADB on MAC OS X - StackOverflow](http://stackoverflow.com/a/32314718){:target="_blank" rel="noopener noreferrer"}
 <br>
-[SDK Platform Tools Download - Android Studio](https://developer.android.com/studio/releases/platform-tools.html){:target="_blank" rel="noopener noreferrer"} 
+[SDK Platform Tools Download - Android Studio](https://developer.android.com/studio/releases/platform-tools.html){:target="_blank" rel="noopener noreferrer"}
 <br>
 [Install Android's ADB and Fastboot Tools on Any OS - Lifehacker](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378){:target="_blank" rel="noopener noreferrer"}

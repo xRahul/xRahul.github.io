@@ -40,10 +40,8 @@ Check out the categorized [list of features](https://gradle.org/features/) provi
 * [Customizable Logging](https://docs.gradle.org/current/userguide/logging.html#sec:changing_what_gradle_logs)
 
 
-
 ### Building a Java Application using Gradle
 
-{:.reveal}
 {% highlight bash %}
 mkdir java-demo && cd java-demo
 gradle init --type java-application
@@ -60,14 +58,12 @@ gradle init --type java-application
 
 This is the recommended way to build a Gradle project. When you initialize a Gradle project, the [gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) is set up automatically which can be executed just like Gradle as:
 
-{:.reveal}
 {% highlight bash %}
 ./gradlew <task>
 {% endhighlight %}
 
 Gradle changes a lot with its upgrades and the old `gradle.build` files might not work for the newer versions. Gradle Wrapper automatically downloads and uses the recommended version of Gradle to execute your tasks.
 
-{:.reveal}
 {% highlight bash %}
 gradle wrapper
 {% endhighlight %}
@@ -75,7 +71,6 @@ gradle wrapper
 You have to push the Gradle wrapper files to **Version control** like git, including **jars**, so everyone can use the same wrapper to build your projects
 You can **upgrade** the Gradle wrapper via it's CLI to make sure any other optimizations present in the build are also applied.
 
-{:.reveal}
 {% highlight bash %}
 ./gradlew wrapper --gradle-version 4.2.1
 {% endhighlight %}
@@ -99,7 +94,6 @@ There are some widely used public [repositories](https://docs.gradle.org/current
 
 There are different [**types of dependencies**](https://docs.gradle.org/current/userguide/dependency_types.html):
 
-{:.reveal}
 {% highlight gradle %}
 dependencies {
     // Module dependencies
@@ -122,11 +116,11 @@ As Gradle is widely used in Java and Android projects, you can check these links
 
 
 
+---
+<br>
 
-{:.reveal}
-#### Reference
+##### References
 
-{:.reveal}
 [Gradle - Wikipedia](https://en.wikipedia.org/wiki/Gradle){:target="_blank" rel="noopener noreferrer"}
 <br>
 [Gradle - Official Docs](https://docs.gradle.org/){:target="_blank" rel="noopener noreferrer"}

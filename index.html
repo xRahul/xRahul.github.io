@@ -8,7 +8,7 @@ pagination:
 
 <ul class="article-list {{ page.url | remove: 'index.html' }}">
   {% for post in paginator.posts %}
-    <li class="article-list-item reveal">
+    <li class="article-list-item">
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
         <h5>
           {{ post.title }}
@@ -54,7 +54,7 @@ pagination:
     </li>
   {% endfor %}
   {% if paginator.total_pages > 1 %}
-    <li class="article-pagination reveal">
+    <li class="article-pagination">
       {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path | remove: 'index.html' }}"><i class="fas fa-angle-double-left" aria-hidden="true"></i> Newer posts</a>
       {% endif %}
