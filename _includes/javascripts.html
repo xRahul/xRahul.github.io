@@ -48,4 +48,22 @@
     });
   }
   </script>
+
+  {% if site.iubenda_policyid and jekyll.environment == "production" %}
+    <script type="text/javascript">
+      var _iub = _iub || [];
+      _iub.csConfiguration = {
+        "banner":{
+          "slideDown":false,
+          "applyStyles":false
+        },
+        "lang":"en",
+        "siteId":{{ site.iubenda_siteid }},
+        "cookiePolicyUrl":"https://www.iubenda.com/privacy-policy/{{ site.iubenda_policyid }}",
+        "cookiePolicyId":{{ site.iubenda_policyid }}
+      };
+    </script>
+    <script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js"
+      charset="UTF-8" async></script>
+  {% endif %}
 {% endif %}
