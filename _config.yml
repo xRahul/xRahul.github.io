@@ -97,7 +97,7 @@ permalink: posts/:slug
 # Important settings
 assets:
   digest: false
-  source_maps: true
+  source_maps: false
   compression: true
   gzip: true
   plugins:
