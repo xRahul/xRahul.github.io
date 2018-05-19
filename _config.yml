@@ -10,8 +10,6 @@ encoding: utf-8
 # Optional settings
 baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 about_enabled: true # Change to true if you wish to show an icon in the navigation that redirects to the about page
-discus_identifier: rahulja-in # Add your Disqus identifier
-ga_analytics: UA-75936371-1 # Add your GA Tracking Id
 local_fonts: true # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
 social_links:
@@ -208,3 +206,7 @@ attribution:
     project_url: https://github.com/nielsenramon/chalk
     creator_url: http://nielsenramon.com
 
+discus_identifier: rahulja-in # Add your Disqus identifier
+ga_analytics: UA-75936371-1 # Add your GA Tracking Id
+iubenda_siteid: 1154232
+iubenda_policyid: 10242650
