@@ -2,7 +2,6 @@
 User-agent: *
 Disallow: /tag/
 Disallow: /project/
-Disallow: /posts/page/
 Disallow: /tags$
 Disallow: /files/
 Disallow: /privacy/
