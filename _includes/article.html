@@ -1,15 +1,15 @@
 <article class="article">
   {% include article/header.html %}
   <div class="article-content">
-  	{% if page.amp %}
-			{{ content  | markdownify | amp_images }}
-		{% else %}
-			{{ content }}
-  	{% endif %}
+    {% if page.amp %}
+      {{ content  | markdownify | amp_images }}
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
   {% include article/footer.html %}
   {% unless page.amp %}
-		{% include article/disqus.html %}
-	{% endunless %}
+    {% include article/disqus.html %}
+  {% endunless %}
 </article>
 {% include article/structuredData.html %}

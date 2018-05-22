@@ -15,8 +15,8 @@ bundle check || bundle install --jobs=3
 
 # Set up JS dependencies via Yarn.
 if hash yarn 2>/dev/null; then
-	yarn install;
+  yarn install;
 else
-	npm install -g yarn;
-	yarn install;
+  npm install -g yarn;
+  yarn install;
 fi;
