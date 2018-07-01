@@ -18,6 +18,6 @@ webfontloader@1.6.28:
   version "1.6.28"
   resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
 
-zooming@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/zooming/-/zooming-2.0.0.tgz#21a736d71c729ac60dc155c4387bf89f46d0d70f"
+zooming@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/zooming/-/zooming-2.1.0.tgz#a65c2a955a1af55959e56e9294e992bb28bf6c2e"
