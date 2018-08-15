@@ -1,3 +1,4 @@
 ---
 BUNDLE_CLEAN: "true"
+BUNDLE_JOBS: "3"
 BUNDLE_WITHOUT: "report"
