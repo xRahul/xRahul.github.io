@@ -103,7 +103,7 @@ Disallow: /tag/*
 
 * `Other Resources`-
     * Go through the [Search Engine Optimization (SEO) Starter Guide](https://support.google.com/webmasters/answer/7451184){:target="_blank" rel="noopener noreferrer"}. It'll be help you get started.
-    * If you've added any structured data in you website, you can use the [Structured Data Testing Tool](https://developers.google.com/webmasters/structured-data/testing-tool){:target="_blank" rel="noopener noreferrer"} to validate and view it.
+    * If you've added any structured data in you website, you can use the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool){:target="_blank" rel="noopener noreferrer"} to validate and view it.
     * Use [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=en&utm_source=wmx&utm_campaign=wmx_otherlinks&url=https://rahulja.in/){:target="_blank" rel="noopener noreferrer"} to find out how to make your web pages fast on all devices.
 
 
