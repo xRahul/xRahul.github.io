@@ -31,34 +31,6 @@
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
-    "@type": "Article",
-    "author": {% include head/structured_data_person.html %},
-    "headline":"{{ include.headline }}",
-    "name": "{{ include.headline }}",
-    "keywords":"{{ include.keywords }}",
-    "url":"{{ site.url }}{{ include.link }}",
-    "datePublished":"{{ include.datePublished | | date: '%Y-%m-%d' }}",
-    "dateModified":"{{ include.dateModified | | date: '%Y-%m-%d' }}",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Rahul Jain",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ site.url }}/assets/about.jpg"
-      }
-    },
-    "image":"{% include head/thumb_image_url.html %}",
-    "mainEntityOfPage":{
-      "@type":"WebPage",
-      "@id":"{{ site.url }}{{ include.link }}"
-    },
-    "wordCount":"{{ wordcount }}",
-    "articleBody":"{{ include.content | markdownify | newline_to_br | strip_html | strip_newlines | strip | escape | remove:'\' }}"
-  }
-  </script>
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [{
       "@type": "ListItem",
