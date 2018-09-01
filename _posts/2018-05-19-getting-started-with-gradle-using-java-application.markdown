@@ -36,7 +36,7 @@ Check out the categorized [list of features](https://gradle.org/features/){:targ
 * [Continuous Execution even After Failures](https://docs.gradle.org/current/userguide/tutorial_gradle_command_line.html#sec:continue_build_on_failure){:target="_blank" rel="noopener noreferrer"}
 * [Transitive Dependencies](https://docs.gradle.org/current/userguide/dependency_management.html#sub:exclude_transitive_dependencies){:target="_blank" rel="noopener noreferrer"}
 * [Version Conflict Resolution](https://docs.gradle.org/current/userguide/dependency_management.html#sec:dependency_resolution){:target="_blank" rel="noopener noreferrer"}
-* [Built-in Support for JVM Code Quality Tools](https://docs.gradle.org/current/userguide/pt05.html){:target="_blank" rel="noopener noreferrer"}
+* [Gradle Features](https://gradle.org/features/){:target="_blank" rel="noopener noreferrer"}
 * [Customizable Logging](https://docs.gradle.org/current/userguide/logging.html#sec:changing_what_gradle_logs){:target="_blank" rel="noopener noreferrer"}
 
 
