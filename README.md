@@ -3,6 +3,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/xRahul/xRahul.github.io.svg?style=flat-square)](https://github.com/xRahul/xRahul.github.io/blob/new-site/LICENSE)
 [![Build Status](https://travis-ci.org/xRahul/xRahul.github.io.svg?branch=new-site)](https://travis-ci.org/xRahul/xRahul.github.io)
+![imgBot](https://img.shields.io/badge/imgBot-optimized-brightgreen.svg)
 ![Gem Version](https://img.shields.io/gem/v/jekyll.svg)
 [![security](https://hakiri.io/github/xRahul/xRahul.github.io/new-site.svg)](https://hakiri.io/github/xRahul/xRahul.github.io/new-site)
 [![libraries.io](https://img.shields.io/librariesio/github/xRahul/xRahul.github.io.svg)](https://libraries.io/github/xRahul/xRahul.github.io)
