@@ -90,7 +90,7 @@ GEM
       sprockets (>= 3.3, < 4.1.beta)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
-    jekyll-gist (1.5.0)
+    jekyll-gist (1.6.0)
       octokit (~> 4.2)
     jekyll-last-modified-at (1.0.1)
       jekyll (~> 3.3)
