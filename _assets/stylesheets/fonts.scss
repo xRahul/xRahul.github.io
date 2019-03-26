@@ -4,24 +4,6 @@
 
 @charset "UTF-8";
 
-// Cormorant Garamond
-// =============================================================================
-
-@font-face {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-display: auto;
-  font-weight: 700;
-  src: asset_url('cormorant-garamond/Cormorant-Garamond-700.eot');
-  src:
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.eot?#iefix') format('embedded-opentype'),
-    local('Cormorant Garamond Medium'),
-    local('Cormorant-Garamond-600'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff2') format('woff2'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff') format('woff'),
-    asset_url('cormorant-garamond/Cormorant-Garamond-700.ttf') format('truetype');
-}
-
 // Lato
 // =============================================================================
 
@@ -69,6 +51,25 @@
     asset_url('lato/Lato-700.woff') format('woff'),
     asset_url('lato/Lato-700.ttf') format('truetype');
 }
+
+
+// Cormorant Garamond
+// =============================================================================
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-display: auto;
+  font-weight: 700;
+  src: asset_url('cormorant-garamond/Cormorant-Garamond-700.eot'); /* IE9 Compat Modes */
+  src:
+    local('Cormorant-Garamond Bold'),
+    local('Cormorant-Garamond-Bold'),
+    asset_url('cormorant-garamond/Cormorant-Garamond-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff2') format('woff2'), /* Super Modern Browsers */
+    asset_url('cormorant-garamond/Cormorant-Garamond-700.woff') format('woff'), /* Modern Browsers */
+    asset_url('cormorant-garamond/Cormorant-Garamond-700.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
