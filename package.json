@@ -2,7 +2,9 @@
   "name": "xRahul.github.io",
   "scripts": {
     "setup": "bin/setup",
+    "start": "npm run local",
     "local": "LC_ALL=en_US.UTF-8 bundle exec jekyll serve --drafts",
+    "incremental": "LC_ALL=en_US.UTF-8 bundle exec jekyll serve --drafts --incremental",
     "publish": "bin/deploy"
   },
   "dependencies": {
