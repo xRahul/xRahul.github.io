@@ -15,18 +15,16 @@
 [![codebeat badge](https://codebeat.co/badges/eb3cbae9-7f2b-41f1-9b06-0c0966d9a636)](https://codebeat.co/projects/github-com-xrahul-xrahul-github-io-new-site)
 
 #### Home page (List of Posts)
-[![Lighthouse Performance score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Performance)](files/Lighthouse-Report-Homepage.pdf)
-[![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report-Homepage.pdf)
-[![Lighthouse Accessibility score: 86/100](https://lighthouse-badge.appspot.com/?score=86&compact&category=Accessibility)](files/Lighthouse-Report-Homepage.pdf)
-[![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](files/Lighthouse-Report-Homepage.pdf)
-[![Lighthouse SEO score: 90/100](https://lighthouse-badge.appspot.com/?score=90&compact&category=SEO)](files/Lighthouse-Report-Homepage.pdf)
+[![Lighthouse Performance score: 94/100](https://lighthouse-badge.appspot.com/?score=94&compact&category=Performance)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in)
+[![Lighthouse Accessibility score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Accessibility)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in)
+[![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in)
+[![Lighthouse SEO score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in)
 
 #### Article page (Post)
-[![Lighthouse Performance score: 99/100](https://lighthouse-badge.appspot.com/?score=99&compact&category=Performance)](files/Lighthouse-Report-Post.pdf)
-[![Lighthouse PWA score: 82/100](https://lighthouse-badge.appspot.com/?score=82&compact&category=PWA)](files/Lighthouse-Report-Post.pdf)
-[![Lighthouse Accessibility score: 91/100](https://lighthouse-badge.appspot.com/?score=91&compact&category=Accessibility)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse Performance score: 66/100](https://lighthouse-badge.appspot.com/?score=66&compact&category=Performance)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse Accessibility score: 93/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=Accessibility)](files/Lighthouse-Report-Post.pdf)
 [![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](files/Lighthouse-Report-Post.pdf)
-[![Lighthouse SEO score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse SEO score: 96/100](https://lighthouse-badge.appspot.com/?score=96&compact&category=SEO)](files/Lighthouse-Report-Post.pdf)
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
 
