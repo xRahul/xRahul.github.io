@@ -21,10 +21,10 @@
 [![Lighthouse SEO score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=SEO)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in)
 
 #### Article page (Post)
-[![Lighthouse Performance score: 66/100](https://lighthouse-badge.appspot.com/?score=66&compact&category=Performance)](files/Lighthouse-Report-Post.pdf)
-[![Lighthouse Accessibility score: 93/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=Accessibility)](files/Lighthouse-Report-Post.pdf)
-[![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](files/Lighthouse-Report-Post.pdf)
-[![Lighthouse SEO score: 96/100](https://lighthouse-badge.appspot.com/?score=96&compact&category=SEO)](files/Lighthouse-Report-Post.pdf)
+[![Lighthouse Performance score: 66/100](https://lighthouse-badge.appspot.com/?score=66&compact&category=Performance)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in/posts/getting-started-with-gradle-using-java-application)
+[![Lighthouse Accessibility score: 93/100](https://lighthouse-badge.appspot.com/?score=93&compact&category=Accessibility)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in/posts/getting-started-with-gradle-using-java-application)
+[![Lighthouse Best Practices score: 100/100](https://lighthouse-badge.appspot.com/?score=100&compact&category=Best+Practices)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in/posts/getting-started-with-gradle-using-java-application)
+[![Lighthouse SEO score: 96/100](https://lighthouse-badge.appspot.com/?score=96&compact&category=SEO)](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://rahulja.in/posts/getting-started-with-gradle-using-java-application)
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
 
