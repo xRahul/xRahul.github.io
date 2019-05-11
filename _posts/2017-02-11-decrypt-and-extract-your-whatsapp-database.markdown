@@ -8,9 +8,9 @@ og_image: "posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo.jpg"
 
 {% include image.html path="posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo.jpg" path-detail="posts/decrypt-and-extract-your-whatsapp-database/whatsapp-promo@2x.jpg" alt="Whatsapp" %}
 
-{% if page.ads %}
-    <amp-auto-ads type="adsense" data-ad-client="{{ site.adsense_client_id }}"></amp-auto-ads>
-{% endif %}
+{% if page.amp %}{% if page.ads %}
+<amp-auto-ads type="adsense" data-ad-client="{{ site.adsense_client_id }}"></amp-auto-ads>
+{% endif %}{% endif %}
 
 Steps to get your whatsapp data in decrypted form-
 <br>
