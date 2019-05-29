@@ -81,9 +81,13 @@
       <script async custom-element="amp-iframe"
         src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     {% endif %}
-    {% if site.adsense_client_id && page.ads && page.ampTags contains 'amp-auto-ads' %}
+    {% if site.adsense_client_id %}
+    {% if page.ads %}
+    {% if page.ampTags contains 'amp-auto-ads' %}
       <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    {% endif %}
+    {% endif %}
     {% endif %}
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
