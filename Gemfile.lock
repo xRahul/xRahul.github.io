@@ -32,7 +32,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     fastimage (2.1.5)
     ffi (1.11.1)
-    font-awesome-sass (5.8.1)
+    font-awesome-sass (5.9.0)
       sassc (>= 1.11)
     forwardable-extended (2.6.0)
     fspath (3.1.1)
