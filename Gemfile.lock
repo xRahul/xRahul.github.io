@@ -124,7 +124,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    mini_magick (4.9.3)
+    mini_magick (4.9.4)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multipart-post (2.1.1)
@@ -198,7 +198,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   jemoji
-  mini_magick
+  mini_magick (>= 4.9.4)
   rake
   rouge
   sanitize
@@ -207,4 +207,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   2.0.1
+   1.17.3
