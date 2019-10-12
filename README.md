@@ -28,11 +28,11 @@
 
 ![Image of rahulja.in](https://github.com/xRahul/xRahul.github.io/raw/new-site/_assets/images/posts/configure-this-site-locally-for-development/og-image%402x.png "rahulja.in")
 
-Install ruby 2.6.4
+Install ruby 2.6.5
 
 ```bash
-rbenv install 2.6.4
-rbenv global 2.6.4
+rbenv install 2.6.5
+rbenv global 2.6.5
 ruby -v
 ```
 
