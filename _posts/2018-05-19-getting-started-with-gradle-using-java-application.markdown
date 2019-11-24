@@ -90,9 +90,9 @@ Go through the [Gradle CLI Docs](https://docs.gradle.org/current/userguide/comma
 
 This is one of the major feature provided by a build system. Dependency management is a technique for declaring, resolving and using dependencies required by the project in an automated fashion.
 
-There are some widely used public [repositories](https://docs.gradle.org/current/userguide/repository_types.html){:target="_blank" rel="noopener noreferrer"} of Gradle like `mavenCentral()`, `jcenter()` and `google()`. But you can also define other repositories by url, even the ones secure access via credentials.
+There are some widely used public [repositories](https://docs.gradle.org/current/userguide/declaring_repositories.html){:target="_blank" rel="noopener noreferrer"} of Gradle like `mavenCentral()`, `jcenter()` and `google()`. But you can also define other repositories by url, even the ones secure access via credentials.
 
-There are different [**types of dependencies**](https://docs.gradle.org/current/userguide/dependency_types.html){:target="_blank" rel="noopener noreferrer"}:
+There are different [**types of dependencies**](https://docs.gradle.org/current/userguide/declaring_dependencies.html){:target="_blank" rel="noopener noreferrer"}:
 
 {% highlight gradle %}
 dependencies {
