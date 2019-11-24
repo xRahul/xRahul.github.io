@@ -16,7 +16,7 @@ before_script:
   - LC_ALL=en_US.UTF-8 JEKYLL_ENV=production bundle exec jekyll build
   - LC_ALL=en_US.UTF-8 JEKYLL_ENV=production bundle exec jekyll build
 
-script: LC_ALL=en_US.UTF-8 bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml,/facebook.com/"
+script: LC_ALL=en_US.UTF-8 bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph --url-ignore "feed.xml,/facebook.com/,freecodecamp.org/xrahul"
 
 branches:
   except:
