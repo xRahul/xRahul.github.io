@@ -1,0 +1,484 @@
+<!doctype html>
+<html ⚡ lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="msvalidate.01" content="C02D47D34B2CA730AA994096C315F5FE" />
+  <meta name="description" content="Configure the repository xRahul.github.io locally for development.">
+
+  <link rel="manifest" href="/manifest.json">
+
+  
+  
+
+  <!-- define the title tag -->
+<title>
+  
+    Configure this site locally for development
+  
+</title>
+
+
+  
+    <link rel="canonical" href="https://rahulja.in/posts/configure-this-site-locally-for-development" />
+    <link rel="alternate" media="handheld" href="https://rahulja.in/posts/configure-this-site-locally-for-development" />
+  
+
+  <!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="/assets/favicons/apple-touch-icon-192x192.png" />
+<link rel="apple-touch-icon-precomposed" sizes="512x512" href="/assets/favicons/apple-touch-icon-512x512.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+
+  <!-- feed link -->
+  <link type="application/atom+xml" rel="alternate" href="https://rahulja.in/feed.xml" title="Articles by Rahul Jain">
+
+  
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+      <style amp-custom="" type="text/css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15; /* @alternate */ -webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline; /* @alternate */ -webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{ /* @alternate */ -webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{ /* @alternate */ -webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{ /* @alternate */ -webkit-appearance:none}::-webkit-file-upload-button{ /* @alternate */ -webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}#iubenda-cs-banner{bottom:0px;left:0px;position:fixed;width:100%;z-index:99999998;background-color:black}.iubenda-cs-content{display:block;margin:0 auto;padding:20px;width:auto;font-family:Helvetica, Arial, FreeSans, sans-serif;font-size:14px;background:#000;color:#fff}.iubenda-cs-rationale{max-width:900px;position:relative;margin:0 auto}.iubenda-banner-content>p{font-family:Helvetica, Arial, FreeSans, sans-serif;line-height:1.5}.iubenda-cs-close-btn{margin:0;color:#fff;text-decoration:none;font-size:14px;position:absolute;top:0;right:0;border:none}.iubenda-cs-cookie-policy-lnk{text-decoration:underline;color:#fff;font-size:14px;font-weight:900}.resp-container{position:relative;overflow:hidden;padding-top:100%}.resp-iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}*,*::before,*::after{box-sizing:border-box}html{font-size:16px}body{margin:0 auto;font-family:"Lato", Helvetica, Arial, sans-serif; /* @alternate */ -webkit-font-smoothing:antialiased;font-weight:400;line-height:1.8;color:#615b5b;background:#fff}p{margin:0;font-weight:400}b,strong{font-weight:700}h1,h2,h3,h4,h5,h6{margin:0;line-height:1.5;text-rendering:optimizeLegibility}h1{font-size:25.6px;font-weight:400;letter-spacing:-.03em;color:#121111}h2{font-size:24px;font-weight:400}h3{font-size:20.8px;font-weight:500}h4{font-size:17.6px;font-weight:500}h5{font-size:18.72px;font-weight:500}h6{font-size:16px}@media all and (max-width: 767px){h1{font-size:24px}h2{font-size:21.6px}h3{font-size:20px}}a{color:#615b5b;text-decoration:underline; /* @alternate */ -webkit-transition:color 0.2s linear;transition:color 0.2s linear}a:hover,a:active{color:#393636}a:focus{color:#393636;outline:none}ul,ol{padding-left:40px;margin:0}abbr{cursor:help;border-bottom:1px dotted #ebeaea}blockquote{padding:0 0 4px 15px;margin:0 0 0 -20px;font-family:"Lato", Helvetica, Arial, sans-serif;font-size:20px;font-style:italic;line-height:1.6;color:#ada8a8;border-left:3px solid #615b5b}hr{margin:0;border-top:0;border-right:0;border-bottom:1px solid #ebeaea;border-left:0}img{display:block;max-width:100%;margin:0}::-moz-selection{color:#fff;background-color:#121111}::selection{color:#fff;background-color:#121111}.text-center{text-align:center}.clearfix:after{content:" ";visibility:hidden;display:block;height:0;clear:both}.desaturate{ /* @alternate */ -webkit-filter:grayscale(1); /* @alternate */ -webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%)}.no-text-decoration{text-decoration:none}.pace{ /* @alternate */ -webkit-pointer-events:none;pointer-events:none; /* @alternate */ -ms-user-select:none; /* @alternate */ -webkit-user-select:none; /* @alternate */ -moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#000000;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:1px}.notfound-wrapper{margin-top:100px;margin-bottom:100px;text-align:center}.highlight{padding:10px 50px 10px 50px}@media all and (max-width: 767px){.highlight{padding:10px 20px 10px 20px}}.footer{display:block;padding-top:35px;margin-bottom:85px;border-top:1px solid #ebeaea}.footer p{font-size:12px;color:#7b7474}.footer a{text-decoration:none}.footer-links{float:none;display:block;text-align:center;padding:0;margin:0 0 15px 0;list-style:none}.footer-links li{display:inline-block;margin-left:20px;vertical-align:middle}.footer-links li:first-child{margin-left:0}.footer-links li a{font-size:18px;color:#393636;fill:#393636}.footer-links li a:hover{color:#121111;fill:#121111}@media all and (max-width: 520px){.footer-links li{margin:0 10px}.footer-links li:last-child{margin-right:0}}.icon-freecodecamp{padding-top:4px}.grid{display:block;padding:0;margin:0 -20px;font-size:0;text-align:left}.grid-cell{display:inline-block;width:100%;padding:0 20px;margin:0;font-size:16px;text-align:left;vertical-align:top}.grid-cell.with-1col{width:8.3333333333%}.grid-cell.with-2col{width:16.6666666667%}.grid-cell.with-3col{width:25%}.grid-cell.with-4col{width:33.3333333333%}.grid-cell.with-5col{width:41.6666666667%}.grid-cell.with-6col{width:50%}.grid-cell.with-7col{width:58.3333333333%}.grid-cell.with-8col{width:66.6666666667%}.grid-cell.with-9col{width:75%}.grid-cell.with-10col{width:83.3333333333%}.grid-cell.with-11col{width:91.6666666667%}.grid-cell.with-1off{margin-left:8.3333333333%}.grid-cell.with-2off{margin-left:16.6666666667%}.grid-cell.with-3off{margin-left:25%}.grid-cell.with-4off{margin-left:33.3333333333%}.grid-cell.with-5off{margin-left:41.6666666667%}.grid-cell.with-6off{margin-left:50%}.grid-cell.with-7off{margin-left:58.3333333333%}.grid-cell.with-8off{margin-left:66.6666666667%}.grid-cell.with-9off{margin-left:75%}.grid-cell.with-10off{margin-left:83.3333333333%}.grid-cell.with-11off{margin-left:91.6666666667%}.grid-cell.is-centered{text-align:center}.grid-cell.is-right{text-align:right}.grid-cell.is-top{vertical-align:top}.grid-cell.is-middle{vertical-align:middle}.grid-cell.is-bottom{vertical-align:bottom}.grid-centered{max-width:650px;margin-right:auto;margin-left:auto}@media all and (max-width: 767px){.grid-cell.with-1col{width:100%}.grid-cell.with-1off{margin-left:0}.grid-cell.with-2col{width:100%}.grid-cell.with-2off{margin-left:0}.grid-cell.with-3col{width:100%}.grid-cell.with-3off{margin-left:0}.grid-cell.with-4col{width:100%}.grid-cell.with-4off{margin-left:0}.grid-cell.with-5col{width:100%}.grid-cell.with-5off{margin-left:0}.grid-cell.with-6col{width:100%}.grid-cell.with-6off{margin-left:0}.grid-cell.with-7col{width:100%}.grid-cell.with-7off{margin-left:0}.grid-cell.with-8col{width:100%}.grid-cell.with-8off{margin-left:0}.grid-cell.with-9col{width:100%}.grid-cell.with-9off{margin-left:0}.grid-cell.with-10col{width:100%}.grid-cell.with-10off{margin-left:0}.grid-cell.with-11col{width:100%}.grid-cell.with-11off{margin-left:0}}.about{padding:100px 0}.about h1{margin:50px 0 15px}.technology-list-ul{padding:0;border-left:1px solid #eaeaea;width:100%;margin:24px 0 0 0;vertical-align:baseline;position:relative}.technology-list-li{vertical-align:baseline;position:relative;margin:0;padding:0;list-style:none;display:block;float:left;border:1px solid #eaeaea;width:20%; /* @alternate */ text-align:-webkit-match-parent}.technology-list-a-svg{content:'';width:100%;height:0;padding:100% 0 0 0;display:block;color:#282828;text-decoration:none;vertical-align:baseline;position:relative}.technology-list-a-svg svg{position:absolute;top:35%;left:25%;width:50%;height:30%;opacity:0.5; /* @alternate */ -webkit-transition:all 0.3s;transition:all 0.3s;box-sizing:inherit}.article{display:block;margin:100px 0}.article-list{display:block;padding:0;margin:50px 0;list-style:none}.article-list li{position:relative;display:block;padding:50px 0;border-bottom:1px solid #ebeaea}.article-list li:last-child{border-bottom:0}.article-list li.article-pagination{display:table;width:100%;margin-top:-15px}.article-list li.article-pagination a{display:inline-block;padding-top:6px;font-size:11px;font-weight:600;letter-spacing:.1em;color:#7b7474;text-decoration:none;text-transform:uppercase; /* @alternate */ -webkit-transition:color 0.2s linear;transition:color 0.2s linear}.article-list li.article-pagination a .icon{display:inline-block;margin-top:-2px;font-size:20px;vertical-align:middle}.article-list li.article-pagination a:hover{color:#121111}.article-list-item a{text-decoration:none}.article-list-item a h5{position:relative;display:block;padding-right:25px;color:#121111;border-bottom:1px solid transparent}.article-list-item a h5 .icon{display:inline-block;margin-top:-2px;vertical-align:middle;opacity:0; /* @alternate */ -webkit-transition:opacity 0.2s linear;transition:opacity 0.2s linear}.article-list-item a:hover h5 .icon{opacity:1}.article-list-item p{display:block;margin:12px 0 10px;font-size:15px;color:#615b5b}.article-list-footer{display:block}.article-list-footer span,.article-list-footer a{display:inline-block;font-size:12px;color:#7b7474;text-transform:uppercase;vertical-align:middle}.article-list-footer a{margin-right:7.5px;color:#615b5b}.article-list-footer a:hover{color:#121111}.article-list-footer a:last-child{margin-right:0}.article-list-divider{margin:0 15px}.article-list-tags{display:inline-block;vertical-align:top}.article-empty{display:block;margin:100px 0;font-style:italic;color:#ada8a8;text-align:center}.article-pagination-right{float:right}.article-header{display:block;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #ebeaea}.article-header p{display:block;margin:12px 0 10px;font-size:16px;color:#615b5b}.article-header a{text-decoration:none}.article-content{display:block}.article-content p,.article-content ul,.article-content ol,.article-content img,.article-content blockquote{display:block;margin-bottom:30px}.article-content h2,.article-content h3,.article-content h4{display:block;margin-bottom:10px;font-family:"Lato", Helvetica, Arial, sans-serif;color:#121111}.article-content blockquote p{margin-bottom:0}.article-content img.emoji{display:inline-block;margin-top:-4px;margin-bottom:0;vertical-align:middle}.article-comments{display:block;padding-top:20px;margin-top:30px;border-top:1px solid #ebeaea}.article-share{display:block;margin-top:-4px}.article-share a{display:inline-block;margin-right:12px;vertical-align:middle}.article-share a i{vertical-align:middle; /* @alternate */ -webkit-transition:fill 0.2s linear;transition:fill 0.2s linear;fill:#ada8a8;width:20px}.article-share a:hover i{fill:#615b5b}@media all and (max-width: 767px){.article-list-footer{display:block}.article-list-divider:last-of-type{display:none}.article-list-tags{display:block;margin-top:-7px}}.embed-responsive{position:relative;display:block;height:0;padding:0;padding-bottom:75%;margin-bottom:30px;overflow:hidden}.embed-responsive iframe,.embed-responsive embed,.embed-responsive object,.embed-responsive video{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.embed-responsive-16by9{padding-bottom:56.25%}.header-nav{display:block;padding:75px 0 10px;border-bottom:1px solid #ebeaea}.header-logo{display:inline-block;font-family:"Cormorant Garamond", "Lato", Courier, serif;font-size:36px;font-weight:700;color:#000;text-decoration:none;line-height:2.1}.header-icon{font-size:25px}.header-icon-link{text-decoration:none}.hash-icon-header{font-size:19px}.header-links{float:right;padding:0;margin:27px 0 0;list-style:none}.header-links li{display:inline-block;margin-left:20px;vertical-align:middle}.header-links li:first-child{margin-left:0}.header-links li a{font-size:18px;color:#393636}.header-links li a:hover{color:#121111}@media all and (max-width: 520px){.header-nav{text-align:center}.header-links{display:block;float:none;text-align:center}.header-links li{margin:0 10px}.header-links li:last-child{margin-right:0}}.highlight{padding:25px;margin:0;margin:30px 0;overflow:auto;font-weight:400;background:#faf9f9;border-radius:4px}.highlight pre{margin:0}.highlighter-rouge{padding:2px 4px;font-size:16px;color:#d14;background:#faf9f9;border:1px solid #ebeaea;border-radius:1px}@media all and (max-width: 767px){.highlight{padding:25px;font-size:16px}}.highlight .c{font-style:italic;color:#998}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{font-style:italic;color:#998}.highlight .cp{font-weight:bold;color:#999}.highlight .c1{font-style:italic;color:#998}.highlight .cs{font-style:italic;font-weight:bold;color:#999}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaa}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{font-weight:bold;color:#458}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{font-weight:bold;color:#458}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne{font-weight:bold;color:#900}.highlight .nf{font-weight:bold;color:#900}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .il{color:#099}.appear{visibility:hidden;opacity:0}.appeared{visibility:visible;opacity:1; /* @alternate */ -webkit-transition:opacity 0.5s ease-in-out;transition:opacity 0.5s ease-in-out}.tags-page-header{margin-top:0px}.tags-page{padding:50px 0}.tags-page h1{margin:0 0 15px 0}
+/*# sourceMappingURL=/assets/source-maps/light.scss.map */
+/*# sourceURL=_assets/stylesheets/light.scss */
+</style>
+    
+  
+
+  <!-- open graph metadata -->
+<meta property="og:title" content="Configure this site locally for development">
+
+
+<meta property="og:image" content="https://rahulja.in/assets/posts/configure-this-site-locally-for-development/og-image.png">
+<meta property="og:url" content="https://rahulja.inamp/posts/configure-this-site-locally-for-development">
+<meta property="og:description" content="Configure the repository xRahul.github.io locally for development.">
+<meta property="profile:first_name" content="Rahul">
+<meta property="profile:last_name" content="Jain">
+<meta property="og:site_name" content="Rahul Jain">
+
+
+  
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Rahul Jain">
+    <meta property="article:published_time" content="2017-01-03T00:00:00+05:30">
+    
+      <meta property="article:tag" content="jekyll">
+    
+      <meta property="article:tag" content="ruby">
+    
+      <meta property="article:tag" content="development">
+    
+  
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://rahulja.inamp/posts/configure-this-site-locally-for-development">
+
+  <meta name="twitter:creator" content="@xRahulJain" />
+
+<meta name="twitter:title" content="Configure this site locally for development">
+<meta name="twitter:description" content="Configure the repository xRahul.github.io locally for development.">
+<meta name="twitter:image" content="https://rahulja.in/assets/posts/configure-this-site-locally-for-development/og-image.png">
+
+
+
+
+
+
+
+  
+
+
+  
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async custom-element="amp-analytics"
+      src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+      src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
+    
+    <!-- amp-youtube doesn't work -->
+    
+    
+    
+    
+    
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  
+</head>
+
+<body>
+
+  
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K4G6PK2&gtm.url=SOURCE_URL"
+        data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gaTrackingId": "UA-75936371-1"
+          }
+        }
+        </script>
+    </amp-analytics>
+  
+
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        
+        <nav class="header-nav">
+  <a href="/" class="header-logo" title="Rahul Jain">
+    
+      Rahul Jain
+    
+  </a>
+  <ul class="header-links">
+
+    
+      <li>
+        <a class="header-icon-link" href="/tags" title="Tags">
+          <i class="fas fa-hashtag" aria-hidden="true"></i>tags
+        </a>
+      </li>
+    
+
+    
+
+    
+      
+        <li>
+          <a class="header-icon-link" href="/about" title="About me">
+            <i class="fas fa-user" aria-hidden="true"></i> Profile
+          </a>
+        </li>
+      
+    
+
+  </ul>
+</nav>
+
+
+        
+        <article class="article">
+  <header class="article-header">
+  <h1>Configure this site locally for development</h1>
+  <p>Configure the repository xRahul.github.io locally for development.</p>
+  <div class="article-list-footer">
+    <span class="article-list-date">
+      January 3, 2017
+    </span>
+    <span class="article-list-divider">-</span>
+    <span class="article-list-minutes">
+      
+      
+        1 minute read
+      
+    </span>
+    <span class="article-list-divider">-</span>
+    <div class="article-list-tags">
+      
+        <a href="/tag/jekyll">
+          #jekyll
+        </a>
+      
+        <a href="/tag/ruby">
+          #ruby
+        </a>
+      
+        <a href="/tag/development">
+          #development
+        </a>
+      
+    </div>
+  </div>
+</header>
+  <div class="article-content">
+    
+      
+<p><amp-img src="/assets/posts/configure-this-site-locally-for-development/og-image.png" alt="Chalk Template" width="600" height="392" layout="responsive"><noscript><img src="/assets/posts/configure-this-site-locally-for-development/og-image.png" alt="Chalk Template" width="600" height="392"></noscript></amp-img></p>
+
+<p>Install ruby 2.3.3</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rbenv <span class="nb">install </span>2.3.3
+rbenv global 2.3.3
+ruby <span class="nt">-v</span></code></pre></figure>
+
+<p>Install site</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/xRahul/xRahul.github.io.git
+git config <span class="nt">--global</span> credential.helper cache
+git config <span class="nt">--global</span> credential.helper <span class="s1">'cache --timeout=36000'</span>
+<span class="nb">cd </span>xRahul.github.io/
+git branch <span class="nt">-r</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="s1">'\-&gt;'</span> | <span class="k">while </span><span class="nb">read </span>remote<span class="p">;</span> <span class="k">do </span>git branch <span class="nt">--track</span> <span class="s2">"</span><span class="k">${</span><span class="nv">remote</span><span class="p">#origin/</span><span class="k">}</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$remote</span><span class="s2">"</span><span class="p">;</span> <span class="k">done
+</span>git fetch <span class="nt">--all</span>
+git pull <span class="nt">--all</span>
+bin/setup</code></pre></figure>
+
+<p>Run local development server</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle <span class="nb">exec </span>jekyll serve <span class="nt">--drafts</span></code></pre></figure>
+
+<p>Deploy to github master branch</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bin/deploy</code></pre></figure>
+
+<hr>
+<p><br></p>
+
+<h5 id="references">References</h5>
+<p><a href="https://rahulja.in" target="_blank" rel="noopener noreferrer">rahulja.in</a>
+<br>
+<a href="https://github.com/xRahul/xRahul.github.io/tree/new-site" target="_blank" rel="noopener noreferrer">xRahul.github.io - Github</a>
+<br>
+<a href="http://stackoverflow.com/a/10312587/1435626" target="_blank" rel="noopener noreferrer">How to fetch all git branches - StackOverflow</a></p>
+
+    
+  </div>
+  <div class="article-share text-center">
+  
+  
+  <a href="https://twitter.com/home?status=Configure+this+site+locally+for+development%20-%20https://rahulja.inamp/posts/configure-this-site-locally-for-development" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+    <i class="fab fa-twitter" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://rahulja.inamp/posts/configure-this-site-locally-for-development" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+  </a>
+  <a href="https://plus.google.com/share?url=https://rahulja.inamp/posts/configure-this-site-locally-for-development" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+    <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="article-pagination">
+  
+  
+</div>
+  
+</article>
+
+
+  
+    
+<script type="application/ld+json">
+{
+   "@context":"http://schema.org",
+   "@type":"BlogPosting",
+   "headline":"Configure this site locally for development",
+   "keywords":"jekyll, ruby, development",
+   "wordCount":"89",
+   "url":"https://rahulja.inamp/posts/configure-this-site-locally-for-development",
+   "datePublished":"2017-01-03",
+   "dateModified":"",
+   "author": {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Singapore",
+        "addressCountry": "Singapore",
+        "sameAs": ["https://en.wikipedia.org/wiki/Singapore"]
+    },
+    "homeLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Singapore",
+            "addressCountry": "Singapore",
+            "sameAs": ["https://en.wikipedia.org/wiki/Singapore"]
+        }
+    },
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Chandigarh Engineering College",
+        "sameAs": ["https://en.wikipedia.org/wiki/Chandigarh_Engineering_College", "http://cecmohali.org"],
+        "logo": "http://cecmohali.org/wp-content/themes/cec-mohali/img/logo.jpg",
+        "email": "contact@cecmohali.org",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mohali",
+            "addressRegion": "Punjab",
+            "postalCode": "140307",
+            "streetAddress": "Landran"
+        }
+    },
+    "birthDate": "1993-02-17",
+    "email": "rahul_jain@live.in",
+    "name": "Rahul Jain",
+    "familyName": "Jain",
+    "givenName": "Rahul",
+    "gender": "Male",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Shopee",
+        "sameAs": ["https://en.wikipedia.org/wiki/Shopee", "https://en.wikipedia.org/wiki/Garena", "https://shopee.sg/"],
+        "areaServed": "Singapore",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Shopee_logo.svg/721px-Shopee_logo.svg.png",
+        "legalName": "Sea Limited"
+    },
+    "nationality": {
+        "@type": "Country",
+        "name": "India",
+        "sameAs": "https://en.wikipedia.org/wiki/India"
+    },
+    "image": "https://rahulja.in/assets/about.jpg",
+    "url": "https://rahulja.in",
+    "sameAs": ["https://www.linkedin.com/in/xrahuljain", "https://github.com/xRahul", "https://www.facebook.com/xRahulJain", "https://twitter.com/xRahulJain", "http://stackoverflow.com/users/1435626/rahul", "https://www.quora.com/profile/Rahul-Jain-5", "https://www.freecodecamp.org/xrahul", "https://codepen.io/xRahul", "https://www.goodreads.com/user/show/6390214-rahul"]
+},
+   "publisher": {
+      "@type": "Organization",
+      "name": "Rahul Jain",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rahulja.in/assets/about.jpg"
+      }
+    },
+    "image":"https://rahulja.in/assets/posts/configure-this-site-locally-for-development/og-image.png",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://rahulja.inamp/posts/configure-this-site-locally-for-development"
+    },
+    "articleBody":"{% include image.html path=”posts/configure-this-site-locally-for-development/og-image.png” path-detail=”posts/configure-this-site-locally-for-development/og-image@2x.png” alt=”Chalk Template” %}Install ruby 2.3.3{% highlight bash %}rbenv install 2.3.3rbenv global 2.3.3ruby -v{% endhighlight %}Install site{% highlight bash %}git clone https://github.com/xRahul/xRahul.github.io.gitgit config –global credential.helper cachegit config –global credential.helper ‘cache –timeout=36000’cd xRahul.github.io/git branch -r | grep -v ‘-&amp;gt;’ | while read remote; do git branch –track “${remote#origin/}” “$remote”; donegit fetch –allgit pull –allbin/setup{% endhighlight %}Run local development server{% highlight bash %}bundle exec jekyll serve –drafts{% endhighlight %}Deploy to github master branch{% highlight bash %}bin/deploy{% endhighlight %}Referencesrahulja.inxRahul.github.io - GithubHow to fetch all git branches - StackOverflow"
+}
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://rahulja.in/about",
+        "name": "Rahul Jain",
+        "image": "https://rahulja.in/assets/about.jpg"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://rahulja.in",
+        "name": "Posts"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://rahulja.inamp/posts/configure-this-site-locally-for-development",
+        "name": "Configure this site locally for development",
+        "image": "https://rahulja.in/assets/posts/configure-this-site-locally-for-development/og-image.png"
+      }
+    }]
+  }
+</script>
+  
+
+
+
+        
+        <footer class="footer">
+  <ul class="footer-links">
+    
+      <li>
+        <a href="mailto:rahul_jain@live.in" title="Email" aria-label="Send Email">
+          <i class="fas fa-at" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://www.facebook.com/xRahulJain" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook Profile">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://twitter.com/xRahulJain" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter Profile">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://plus.google.com/+RahulJain17" target="_blank" rel="me noopener noreferrer" title="Google Plus" aria-label="Google Plus Profile">
+          <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/xRahulJain" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/xRahul" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Github Profile">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="http://stackoverflow.com/users/1435626/rahul" target="_blank" rel="noopener noreferrer" title="StackOverflow" aria-label="Stackoverflow Profile">
+          <i class="fab fa-stack-overflow" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://www.freecodecamp.org/xrahul" target="_blank" rel="noopener noreferrer" title="freeCodeCamp" aria-label="FreeCodeCamp Profile">
+          <i class="fab fa-free-code-camp" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="/feed.xml" target="_blank" title="RSS" aria-label="RSS Feed">
+          <i class="fas fa-rss" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  </ul>
+
+  <p class="text-center">
+    <a href="/privacy/cookies" rel="noopener noreferrer" target="_blank" title="Privacy Policy" aria-label="Privacy Policy">
+      Privacy Policy
+    </a>.
+    I'm using customized
+    <a target="_blank" href="https://github.com/nielsenramon/chalk" rel="noopener noreferrer" title="Chalk" aria-label="Clalk - Theme">Chalk</a>,
+    a template by
+    <a target="_blank" href="http://nielsenramon.com" rel="noopener noreferrer" title="Nielsen Ramon" aria-label="Nielsen Ramon Profile">Nielsen Ramon</a>.
+  </p>
+
+</footer>
+
+      </div>
+    </div>
+  </main>
+
+  
+  
+  <amp-install-serviceworker
+    src="https://rahulja.in/assets/sw.js"
+    layout="nodisplay"></amp-install-serviceworker>
+
+
+</body>
+</html>

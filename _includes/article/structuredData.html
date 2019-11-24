@@ -1,9 +1,0 @@
-{% assign keywordTags = page.tags  | join: ', ' %}
-{% include head/structured_data_post.html
-  headline=page.title
-  keywords=keywordTags
-  content=page.content
-  link=page.url
-  datePublished=page.date
-  dateModified=page.last_modified_at
-%}

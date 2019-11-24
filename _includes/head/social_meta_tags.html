@@ -1,8 +1,0 @@
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="{{ page.url | remove: 'index.html' | prepend: site.url }}">
-{% if site.social_links.twitter %}
-  <meta name="twitter:creator" content="@{{ site.social_links.twitter }}" />
-{% endif %}
-<meta name="twitter:title" content="{% if page.title and page.title != '' %}{{ page.title | escape }}{% else %}{{ site.name | escape }}{% endif %}">
-<meta name="twitter:description" content="{{ page.description | escape }}">
-<meta name="twitter:image" content="{% include head/thumb_image_url.html %}">
