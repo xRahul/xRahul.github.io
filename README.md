@@ -8,6 +8,7 @@
 [![security](https://hakiri.io/github/xRahul/xRahul.github.io/new-site.svg)](https://hakiri.io/github/xRahul/xRahul.github.io/new-site)
 [![libraries.io](https://img.shields.io/librariesio/github/xRahul/xRahul.github.io.svg)](https://libraries.io/github/xRahul/xRahul.github.io)
 
+[![GitHub PageSpeed](https://api.speedbadge.io/v1?url=https://rahulja.in&showStratLabel=true&strat=mobile)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frahulja.in%2F&tab=mobile)
 [![GitHub PageSpeed](https://api.speedbadge.io/v1?url=https://rahulja.in&showStratLabel=true&strat=desktop)](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frahulja.in%2F&tab=desktop)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d251b6435fc844c887ea6c7e58f0c982)](https://www.codacy.com/app/xRahul/xRahul.github.io)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f6e013323629b1fc88c2/maintainability)](https://codeclimate.com/github/xRahul/xRahul.github.io/maintainability)
