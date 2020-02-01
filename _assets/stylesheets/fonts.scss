@@ -12,6 +12,7 @@
   font-style: normal;
   font-display: auto;
   font-weight: 300;
+  font-display: swap;
   src: asset_url('lato/Lato-300.eot');
   src:
     asset_url('lato/Lato-300.eot?#iefix') format('embedded-opentype'),
@@ -27,6 +28,7 @@
   font-style: normal;
   font-display: auto;
   font-weight: 400;
+  font-display: swap;
   src: asset_url('lato/Lato-regular.eot');
   src:
     asset_url('lato/Lato-regular.eot?#iefix') format('embedded-opentype'),
@@ -42,6 +44,7 @@
   font-style: normal;
   font-display: auto;
   font-weight: 700;
+  font-display: swap;
   src: asset_url('lato/Lato-700.eot');
   src:
     asset_url('lato/Lato-700.eot?#iefix') format('embedded-opentype'),
@@ -60,6 +63,7 @@
   font-family: 'Cormorant Garamond';
   font-display: auto;
   font-weight: 700;
+  font-display: swap;
   src: asset_url('cormorant-garamond/Cormorant-Garamond-700.eot'); /* IE9 Compat Modes */
   src:
     local('Cormorant-Garamond Bold'),

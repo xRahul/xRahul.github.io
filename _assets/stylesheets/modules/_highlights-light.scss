@@ -3,9 +3,8 @@
 // =============================================================================
 
 .highlight {
-  padding: 25px;
+  padding: 5px;
   margin: 0;
-  margin: 30px 0;
   overflow: auto;
   font-weight: 400;
   background: lighten($gray-lightest, 6);
@@ -18,7 +17,7 @@
 // Inline highlighting
 
 .highlighter-rouge {
-  padding: 2px 4px;
+  padding: 4px 4px;
   font-size: 16px;
   color: #d14;
   background: lighten($gray-lightest, 6);
@@ -31,7 +30,7 @@
 
 @include breakpoint(small) {
   .highlight {
-    padding: 25px;
+    padding: 5px;
     font-size: 16px;
   }
 }
