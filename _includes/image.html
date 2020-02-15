@@ -1,7 +1,7 @@
 {% if page.amp %}
   <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}" />
 {% else %}
-  <a href="{% asset '{{ include.path-detail }}' @path %}">
+  <a class="{{ include.a-class }}" href="{% asset '{{ include.path-detail }}' @path %}">
     <img src="{% asset '{{ include.path }}' @path %}" alt="{{ include.alt }}"
       data-action="zoom"
       data-rjs="{% asset '{{ include.path-detail }}' @path %}"

@@ -211,6 +211,10 @@ img {
   padding: 10px 50px 10px 50px;
 }
 
+.auto-margin {
+  margin: auto;
+}
+
 @include breakpoint(small) {
   .highlight {
     padding: 10px 20px 10px 20px;
