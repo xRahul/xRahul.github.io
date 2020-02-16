@@ -82,7 +82,7 @@ Cons:
 
 ## [InstaReM](https://www.instarem.com/invite/cj5NBN)
 
-> Overseas Money Transfers  with Zero FX<super>*</super>
+> Overseas Money Transfers  with Zero FX{% if page.amp %}{% else %}<super>*</super>{% endif %}
 
 This is a Singapore-headquartered offering digital cross-border money transfers. While it has operations in multiple countries, it is not as famous as Transferwise. Give it a go as it currently provides the best overseas money transfer conversion amount. To transfer money overseas, find the options below:
 
