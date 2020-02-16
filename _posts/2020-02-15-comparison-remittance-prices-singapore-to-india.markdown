@@ -103,7 +103,7 @@ Pros:
 3. Highest total converted amount in all 3
 
 Cons:
-1. No direct bank to bank transfer. Money goes to Transferwise and comes from their bank accounts. So need to keep additional receipts for proof.
+1. No direct bank to bank transfer. Money goes to InstaReM and comes from their bank accounts. So need to keep additional receipts for proof.
 2. Least Known company among all 3
 3. A bit higher conversion rate than transferwise
 4. Takes time to transfer the money
