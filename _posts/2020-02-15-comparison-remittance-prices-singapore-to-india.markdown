@@ -4,6 +4,7 @@ description: A comparison between the conversion price offered by DBS, Transferw
 tags: [india, singapore, money]
 ampTags: [amp-auto-ads]
 ads: true
+og_image: "posts/comparison-remittance-prices-singapore-to-india/instarem_mobile@2x.png"
 ---
 
 As you start earning in Singapore, you'll have to start looking into different methods of sending money from Singapore to India, be it for personal expenses, loans, family etc. To make the choice easier, here's what I've found between different remittance methods. The methods I am reviewing here are [DBS Bank Overseas Money Transfer](https://www.dbs.com.sg/personal/default.page), [Transferwise](https://transferwise.com/invite/u/rahulj248) and [InstaReM](https://www.instarem.com/invite/cj5NBN).
