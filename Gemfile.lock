@@ -125,7 +125,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.13.0)
     multipart-post (2.1.1)
-    nokogiri (1.10.7)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -145,7 +145,7 @@ GEM
       ffi (~> 1.0)
     rouge (3.15.0)
     safe_yaml (1.0.5)
-    sanitize (5.1.0)
+    sanitize (5.2.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.8.0)
       nokogumbo (~> 2.0)
@@ -197,10 +197,10 @@ DEPENDENCIES
   mini_magick
   rake
   rouge
-  sanitize
+  sanitize (>= 5.2.1)
   sass
   sprockets (= 4.0.0.beta8)
   uglifier
 
 BUNDLED WITH
-   2.0.2
+   1.17.3
