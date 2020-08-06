@@ -8,7 +8,7 @@ gem "html-proofer"
 gem "image_optim_bin" # Optional
 gem "image_optim_pack"
 gem "image_optim"
-gem "jekyll-assets"
+gem "jekyll-assets", ">= 3.0.12"
 gem "jekyll-feed"
 gem "jekyll-gist"
 gem "jekyll-last-modified-at"
