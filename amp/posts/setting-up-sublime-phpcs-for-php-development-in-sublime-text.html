@@ -1,0 +1,635 @@
+<!doctype html>
+<html ⚡ lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="msvalidate.01" content="C02D47D34B2CA730AA994096C315F5FE" />
+  <meta name="description" content="Install and setup sublime-phpcs with PHP CodeSniffer, PHP Coding Standard Fixer, Linter, Mess Detector and scheck from fb/pfff for Sublime Text 3">
+
+  <link rel="manifest" href="/manifest.json">
+
+  
+  
+
+  <!-- define the title tag -->
+<title>
+  
+    Setting up sublime-phpcs for PHP development in Sublime Text
+  
+</title>
+
+
+  
+    <link rel="canonical" href="https://rahulja.in/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text" />
+    <link rel="alternate" media="handheld" href="https://rahulja.in/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text" />
+  
+
+  <!-- favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="/assets/favicons/apple-touch-icon-192x192.png" />
+<link rel="apple-touch-icon-precomposed" sizes="512x512" href="/assets/favicons/apple-touch-icon-512x512.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/favicons/apple-touch-icon-76x76.png" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
+<meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
+
+  <!-- feed link -->
+  <link type="application/atom+xml" rel="alternate" href="https://rahulja.in/feed.xml" title="Articles by Rahul Jain">
+
+  
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700|Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+      <style amp-custom="" type="text/css">/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15; /* @alternate */ -webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline; /* @alternate */ -webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{ /* @alternate */ -webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{ /* @alternate */ -webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{ /* @alternate */ -webkit-appearance:none}::-webkit-file-upload-button{ /* @alternate */ -webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}#iubenda-cs-banner{bottom:0px;left:0px;position:fixed;width:100%;z-index:99999998;background-color:black}.iubenda-cs-content{display:block;margin:0 auto;padding:20px;width:auto;font-family:Helvetica, Arial, FreeSans, sans-serif;font-size:14px;background:#000;color:#fff}.iubenda-cs-rationale{max-width:900px;position:relative;margin:0 auto}.iubenda-banner-content>p{font-family:Helvetica, Arial, FreeSans, sans-serif;line-height:1.5}.iubenda-cs-close-btn{margin:0;color:#fff;text-decoration:none;font-size:14px;position:absolute;top:0;right:0;border:none}.iubenda-cs-cookie-policy-lnk{text-decoration:underline;color:#fff;font-size:14px;font-weight:900}.resp-container{position:relative;overflow:hidden;padding-top:100%}.resp-iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}*,*::before,*::after{box-sizing:border-box}html{font-size:16px}body{margin:0 auto;font-family:"Lato", Helvetica, Arial, sans-serif; /* @alternate */ -webkit-font-smoothing:antialiased;font-weight:400;line-height:1.8;color:#615b5b;background:#fff}p{margin:0;font-weight:400}b,strong{font-weight:700}h1,h2,h3,h4,h5,h6{margin:0;line-height:1.5;text-rendering:optimizeLegibility}h1{font-size:25.6px;font-weight:400;letter-spacing:-.03em;color:#121111}h2{font-size:24px;font-weight:400}h3{font-size:20.8px;font-weight:500}h4{font-size:17.6px;font-weight:500}h5{font-size:18.72px;font-weight:500}h6{font-size:16px}@media all and (max-width: 767px){h1{font-size:24px}h2{font-size:21.6px}h3{font-size:20px}}a{color:#615b5b;text-decoration:underline;transition:color 0.2s linear}a:hover,a:active{color:#393636}a:focus{color:#393636;outline:none}ul,ol{padding-left:40px;margin:0}abbr{cursor:help;border-bottom:1px dotted #ebeaea}blockquote{padding:0 0 4px 15px;margin:0 0 0 -20px;font-family:"Lato", Helvetica, Arial, sans-serif;font-size:20px;font-style:italic;line-height:1.6;color:#ada8a8;border-left:3px solid #615b5b}hr{margin:0;border-top:0;border-right:0;border-bottom:1px solid #ebeaea;border-left:0}img{display:block;max-width:100%;margin:0}::-moz-selection{color:#fff;background-color:#121111}::selection{color:#fff;background-color:#121111}.text-center{text-align:center}.clearfix:after{content:" ";visibility:hidden;display:block;height:0;clear:both}.desaturate{ /* @alternate */ -webkit-filter:grayscale(1); /* @alternate */ -webkit-filter:grayscale(100%);filter:gray;filter:grayscale(100%)}.no-text-decoration{text-decoration:none}.pace{ /* @alternate */ -webkit-pointer-events:none;pointer-events:none; /* @alternate */ -ms-user-select:none; /* @alternate */ -webkit-user-select:none; /* @alternate */ -moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#000000;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:1px}.notfound-wrapper{margin-top:100px;margin-bottom:100px;text-align:center}.highlight{padding:10px 50px 10px 50px}.auto-margin{margin:auto}@media all and (max-width: 767px){.highlight{padding:10px 20px 10px 20px}}.footer{display:block;padding-top:35px;margin-bottom:85px;border-top:1px solid #ebeaea}.footer p{font-size:12px;color:#7b7474}.footer a{text-decoration:none}.footer-links{float:none;display:block;text-align:center;padding:0;margin:0 0 15px 0;list-style:none}.footer-links li{display:inline-block;margin-left:20px;vertical-align:middle}.footer-links li:first-child{margin-left:0}.footer-links li a{font-size:18px;color:#393636;fill:#393636}.footer-links li a:hover{color:#121111;fill:#121111}@media all and (max-width: 520px){.footer-links li{margin:0 10px}.footer-links li:last-child{margin-right:0}}.icon-freecodecamp{padding-top:4px}.grid{display:block;padding:0;margin:0 -20px;font-size:0;text-align:left}.grid-cell{display:inline-block;width:100%;padding:0 20px;margin:0;font-size:16px;text-align:left;vertical-align:top}.grid-cell.with-1col{width:8.3333333333%}.grid-cell.with-2col{width:16.6666666667%}.grid-cell.with-3col{width:25%}.grid-cell.with-4col{width:33.3333333333%}.grid-cell.with-5col{width:41.6666666667%}.grid-cell.with-6col{width:50%}.grid-cell.with-7col{width:58.3333333333%}.grid-cell.with-8col{width:66.6666666667%}.grid-cell.with-9col{width:75%}.grid-cell.with-10col{width:83.3333333333%}.grid-cell.with-11col{width:91.6666666667%}.grid-cell.with-1off{margin-left:8.3333333333%}.grid-cell.with-2off{margin-left:16.6666666667%}.grid-cell.with-3off{margin-left:25%}.grid-cell.with-4off{margin-left:33.3333333333%}.grid-cell.with-5off{margin-left:41.6666666667%}.grid-cell.with-6off{margin-left:50%}.grid-cell.with-7off{margin-left:58.3333333333%}.grid-cell.with-8off{margin-left:66.6666666667%}.grid-cell.with-9off{margin-left:75%}.grid-cell.with-10off{margin-left:83.3333333333%}.grid-cell.with-11off{margin-left:91.6666666667%}.grid-cell.is-centered{text-align:center}.grid-cell.is-right{text-align:right}.grid-cell.is-top{vertical-align:top}.grid-cell.is-middle{vertical-align:middle}.grid-cell.is-bottom{vertical-align:bottom}.grid-centered{max-width:750px;margin-right:auto;margin-left:auto}@media all and (max-width: 767px){.grid-cell.with-1col{width:100%}.grid-cell.with-1off{margin-left:0}.grid-cell.with-2col{width:100%}.grid-cell.with-2off{margin-left:0}.grid-cell.with-3col{width:100%}.grid-cell.with-3off{margin-left:0}.grid-cell.with-4col{width:100%}.grid-cell.with-4off{margin-left:0}.grid-cell.with-5col{width:100%}.grid-cell.with-5off{margin-left:0}.grid-cell.with-6col{width:100%}.grid-cell.with-6off{margin-left:0}.grid-cell.with-7col{width:100%}.grid-cell.with-7off{margin-left:0}.grid-cell.with-8col{width:100%}.grid-cell.with-8off{margin-left:0}.grid-cell.with-9col{width:100%}.grid-cell.with-9off{margin-left:0}.grid-cell.with-10col{width:100%}.grid-cell.with-10off{margin-left:0}.grid-cell.with-11col{width:100%}.grid-cell.with-11off{margin-left:0}}.about{padding:10px 0}.about h1{margin:50px 0 15px}.technology-list-ul{padding:0;border-left:1px solid #eaeaea;width:100%;margin:24px 0 0 0;vertical-align:baseline;position:relative}.technology-list-li{vertical-align:baseline;position:relative;margin:0;padding:0;list-style:none;display:block;float:left;border:1px solid #eaeaea;width:20%; /* @alternate */ text-align:-webkit-match-parent}.technology-list-a-svg{content:'';width:100%;height:0;padding:100% 0 0 0;display:block;color:#282828;text-decoration:none;vertical-align:baseline;position:relative}.technology-list-a-svg svg{position:absolute;top:35%;left:25%;width:50%;height:30%;opacity:0.5;transition:all 0.3s;box-sizing:inherit}.article{display:block;margin:100px 0}.article-list{display:block;padding:0;margin:50px 0;list-style:none}.article-list li{position:relative;display:block;padding:50px 0;border-bottom:1px solid #ebeaea}.article-list li:last-child{border-bottom:0}.article-list li.article-pagination{display:table;width:100%;margin-top:-15px}.article-list li.article-pagination a{display:inline-block;padding-top:6px;font-size:11px;font-weight:600;letter-spacing:.1em;color:#7b7474;text-decoration:none;text-transform:uppercase;transition:color 0.2s linear}.article-list li.article-pagination a .icon{display:inline-block;margin-top:-2px;font-size:20px;vertical-align:middle}.article-list li.article-pagination a:hover{color:#121111}.article-list-item a{text-decoration:none}.article-list-item a h5{position:relative;display:block;padding-right:25px;color:#121111;border-bottom:1px solid transparent}.article-list-item a h5 .icon{display:inline-block;margin-top:-2px;vertical-align:middle;opacity:0;transition:opacity 0.2s linear}.article-list-item a:hover h5 .icon{opacity:1}.article-list-item p{display:block;margin:12px 0 10px;font-size:15px;color:#615b5b}.article-list-footer{display:block}.article-list-footer span,.article-list-footer a{display:inline-block;font-size:12px;color:#7b7474;text-transform:uppercase;vertical-align:middle}.article-list-footer a{margin-right:7.5px;color:#615b5b}.article-list-footer a:hover{color:#121111}.article-list-footer a:last-child{margin-right:0}.article-list-divider{margin:0 15px}.article-list-tags{display:inline-block;vertical-align:top}.article-empty{display:block;margin:100px 0;font-style:italic;color:#ada8a8;text-align:center}.article-pagination-right{float:right}.article-header{display:block;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid #ebeaea}.article-header p{display:block;margin:12px 0 10px;font-size:16px;color:#615b5b}.article-header a{text-decoration:none}.article-content{display:block}.article-content p,.article-content ul,.article-content ol,.article-content img,.article-content blockquote{display:block;margin-bottom:30px}.article-content h2,.article-content h3,.article-content h4{display:block;margin-bottom:10px;font-family:"Lato", Helvetica, Arial, sans-serif;color:#121111}.article-content blockquote p{margin-bottom:0}.article-content img.emoji{display:inline-block;margin-top:-4px;margin-bottom:0;vertical-align:middle}.article-comments{display:block;padding-top:20px;margin-top:30px;border-top:1px solid #ebeaea}.article-share{display:block;margin-top:-4px}.article-share a{display:inline-block;margin-right:12px;vertical-align:middle}.article-share a i{vertical-align:middle;transition:fill 0.2s linear;fill:#ada8a8;width:20px}.article-share a:hover i{fill:#615b5b}@media all and (max-width: 767px){.article-list-footer{display:block}.article-list-divider:last-of-type{display:none}.article-list-tags{display:block;margin-top:-7px}}.embed-responsive{position:relative;display:block;height:0;padding:0;padding-bottom:75%;margin-bottom:30px;overflow:hidden}.embed-responsive iframe,.embed-responsive embed,.embed-responsive object,.embed-responsive video{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.embed-responsive-16by9{padding-bottom:56.25%}.header-nav{display:block;padding:75px 0 10px;border-bottom:1px solid #ebeaea}.header-logo{display:inline-block;font-family:"Cormorant Garamond", "Lato", Courier, serif;font-size:36px;font-weight:700;color:#000;text-decoration:none;line-height:2.1}.header-icon{font-size:25px}.header-icon-link{text-decoration:none}.hash-icon-header{font-size:19px}.header-links{float:right;padding:0;margin:27px 0 0;list-style:none}.header-links li{display:inline-block;margin-left:20px;vertical-align:middle}.header-links li:first-child{margin-left:0}.header-links li a{font-size:18px;color:#393636}.header-links li a:hover{color:#121111}@media all and (max-width: 520px){.header-nav{text-align:center}.header-links{display:block;float:none;text-align:center}.header-links li{margin:0 10px}.header-links li:last-child{margin-right:0}}.highlight{padding:5px 20px;margin:0;overflow:auto;font-weight:400;background:#faf9f9;border-radius:4px}.highlight pre{margin:0}.highlighter-rouge{padding:4px 4px;font-size:16px;color:#d14;background:#faf9f9;border:1px solid #ebeaea;border-radius:1px}@media all and (max-width: 767px){.highlight{padding:5px;font-size:16px}}.highlight .c{font-style:italic;color:#998}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{font-style:italic;color:#998}.highlight .cp{font-weight:bold;color:#999}.highlight .c1{font-style:italic;color:#998}.highlight .cs{font-style:italic;font-weight:bold;color:#999}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaa}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{font-weight:bold;color:#458}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086b3}.highlight .nc{font-weight:bold;color:#458}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne{font-weight:bold;color:#900}.highlight .nf{font-weight:bold;color:#900}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .il{color:#099}.appear{visibility:hidden;opacity:0}.appeared{visibility:visible;opacity:1;transition:opacity 0.5s ease-in-out}.tags-page-header{margin-top:0px}.tags-page{padding:50px 0}.tags-page h1{margin:0 0 15px 0}
+/*# sourceMappingURL=/assets/source-maps/light.scss.map */
+/*# sourceURL=_assets/stylesheets/light.scss */
+</style>
+    
+  
+
+  <!-- open graph metadata -->
+<meta property="og:title" content="Setting up sublime-phpcs for PHP development in Sublime Text">
+
+
+<meta property="og:image" content="https://rahulja.in/assets/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text/phpcs.jpg">
+<meta property="og:url" content="https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text">
+<meta property="og:description" content="Install and setup sublime-phpcs with PHP CodeSniffer, PHP Coding Standard Fixer, Linter, Mess Detector and scheck from fb/pfff for Sublime Text 3">
+<meta property="profile:first_name" content="Rahul">
+<meta property="profile:last_name" content="Jain">
+<meta property="og:site_name" content="Rahul Jain">
+
+
+  
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Rahul Jain">
+    <meta property="article:published_time" content="2017-03-14T00:00:00+05:30">
+    
+      <meta property="article:tag" content="development">
+    
+      <meta property="article:tag" content="macosx">
+    
+      <meta property="article:tag" content="php">
+    
+      <meta property="article:tag" content="tools">
+    
+  
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text">
+
+  <meta name="twitter:creator" content="@xRahulJain" />
+
+<meta name="twitter:title" content="Setting up sublime-phpcs for PHP development in Sublime Text">
+<meta name="twitter:description" content="Install and setup sublime-phpcs with PHP CodeSniffer, PHP Coding Standard Fixer, Linter, Mess Detector and scheck from fb/pfff for Sublime Text 3">
+<meta name="twitter:image" content="https://rahulja.in/assets/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text/phpcs.jpg">
+
+
+
+
+
+
+
+  
+
+
+  
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async custom-element="amp-analytics"
+      src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+      src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
+    
+    <!-- amp-youtube doesn't work -->
+    
+    
+    
+    
+    
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+  
+</head>
+
+<body>
+
+  
+    <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-K4G6PK2&gtm.url=SOURCE_URL"
+        data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "gaTrackingId": "UA-75936371-1"
+          }
+        }
+        </script>
+    </amp-analytics>
+  
+
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        
+        <nav class="header-nav">
+  <a href="/" class="header-logo" title="Rahul Jain">
+    
+      Rahul Jain
+    
+  </a>
+  <ul class="header-links">
+
+    
+      <li>
+        <a class="header-icon-link" href="/tags" title="Tags">
+          <i class="fas fa-hashtag" aria-hidden="true"></i>tags
+        </a>
+      </li>
+    
+
+    
+
+    
+      
+        <li>
+          <a class="header-icon-link" href="/about" title="About me">
+            <i class="fas fa-user" aria-hidden="true"></i> Profile
+          </a>
+        </li>
+      
+    
+
+  </ul>
+</nav>
+
+
+        
+        <article class="article">
+  <header class="article-header">
+  <h1>Setting up sublime-phpcs for PHP development in Sublime Text</h1>
+  <p>Install and setup sublime-phpcs with PHP CodeSniffer, PHP Coding Standard Fixer, Linter, Mess Detector and scheck from fb/pfff for Sublime Text 3</p>
+  <div class="article-list-footer">
+    <span class="article-list-date">
+      March 14, 2017
+    </span>
+    <span class="article-list-divider">-</span>
+    <span class="article-list-minutes">
+      
+      
+        4 minute read
+      
+    </span>
+    <span class="article-list-divider">-</span>
+    <div class="article-list-tags">
+      
+        <a href="/tag/development">
+          #development
+        </a>
+      
+        <a href="/tag/macosx">
+          #macosx
+        </a>
+      
+        <a href="/tag/php">
+          #php
+        </a>
+      
+        <a href="/tag/tools">
+          #tools
+        </a>
+      
+    </div>
+  </div>
+</header>
+  <div class="article-content">
+    
+      <h4 id="this-is-a-plugin-for-sublime-text-which-provides-checkstyle-reports-using-the-following-tools-all-optional">This is a plugin for Sublime Text which provides checkstyle reports using the following tools (all optional):</h4>
+
+<ul>
+  <li>Linter (<code class="language-plaintext highlighter-rouge">php -l</code>). This provides a convenient way to perform only a syntax check on the given PHP code.</li>
+  <li>
+<a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHP CodeSniffer</a> 1.3+ (<code class="language-plaintext highlighter-rouge">phpcs</code>). It tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard.</li>
+  <li>
+<a href="https://phpmd.org/" target="_blank" rel="noopener noreferrer">PHP Mess Detector</a> 1.4+ (<code class="language-plaintext highlighter-rouge">phpmd</code>). It detects and reports various potential problems with the code like possible bugs, suboptimal code, overcomplicated expressions and unused parameters, methods, properties.</li>
+  <li>
+<a href="https://github.com/facebook/pfff/wiki/Scheck" target="_blank" rel="noopener noreferrer">Scheck</a> 0.23+ (<code class="language-plaintext highlighter-rouge">scheck</code>, part of Facebook’s pfff toolchain). This will help you find stupid mistakes like a typo in your code.</li>
+</ul>
+
+<h4 id="you-can-also-configure-the-plugin-to-fix-the-issues-using-either">You can also configure the plugin to fix the issues using either</h4>
+
+<ul>
+  <li>
+<a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank" rel="noopener noreferrer">PHP Coding Standards Fixer</a> 0.2+ (<code class="language-plaintext highlighter-rouge">php-cs-fixer</code>). It can fix most issues in your code when you want to follow the PHP coding standards as defined in the PSR-1 and PSR-2 documents and many more.</li>
+  <li>or <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHP Code Beautifier</a> 2.2.0+ (<code class="language-plaintext highlighter-rouge">phpcbf</code>). It can automatically correct coding standard violations.</li>
+</ul>
+
+<p>This plugin has been tested on:</p>
+
+<ul>
+  <li>Mac OS X 10.8.2</li>
+  <li>Ubuntu 11.10</li>
+  <li>Windows 7</li>
+  <li>Sublime Text 2</li>
+  <li>Sublime Text 3</li>
+</ul>
+
+<h2 id="install-sublime-phpcs">Install sublime-phpcs</h2>
+
+<ul>
+  <li>
+    <p>Using Sublime Text’s Package Control <em>(recommended)</em></p>
+
+    <p><code class="language-plaintext highlighter-rouge">Preferences</code> -&gt; <code class="language-plaintext highlighter-rouge">Package Control</code> -&gt; <code class="language-plaintext highlighter-rouge">Install Package</code> -&gt; <code class="language-plaintext highlighter-rouge">Phpcs</code></p>
+  </li>
+  <li>
+    <p>Or via git checkout in Sublime Text packages</p>
+
+    <p>Simply checkout the git repo into <code class="language-plaintext highlighter-rouge">~/Library/Application Support/Sublime Text [VERSION NUMBER]/Packages/</code> for MacOSX or the equivalent folder on Windows or Linux.</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~/Library/Application<span class="se">\ </span>Support/Sublime<span class="se">\ </span>Text<span class="se">\ </span>2/Packages/
+git clone git://github.com/benmatselby/sublime-phpcs.git Phpcs</code></pre></figure>
+
+<h2 id="install-dependencies">Install dependencies</h2>
+
+<ul>
+  <li>Make sure you have <a href="http://php.net/manual/en/install.php" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">php</code></a> installed on your system and check that you can use it directly-</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">php <span class="nt">-v</span>
+    PHP 5.6.28 <span class="o">(</span>cli<span class="o">)</span> <span class="o">(</span>built: Dec  6 2016 12:38:54<span class="o">)</span>
+    Copyright <span class="o">(</span>c<span class="o">)</span> 1997-2016 The PHP Group
+    Zend Engine v2.6.0, Copyright <span class="o">(</span>c<span class="o">)</span> 1998-2016 Zend Technologies</code></pre></figure>
+
+<ul>
+  <li>Now you need to have the latest <a href="https://getcomposer.org/doc/00-intro.md" target="_blank" rel="noopener noreferrer"><code class="language-plaintext highlighter-rouge">composer</code></a> installed. Use the provided link to move it globally.</li>
+  <li>Now install the <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHP CodeSniffer</a>, <a href="https://phpmd.org/" target="_blank" rel="noopener noreferrer">PHP Mess Detector</a>, <a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank" rel="noopener noreferrer">PHP CS Fixer</a> and <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHP Code Beautifier</a> globally. You can also follow the links to see the install instructions for each.</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">composer global require squizlabs/php_codesniffer
+composer global require phpmd/phpmd
+composer global require friendsofphp/php-cs-fixer</code></pre></figure>
+
+<ul>
+  <li>Please note the absolute path of all the installed packages (On a Mac/Linux based environment), you can use:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">which phpcs
+which phpmd
+which php-cs-fixer
+which phpcbf</code></pre></figure>
+
+<ul>
+  <li>Now install Scheck dependencies.
+    <ul>
+      <li>Make sure you have <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">git</a> installed.</li>
+      <li>Follow the instructions here for generic, macosx and linux to install only these two packages- <code class="language-plaintext highlighter-rouge">Ocaml</code> and <code class="language-plaintext highlighter-rouge">camlp4</code>. You do not need the other packages like GTK, Cairo, SWI-prolog or Java for scheck.
+For macosx, use <a href="/posts/using-homebrew-on-macosx" target="_blank" rel="noopener noreferrer">homebrew</a>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># for macosx using homebrew</span>
+brew <span class="nb">install </span>objective-caml camlp4
+
+<span class="c"># for fedora, you may need to install these too</span>
+yum <span class="nb">install </span>ocaml-camlp4 ocaml-camlp4-devel perl-pod-usage</code></pre></figure>
+
+<ul>
+  <li>
+    <p>Now install <a href="https://github.com/facebook/pfff/wiki/Main#install" target="_blank" rel="noopener noreferrer">Scheck</a>. If you follow the instructions mentioned in their project, you can download and setup the entire <code class="language-plaintext highlighter-rouge">pfff</code> set of tools. But for our case, we just need the <code class="language-plaintext highlighter-rouge">scheck</code> part. So, follow these instructions to get just that.</p>
+
+    <p>After following the steps, you’ll find a file called <code class="language-plaintext highlighter-rouge">scheck</code> in your cloned repo. Please note the absolute path of that as you’ll need it later.</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># clone their github repository somewhere</span>
+git clone https://github.com/facebook/pfff.git <span class="nt">--depth</span><span class="o">=</span>1
+
+<span class="c"># build pfff tools</span>
+<span class="nb">cd</span> &lt;path_to_cloned_github_repository&gt;
+./configure <span class="nt">-novisual</span>
+make depend
+make</code></pre></figure>
+
+<ul>
+  <li>Now you just need to setup the configuration for <code class="language-plaintext highlighter-rouge">sublime-phpcs</code> package in sublime text.
+    <ul>
+      <li>
+<code class="language-plaintext highlighter-rouge">Preferences</code> -&gt; <code class="language-plaintext highlighter-rouge">Package Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">PHP Code Sniffer</code> -&gt; <code class="language-plaintext highlighter-rouge">Settings - User</code>
+</li>
+      <li>Add the following json configuration-</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nl">"phpcs_php_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/usr/bin/php"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcs_executable_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/&lt;username&gt;/.composer/vendor/bin/phpcs"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpmd_executable_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/&lt;username&gt;/.composer/vendor/bin/phpmd"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"phpcbf_executable_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/&lt;username&gt;/.composer/vendor/bin/phpcbf"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"scheck_executable_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/&lt;username&gt;/Documents/GitHub/pfff/scheck"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"php_cs_fixer_executable_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/Users/&lt;username&gt;/.composer/vendor/bin/php-cs-fixer"</span><span class="p">,</span><span class="w">
+
+    </span><span class="nl">"phpmd_run"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"scheck_run"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcs_linter_run"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcs_sniffer_run"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+
+    </span><span class="nl">"extensions_to_blacklist"</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span><span class="w">
+
+    </span><span class="nl">"phpcs_execute_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcs_show_errors_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcs_command_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"php_cs_fixer_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcbf_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpcs_linter_command_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phpmd_command_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"scheck_command_on_save"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>In the above configuration, replace the paths with your install paths.</p>
+
+<p>Also use either <code class="language-plaintext highlighter-rouge">php_cs_fixer</code> or <code class="language-plaintext highlighter-rouge">phpcbf</code> for fixing the errors. I’d recommend using <code class="language-plaintext highlighter-rouge">phpcbf</code> as that is already isntalled with <code class="language-plaintext highlighter-rouge">phpcs</code> and thus you won’t have to install <code class="language-plaintext highlighter-rouge">php_cs_fixer</code> at all.</p>
+
+<p>I am disabling anything happening on save, but you can change the configuration any way you want. Find the defaults here-</p>
+
+<ul>
+  <li>
+<code class="language-plaintext highlighter-rouge">Preferences</code> -&gt; <code class="language-plaintext highlighter-rouge">Package Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">PHP Code Sniffer</code> -&gt; <code class="language-plaintext highlighter-rouge">Settings - Default</code>
+</li>
+</ul>
+
+<p>Now you just need to do <code class="language-plaintext highlighter-rouge">Cmd</code> + <code class="language-plaintext highlighter-rouge">Shift</code> + <code class="language-plaintext highlighter-rouge">P</code> and look for <code class="language-plaintext highlighter-rouge">sniff</code> options.</p>
+
+<hr>
+<p><br></p>
+
+<h5 id="references">References</h5>
+<p><a href="http://benmatselby.github.io/sublime-phpcs/" target="_blank" rel="noopener noreferrer">sublime-phpcs - Github Pages</a>
+<br>
+<a href="http://php.net/manual/en/features.commandline.options.php" target="_blank" rel="noopener noreferrer">PHP Command Line Options - php.net</a>
+<br>
+<a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHP CodeSniffer - Github</a>
+<br>
+<a href="https://phpmd.org/" target="_blank" rel="noopener noreferrer">PHP Mess Detector - phpmd</a>
+<br>
+<a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank" rel="noopener noreferrer">PHP Coding Standards Fixer - Github</a>
+<br>
+<a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHP Code Beautifier - Github</a>
+<br>
+<a href="http://php.net/manual/en/install.php" target="_blank" rel="noopener noreferrer">PHP installation - php.net</a>
+<br>
+<a href="https://getcomposer.org/doc/00-intro.md" target="_blank" rel="noopener noreferrer">Introduction - Composer</a>
+<br>
+<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="noopener noreferrer">Installing Git - git-scm</a>
+<br>
+<a href="https://github.com/facebook/pfff/wiki/Scheck" target="_blank" rel="noopener noreferrer">Scheck Wiki - Github</a>
+<br>
+<a href="https://github.com/facebook/pfff/wiki/Main" target="_blank" rel="noopener noreferrer">pfff Wiki - Github</a>
+<br>
+<a href="https://github.com/facebook/pfff/blob/master/install.txt" target="_blank" rel="noopener noreferrer">pfff General Install Instructions - Github</a>
+<br>
+<a href="https://github.com/facebook/pfff/blob/master/install_linux.txt" target="_blank" rel="noopener noreferrer">pfff Linux Install Instructions - Github</a>
+<br>
+<a href="https://github.com/facebook/pfff/blob/master/install_macos.txt" target="_blank" rel="noopener noreferrer">pfff MacOSX Install Instructions - Github</a>
+<br>
+<a href="https://github.com/benmatselby/sublime-phpcs/tree/master/example-settings" target="_blank" rel="noopener noreferrer">sublime-phpcs example configurations - Github</a></p>
+
+    
+  </div>
+  <div class="article-share text-center">
+  
+  
+  <a href="https://twitter.com/home?status=Setting+up+sublime-phpcs+for+PHP+development+in+Sublime+Text%20-%20https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+    <i class="fab fa-twitter" aria-hidden="true"></i>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+  </a>
+  <a href="https://plus.google.com/share?url=https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+    <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="article-pagination">
+  
+  
+</div>
+  
+</article>
+
+
+  
+    
+<script type="application/ld+json">
+{
+   "@context":"http://schema.org",
+   "@type":"BlogPosting",
+   "headline":"Setting up sublime-phpcs for PHP development in Sublime Text",
+   "keywords":"development, macosx, php, tools",
+   "wordCount":"734",
+   "url":"https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text",
+   "datePublished":"2017-03-14",
+   "dateModified":"2018-05-19",
+   "author": {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Singapore",
+        "addressCountry": "Singapore",
+        "sameAs": ["https://en.wikipedia.org/wiki/Singapore"]
+    },
+    "homeLocation": {
+        "@type": "Place",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Singapore",
+            "addressCountry": "Singapore",
+            "sameAs": ["https://en.wikipedia.org/wiki/Singapore"]
+        }
+    },
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Chandigarh Engineering College",
+        "sameAs": ["https://en.wikipedia.org/wiki/Chandigarh_Engineering_College", "http://cecmohali.org"],
+        "logo": "http://cecmohali.org/wp-content/themes/cec-mohali/img/logo.jpg",
+        "email": "contact@cecmohali.org",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mohali",
+            "addressRegion": "Punjab",
+            "postalCode": "140307",
+            "streetAddress": "Landran"
+        }
+    },
+    "birthDate": "1993-02-17",
+    "email": "rahul_jain@live.in",
+    "name": "Rahul Jain",
+    "familyName": "Jain",
+    "givenName": "Rahul",
+    "gender": "Male",
+    "jobTitle": "Software Engineer",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Shopee",
+        "sameAs": ["https://en.wikipedia.org/wiki/Shopee", "https://en.wikipedia.org/wiki/Garena", "https://shopee.sg/"],
+        "areaServed": "Singapore",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Shopee_logo.svg/721px-Shopee_logo.svg.png",
+        "legalName": "Sea Limited"
+    },
+    "nationality": {
+        "@type": "Country",
+        "name": "India",
+        "sameAs": "https://en.wikipedia.org/wiki/India"
+    },
+    "image": "https://rahulja.in/assets/about.jpg",
+    "url": "https://rahulja.in",
+    "sameAs": ["https://www.linkedin.com/in/xrahuljain", "https://github.com/xRahul", "https://www.facebook.com/xRahulJain", "https://twitter.com/xRahulJain", "http://stackoverflow.com/users/1435626/rahul", "https://www.quora.com/profile/Rahul-Jain-5", "https://www.freecodecamp.org/xrahul", "https://codepen.io/xRahul", "https://www.goodreads.com/user/show/6390214-rahul"]
+},
+   "publisher": {
+      "@type": "Organization",
+      "name": "Rahul Jain",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://rahulja.in/assets/about.jpg"
+      }
+    },
+    "image":"https://rahulja.in/assets/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text/phpcs.jpg",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text"
+    },
+    "articleBody":"This is a plugin for Sublime Text which provides checkstyle reports using the following tools (all optional):  Linter (php -l). This provides a convenient way to perform only a syntax check on the given PHP code.  PHP CodeSniffer 1.3+ (phpcs). It tokenizes PHP, JavaScript and CSS files to detect violations of a defined coding standard.  PHP Mess Detector 1.4+ (phpmd). It detects and reports various potential problems with the code like possible bugs, suboptimal code, overcomplicated expressions and unused parameters, methods, properties.  Scheck 0.23+ (scheck, part of Facebook’s pfff toolchain). This will help you find stupid mistakes like a typo in your code.You can also configure the plugin to fix the issues using either  PHP Coding Standards Fixer 0.2+ (php-cs-fixer). It can fix most issues in your code when you want to follow the PHP coding standards as defined in the PSR-1 and PSR-2 documents and many more.  or PHP Code Beautifier 2.2.0+ (phpcbf). It can automatically correct coding standard violations.This plugin has been tested on:  Mac OS X 10.8.2  Ubuntu 11.10  Windows 7  Sublime Text 2  Sublime Text 3Install sublime-phpcs      Using Sublime Text’s Package Control (recommended)    Preferences -&amp;gt; Package Control -&amp;gt; Install Package -&amp;gt; Phpcs        Or via git checkout in Sublime Text packages    Simply checkout the git repo into ~/Library/Application Support/Sublime Text [VERSION NUMBER]/Packages/ for MacOSX or the equivalent folder on Windows or Linux.  {% highlight bash %}cd ~/Library/Application Support/Sublime Text 2/Packages/git clone git://github.com/benmatselby/sublime-phpcs.git Phpcs{% endhighlight %}Install dependencies  Make sure you have php installed on your system and check that you can use it directly-{% highlight bash %}php -v    PHP 5.6.28 (cli) (built: Dec  6 2016 12:38:54)    Copyright (c) 1997-2016 The PHP Group    Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies{% endhighlight %}  Now you need to have the latest composer installed. Use the provided link to move it globally.  Now install the PHP CodeSniffer, PHP Mess Detector, PHP CS Fixer and PHP Code Beautifier globally. You can also follow the links to see the install instructions for each.{% highlight bash %}composer global require squizlabs/php_codesniffercomposer global require phpmd/phpmdcomposer global require friendsofphp/php-cs-fixer{% endhighlight %}  Please note the absolute path of all the installed packages (On a Mac/Linux based environment), you can use:{% highlight bash %}which phpcswhich phpmdwhich php-cs-fixerwhich phpcbf{% endhighlight %}  Now install Scheck dependencies.          Make sure you have git installed.      Follow the instructions here for generic, macosx and linux to install only these two packages- Ocaml and camlp4. You do not need the other packages like GTK, Cairo, SWI-prolog or Java for scheck.For macosx, use homebrew      {% highlight bash %}for macosx using homebrewbrew install objective-caml camlp4for fedora, you may need to install these tooyum install ocaml-camlp4 ocaml-camlp4-devel perl-pod-usage{% endhighlight %}      Now install Scheck. If you follow the instructions mentioned in their project, you can download and setup the entire pfff set of tools. But for our case, we just need the scheck part. So, follow these instructions to get just that.    After following the steps, you’ll find a file called scheck in your cloned repo. Please note the absolute path of that as you’ll need it later.  {% highlight bash %}clone their github repository somewheregit clone https://github.com/facebook/pfff.git –depth=1build pfff toolscd ./configure -novisualmake dependmake{% endhighlight %}  Now you just need to setup the configuration for sublime-phpcs package in sublime text.          Preferences -&amp;gt; Package Settings -&amp;gt; PHP Code Sniffer -&amp;gt; Settings - User      Add the following json configuration-      {% highlight json %}{    “phpcs_php_path”: “/usr/bin/php”,    “phpcs_executable_path”: “/Users//.composer/vendor/bin/phpcs&quot;,    &quot;phpmd_executable_path&quot;: &quot;/Users//.composer/vendor/bin/phpmd&quot;,  &quot;phpcbf_executable_path&quot;: &quot;/Users//.composer/vendor/bin/phpcbf&quot;,    &quot;scheck_executable_path&quot;: &quot;/Users//Documents/GitHub/pfff/scheck&quot;,    &quot;php_cs_fixer_executable_path&quot;: &quot;/Users//.composer/vendor/bin/php-cs-fixer&quot;,&quot;phpmd_run&quot;: true,&quot;scheck_run&quot;: true,&quot;phpcs_linter_run&quot;: true,&quot;phpcs_sniffer_run&quot;: true,&quot;extensions_to_blacklist&quot;: [],&quot;phpcs_execute_on_save&quot;: false,&quot;phpcs_show_errors_on_save&quot;: false,&quot;phpcs_command_on_save&quot;: false,&quot;php_cs_fixer_on_save&quot;: false,&quot;phpcbf_on_save&quot;: false,&quot;phpcs_linter_command_on_save&quot;: false,&quot;phpmd_command_on_save&quot;: false,&quot;scheck_command_on_save&quot;: false } {% endhighlight %}In the above configuration, replace the paths with your install paths.Also use either php_cs_fixer or phpcbf for fixing the errors. I’d recommend using phpcbf as that is already isntalled with phpcs and thus you won’t have to install php_cs_fixer at all.I am disabling anything happening on save, but you can change the configuration any way you want. Find the defaults here-  Preferences -&amp;gt; Package Settings -&amp;gt; PHP Code Sniffer -&amp;gt; Settings - DefaultNow you just need to do Cmd + Shift + P and look for sniff options.Referencessublime-phpcs - Github PagesPHP Command Line Options - php.netPHP CodeSniffer - GithubPHP Mess Detector - phpmdPHP Coding Standards Fixer - GithubPHP Code Beautifier - GithubPHP installation - php.netIntroduction - ComposerInstalling Git - git-scmScheck Wiki - Githubpfff Wiki - Githubpfff General Install Instructions - Githubpfff Linux Install Instructions - Githubpfff MacOSX Install Instructions - Githubsublime-phpcs example configurations - Github"
+}
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://rahulja.in/about",
+        "name": "Rahul Jain",
+        "image": "https://rahulja.in/assets/about.jpg"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://rahulja.in",
+        "name": "Posts"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://rahulja.inamp/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text",
+        "name": "Setting up sublime-phpcs for PHP development in Sublime Text",
+        "image": "https://rahulja.in/assets/posts/setting-up-sublime-phpcs-for-php-development-in-sublime-text/phpcs.jpg"
+      }
+    }]
+  }
+</script>
+  
+
+
+
+        
+        <footer class="footer">
+  <ul class="footer-links">
+    
+      <li>
+        <a href="mailto:rahul_jain@live.in" title="Email" aria-label="Send Email">
+          <i class="fas fa-at" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://www.facebook.com/xRahulJain" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook Profile">
+          <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://twitter.com/xRahulJain" target="_blank" rel="noopener noreferrer" title="Twitter" aria-label="Twitter Profile">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/xRahulJain" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn Profile">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://github.com/xRahul" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="Github Profile">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="http://stackoverflow.com/users/1435626/rahul" target="_blank" rel="noopener noreferrer" title="StackOverflow" aria-label="Stackoverflow Profile">
+          <i class="fab fa-stack-overflow" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" target="_blank" title="RSS" aria-label="RSS Feed">
+          <i class="fas fa-rss" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  </ul>
+
+  <p class="text-center">
+    <a href="/privacy/cookies" rel="noopener noreferrer" target="_blank" title="Privacy Policy" aria-label="Privacy Policy">
+      Privacy Policy
+    </a>.
+    I'm using customized
+    <a target="_blank" href="https://github.com/nielsenramon/chalk" rel="noopener noreferrer" title="Chalk" aria-label="Clalk - Theme">Chalk</a>,
+    a template by
+    <a target="_blank" href="http://nielsenramon.com" rel="noopener noreferrer" title="Nielsen Ramon" aria-label="Nielsen Ramon Profile">Nielsen Ramon</a>.
+  </p>
+
+</footer>
+
+      </div>
+    </div>
+  </main>
+
+  
+  
+  <amp-install-serviceworker
+    src="https://rahulja.in/assets/sw.js"
+    layout="nodisplay"></amp-install-serviceworker>
+
+
+</body>
+</html>
