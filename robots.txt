@@ -1,8 +1,2 @@
 # Allow crawling of all content
 User-agent: *
-Disallow: /tag/
-Disallow: /project/
-Disallow: /tags$
-Disallow: /files/
-Disallow: /privacy/
-Disallow: /404.html
