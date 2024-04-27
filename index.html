@@ -20,27 +20,42 @@
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 
     <title>Rahul Jain</title>
-<style>
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        display: table;
-    }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-    h1 {
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-    }
-</style>
+        .flip-animation {
+            position: relative;
+        }
+
+        .flip-animation span {
+            position: relative;
+            display: inline-block;
+            font-size: 40px;
+            animation: flip 4s infinite;
+            animation-delay: calc(.1s * var(--i))
+        }
+        @keyframes flip {
+            0%,85% {
+            transform: rotateY(360deg)
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>RAHUL JAIN</h1>
+<h1 class="flip-animation">
+    <span style="--i:1">R</span><span style="--i:2">A</span><span style="--i:3">H</span><span style="--i:4">U</span><span style="--i:5">L</span>
+    <span style="--i:6">J</span><span style="--i:7">A</span><span style="--i:8">I</span><span style="--i:9">N</span>
+</h1>
 </body>
 </html>
