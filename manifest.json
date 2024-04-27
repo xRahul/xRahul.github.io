@@ -4,19 +4,29 @@
   "description": "Personal website of Rahul Jain",
   "icons": [
     {
+      "src": "assets/favicons/favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "assets/favicons/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/assets/favicons/android-chrome-36x36.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicons/android-chrome-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
       "src": "assets/favicons/apple-touch-icon-57x57.png",
       "type": "image/png",
       "sizes": "57x57"
-    },
-    {
-      "src": "assets/favicons/apple-touch-icon-114x114.png",
-      "type": "image/png",
-      "sizes": "114x114"
-    },
-    {
-      "src": "assets/favicons/apple-touch-icon-72x72.png",
-      "type": "image/png",
-      "sizes": "72x72"
     },
     {
       "src": "assets/favicons/apple-touch-icon-60x60.png",
@@ -24,19 +34,14 @@
       "sizes": "60x60"
     },
     {
-      "src": "assets/favicons/apple-touch-icon-120x120.png",
+      "src": "assets/favicons/mstile-70x70.png",
       "type": "image/png",
-      "sizes": "120x120"
+      "sizes": "70x70"
     },
     {
-      "src": "assets/favicons/apple-touch-icon-192x192.png",
+      "src": "assets/favicons/apple-touch-icon-72x72.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "assets/favicons/apple-touch-icon-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "72x72"
     },
     {
       "src": "assets/favicons/apple-touch-icon-76x76.png",
@@ -49,14 +54,14 @@
       "sizes": "96x96"
     },
     {
-      "src": "assets/favicons/favicon-32x32.png",
+      "src": "assets/favicons/apple-touch-icon-114x114.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "114x114"
     },
     {
-      "src": "assets/favicons/favicon-16x16.png",
+      "src": "assets/favicons/apple-touch-icon-120x120.png",
       "type": "image/png",
-      "sizes": "16x16"
+      "sizes": "120x120"
     },
     {
       "src": "assets/favicons/favicon-128.png",
@@ -64,9 +69,29 @@
       "sizes": "128x128"
     },
     {
-      "src": "assets/favicons/mstile-70x70.png",
+      "src": "/assets/favicons/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-192x192.png",
       "type": "image/png",
-      "sizes": "70x70"
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/favicons/android-chrome-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicons/android-chrome-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/favicons/apple-touch-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "background_color": "#ffffff",
