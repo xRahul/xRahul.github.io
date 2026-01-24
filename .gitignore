@@ -11,3 +11,9 @@ Thumbs.db
 /node_modules/
 yarn-error.log
 VisualStudio.code-workspace
+# Build
+dist/
+test-results/
+playwright-report/
+coverage/
+.vscode/
