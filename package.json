@@ -1,0 +1,30 @@
+{
+  "name": "rahulja.in",
+  "version": "1.0.0",
+  "description": "Rahul Jain's Personal Website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xRahul/xRahul.github.io.git"
+  },
+  "keywords": [],
+  "author": "Rahul Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xRahul/xRahul.github.io/issues"
+  },
+  "homepage": "https://github.com/xRahul/xRahul.github.io#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "prettier": "^3.8.1",
+    "vite": "^7.3.1"
+  }
+}
