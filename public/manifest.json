@@ -95,9 +95,9 @@
     }
   ],
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "any",
-  "theme_color": "#000000",
+  "theme_color": "#ffffff",
   "lang": "en-US",
   "start_url": "/"
 }
