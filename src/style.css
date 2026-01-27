@@ -102,37 +102,126 @@ body,
   }
 }
 
-.swap-animation:before {
-  content: '';
-  animation: swap-text 6s linear infinite;
+.swap-animation {
+  display: grid;
+  place-items: center;
 }
 
-@keyframes swap-text {
-  0% {
-    content: 'Software Engineer';
-  }
+.swap-animation span {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+.swap-animation span:nth-child(1) {
+  animation-name: swap-1;
+}
+
+.swap-animation span:nth-child(2) {
+  animation-name: swap-2;
+}
+
+.swap-animation span:nth-child(3) {
+  animation-name: swap-3;
+}
+
+.swap-animation span:nth-child(4) {
+  animation-name: swap-4;
+}
+
+.swap-animation span:nth-child(5) {
+  animation-name: swap-5;
+}
+
+@keyframes swap-1 {
+  0%,
   50% {
-    content: 'Software Engineer';
+    opacity: 1;
+    visibility: visible;
   }
-
-  60% {
-    content: 'Avid Reader';
-  }
-
-  70% {
-    content: 'Tech Enthusiast';
-  }
-
-  80% {
-    content: 'Gamer';
-  }
-
+  50.01%,
   90% {
-    content: 'Amateur Guitarist';
+    opacity: 0;
+    visibility: hidden;
   }
-
+  90.01%,
   100% {
-    content: 'Software Engineer';
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes swap-2 {
+  0%,
+  50% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50.01%,
+  60% {
+    opacity: 1;
+    visibility: visible;
+  }
+  60.01%,
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes swap-3 {
+  0%,
+  60% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  60.01%,
+  70% {
+    opacity: 1;
+    visibility: visible;
+  }
+  70.01%,
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes swap-4 {
+  0%,
+  70% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  70.01%,
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80.01%,
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes swap-5 {
+  0%,
+  80% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  80.01%,
+  90% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90.01%,
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
