@@ -18,8 +18,10 @@ test('has social links', async ({ page }) => {
   await page.goto('/');
 
   // Check for social links
-  await expect(page.getByLabel('Stack Overflow')).toBeVisible();
-  await expect(page.getByLabel('Linkedin')).toBeVisible();
-  await expect(page.getByLabel('Github')).toBeVisible();
-  await expect(page.getByLabel('Twitter')).toBeVisible();
+  await Promise.all([
+    expect(page.getByLabel('Stack Overflow')).toBeVisible(),
+    expect(page.getByLabel('Linkedin')).toBeVisible(),
+    expect(page.getByLabel('Github')).toBeVisible(),
+    expect(page.getByLabel('Twitter')).toBeVisible(),
+  ]);
 });
