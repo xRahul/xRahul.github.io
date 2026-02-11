@@ -5,12 +5,11 @@ test('verify font-display property', async ({ page }) => {
 
   const fontDisplay = await page.evaluate(async () => {
     await document.fonts.ready;
-    for (const face of document.fonts) {
-      if (face.family === 'Cormorant Garamond') {
-        return face.display;
-      }
-    }
-    return 'font not found';
+    const faces = Array.from(document.fonts);
+    const targetFont = faces.find(
+      (face) => face.family === 'Cormorant Garamond'
+    );
+    return targetFont ? targetFont.display : 'font not found';
   });
 
   console.log(`Current font-display: ${fontDisplay}`);
