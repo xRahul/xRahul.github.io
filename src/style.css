@@ -67,10 +67,9 @@ svg {
   margin: 1em;
 }
 
-html,
 body {
-  height: 100%;
-  /* min-height is buggie in IE */
+  min-height: 100vh;
+  margin: 0;
 }
 
 body,
