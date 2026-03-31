@@ -1,5 +1,14 @@
 import { test, expect } from '@playwright/test';
 
+test('has description meta tag', async ({ page }) => {
+  await page.goto('/');
+
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+    'content',
+    'Rahul Jain is a senior software engineer and tech enthusiast living in Singapore'
+  );
+});
+
 test('has opengraph and twitter meta tags', async ({ page }) => {
   await page.goto('/');
 
