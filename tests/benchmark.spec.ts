@@ -31,6 +31,4 @@ test('measure fps of flip animation', async ({ page }) => {
       });
     });
   });
-
-  console.log(`Average FPS: ${fps.toFixed(2)}`);
 });
