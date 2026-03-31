@@ -82,10 +82,6 @@ body,
   will-change: transform;
 }
 
-.display-none {
-  display: none;
-}
-
 @keyframes flip {
   0% {
     transform: rotateY(360deg);
