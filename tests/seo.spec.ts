@@ -59,3 +59,46 @@ test('has opengraph and twitter meta tags', async ({ page }) => {
     ),
   ]);
 });
+
+test('has favicon and manifest tags', async ({ page }) => {
+  await page.goto('/');
+
+  await Promise.all([
+    expect(page.locator('link[rel="manifest"]')).toHaveAttribute(
+      'href',
+      '/manifest.json'
+    ),
+    expect(page.locator('link[rel="apple-touch-icon"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/apple-touch-icon.png'
+    ),
+    expect(page.locator('link[rel="icon"][sizes="16x16"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/favicon-16x16.png'
+    ),
+    expect(page.locator('link[rel="icon"][sizes="32x32"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/favicon-32x32.png'
+    ),
+    expect(page.locator('link[rel="icon"][sizes="96x96"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/favicon-96x96.png'
+    ),
+    expect(page.locator('link[rel="icon"][sizes="128x128"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/favicon-128.png'
+    ),
+    expect(page.locator('link[rel="icon"][sizes="192x192"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/android-chrome-192x192.png'
+    ),
+    expect(page.locator('link[rel="mask-icon"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/safari-pinned-tab.svg'
+    ),
+    expect(page.locator('link[rel="shortcut icon"]')).toHaveAttribute(
+      'href',
+      '/assets/favicons/favicon.ico'
+    ),
+  ]);
+});
