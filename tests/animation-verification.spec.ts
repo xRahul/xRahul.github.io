@@ -8,8 +8,7 @@ test('animation container and items exist', async ({ page }) => {
   await expect(container).toBeVisible();
 
   // Initially, before changes, checking for "Software Engineer" text
-  // The current implementation uses ::before, so the text might be in the display-none span
-  // or just invisible.
+  // The current implementation uses ::before, so the text might be invisible.
   // We just want to ensure the page loads and the container is there.
 
   // After changes, we expect 5 spans.
